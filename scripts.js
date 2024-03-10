@@ -17,4 +17,9 @@ window.onload = function() {
         .then(data => {
             document.getElementById('head').innerHTML = data;
         });
+    fetch('/Meu-Site-Pessoal/footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer').innerHTML = data;
+        });
 };
