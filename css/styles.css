@@ -2494,14 +2494,11 @@ textarea.form-control-lg {
 .input-group > .form-control:focus,
 .input-group > .form-select:focus,
 .input-group > .form-floating:focus-within {
-  z-index: 5;
 }
 .input-group .btn {
   position: relative;
-  z-index: 2;
 }
 .input-group .btn:focus {
-  z-index: 5;
 }
 
 .input-group-text {
@@ -2578,7 +2575,6 @@ textarea.form-control-lg {
 .valid-tooltip {
   position: absolute;
   top: 100%;
-  z-index: 5;
   display: none;
   max-width: 100%;
   padding: 0.25rem 0.5rem;
@@ -2654,7 +2650,7 @@ textarea.form-control-lg {
 .input-group > .form-select:not(:focus).is-valid,
 .was-validated .input-group > .form-floating:not(:focus-within):valid,
 .input-group > .form-floating:not(:focus-within).is-valid {
-  z-index: 3;
+
 }
 
 .invalid-feedback {
@@ -2668,7 +2664,6 @@ textarea.form-control-lg {
 .invalid-tooltip {
   position: absolute;
   top: 100%;
-  z-index: 5;
   display: none;
   max-width: 100%;
   padding: 0.25rem 0.5rem;
@@ -2744,7 +2739,6 @@ textarea.form-control-lg {
 .input-group > .form-select:not(:focus).is-invalid,
 .was-validated .input-group > .form-floating:not(:focus-within):invalid,
 .input-group > .form-floating:not(:focus-within).is-invalid {
-  z-index: 4;
 }
 
 .btn {
@@ -6037,7 +6031,6 @@ textarea.form-control-lg {
   .offcanvas-sm {
     position: fixed;
     bottom: 0;
-    z-index: var(--bs-offcanvas-zindex);
     display: flex;
     flex-direction: column;
     max-width: 100%;
@@ -6125,7 +6118,6 @@ textarea.form-control-lg {
   .offcanvas-md {
     position: fixed;
     bottom: 0;
-    z-index: var(--bs-offcanvas-zindex);
     display: flex;
     flex-direction: column;
     max-width: 100%;
@@ -6213,7 +6205,6 @@ textarea.form-control-lg {
   .offcanvas-lg {
     position: fixed;
     bottom: 0;
-    z-index: var(--bs-offcanvas-zindex);
     display: flex;
     flex-direction: column;
     max-width: 100%;
@@ -6301,7 +6292,6 @@ textarea.form-control-lg {
   .offcanvas-xl {
     position: fixed;
     bottom: 0;
-    z-index: var(--bs-offcanvas-zindex);
     display: flex;
     flex-direction: column;
     max-width: 100%;
@@ -6389,7 +6379,6 @@ textarea.form-control-lg {
   .offcanvas-xxl {
     position: fixed;
     bottom: 0;
-    z-index: var(--bs-offcanvas-zindex);
     display: flex;
     flex-direction: column;
     max-width: 100%;
@@ -6476,7 +6465,6 @@ textarea.form-control-lg {
 .offcanvas {
   position: fixed;
   bottom: 0;
-  z-index: var(--bs-offcanvas-zindex);
   display: flex;
   flex-direction: column;
   max-width: 100%;
@@ -6867,7 +6855,6 @@ textarea.form-control-lg {
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 1;
   content: "";
 }
 
@@ -10975,7 +10962,7 @@ html {
   left: 0;
   transition: all 0.2s ease-in-out;
   opacity: 0;
-  background-color: rgba(26, 188, 156, 0.9);
+  background-color: rgba(37, 150, 190, 0.8);
 }
 .portfolio .portfolio-item .portfolio-item-caption:hover {
   opacity: 1;
