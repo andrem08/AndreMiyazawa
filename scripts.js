@@ -17,6 +17,9 @@ function loadHTML(path, elementId) {
         .then(response => response.text())
         .then(data => {
             document.getElementById(elementId).innerHTML = data;
+
+            //Caso o path seja o header, adiciona um event listener para o botão do menu
+            //onde o botão é clicado e o menu é exibido ou escondido
             if (path === '/Meu-Site-Pessoal/header.html') {
                 // Add the event listener after the HTML is loaded
                 var navbarButton = document.getElementById('navbarButton');
@@ -38,30 +41,38 @@ function loadHTML(path, elementId) {
                 }
             }
         })
-    // fetch(path.split('/')[2])
-    //     .then(response => response.text())
-    //     .then(data => {
-    //         document.getElementById(elementId).innerHTML = data;
-    //
-    //         if(path === '/Meu-Site-Pessoal/header.html') {
-    //             // Add the event listener after the HTML is loaded
-    //             var navbarButton = document.getElementById('navbarButton');
-    //             if (navbarButton) {
-    //                 navbarButton.addEventListener('click', function() {
-    //                     var navbar = document.getElementById('navbarResponsive');
-    //                     if (navbar) {
-    //                         if (navbar.style.display === 'none' || navbar.style.display === '') {
-    //                             navbar.style.display = 'block';
-    //                         } else {
-    //                             navbar.style.display = 'none';
-    //                         }
-    //                     } else {
-    //                         console.error('Element with ID "navbarResponsive" not found');
-    //                     }
-    //                 });
-    //             } else {
-    //                 console.error('Element with ID "navbarButton" not found');
-    //             }
-    //         }
-    //     });
 }
+
+// Utilizar o site localmente
+//
+// function loadHTML(path, elementId) {
+//     path = path.split('/')[2]
+//     fetch(path)
+//         .then(response => response.text())
+//         .then(data => {
+//             document.getElementById(elementId).innerHTML = data;
+//
+//             //Caso o path seja o header, adiciona um event listener para o botão do menu
+//             //onde o botão é clicado e o menu é exibido ou escondido
+//             if (path === 'header.html') {
+//                 // Add the event listener after the HTML is loaded
+//                 var navbarButton = document.getElementById('navbarButton');
+//                 if (navbarButton) {
+//                     navbarButton.addEventListener('click', function () {
+//                         var navbar = document.getElementById('navbarResponsive');
+//                         if (navbar) {
+//                             if (navbar.style.display === 'none' || navbar.style.display === '') {
+//                                 navbar.style.display = 'block';
+//                             } else {
+//                                 navbar.style.display = 'none';
+//                             }
+//                         } else {
+//                             console.error('Element with ID "navbarResponsive" not found');
+//                         }
+//                     });
+//                 } else {
+//                     console.error('Element with ID "navbarButton" not found');
+//                 }
+//             }
+//         })
+// }
