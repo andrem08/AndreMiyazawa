@@ -1,3 +1,8 @@
+window.onload = function() {
+    loadHTML('/Meu-Site-Pessoal/header.html', 'header');
+    loadHTML('/Meu-Site-Pessoal/head.html', 'head');
+    loadHTML('/Meu-Site-Pessoal/footer.html', 'footer');
+};
 
 // Utilizar o fetch para enviar o header em todas as páginas
 // O fetch é uma função que faz uma requisição para um servidor e retorna uma promessa
@@ -6,20 +11,10 @@
 // O data é o conteúdo do arquivo
 // O document.getElementById('header').innerHTML = data; insere o conteúdo do arquivo no elemento com id 'header'
 
-window.onload = function() {
-    fetch('/Meu-Site-Pessoal/header.html')
+function loadHTML(path, elementId) {
+    fetch(path)
         .then(response => response.text())
         .then(data => {
-            document.getElementById('header').innerHTML = data;
+            document.getElementById(elementId).innerHTML = data;
         });
-    fetch('/Meu-Site-Pessoal/head.html')
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById('head').innerHTML = data;
-        });
-    fetch('/Meu-Site-Pessoal/footer.html')
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById('footer').innerHTML = data;
-        });
-};
+}
