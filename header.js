@@ -1,12 +1,8 @@
-document.addEventListener('DOMContentLoaded', function() {
-    var button = document.querySelector('.navbar-toggler');
-    var nav = document.querySelector('#navbarResponsive');
-
-    button.addEventListener('click', function() {
-        if (nav.style.display === 'none' || nav.style.display === '') {
-            nav.style.display = 'block';
-        } else {
-            nav.style.display = 'none';
-        }
-    });
+document.getElementById('navbarButton').addEventListener('click', function() {
+    var navbar = document.getElementById('navbarResponsive');
+    if (navbar.style.display === 'none' || navbar.style.display === '') {
+        navbar.style.display = 'block';
+    } else {
+        navbar.style.display = 'none';
+    }
 });

@@ -1,6 +1,7 @@
-window.onload = function() {
+window.onload = function () {
     loadHTML('/Meu-Site-Pessoal/header.html', 'header');
     loadHTML('/Meu-Site-Pessoal/head.html', 'head');
+    loadHTML('/Meu-Site-Pessoal/footer.html', 'footer');
     loadHTML('/Meu-Site-Pessoal/footer.html', 'footer');
 };
 
@@ -16,5 +17,51 @@ function loadHTML(path, elementId) {
         .then(response => response.text())
         .then(data => {
             document.getElementById(elementId).innerHTML = data;
-        });
+            if (path === '/Meu-Site-Pessoal/header.html') {
+                // Add the event listener after the HTML is loaded
+                var navbarButton = document.getElementById('navbarButton');
+                if (navbarButton) {
+                    navbarButton.addEventListener('click', function () {
+                        var navbar = document.getElementById('navbarResponsive');
+                        if (navbar) {
+                            if (navbar.style.display === 'none' || navbar.style.display === '') {
+                                navbar.style.display = 'block';
+                            } else {
+                                navbar.style.display = 'none';
+                            }
+                        } else {
+                            console.error('Element with ID "navbarResponsive" not found');
+                        }
+                    });
+                } else {
+                    console.error('Element with ID "navbarButton" not found');
+                }
+            }
+        })
+    // fetch(path.split('/')[2])
+    //     .then(response => response.text())
+    //     .then(data => {
+    //         document.getElementById(elementId).innerHTML = data;
+    //
+    //         if(path === '/Meu-Site-Pessoal/header.html') {
+    //             // Add the event listener after the HTML is loaded
+    //             var navbarButton = document.getElementById('navbarButton');
+    //             if (navbarButton) {
+    //                 navbarButton.addEventListener('click', function() {
+    //                     var navbar = document.getElementById('navbarResponsive');
+    //                     if (navbar) {
+    //                         if (navbar.style.display === 'none' || navbar.style.display === '') {
+    //                             navbar.style.display = 'block';
+    //                         } else {
+    //                             navbar.style.display = 'none';
+    //                         }
+    //                     } else {
+    //                         console.error('Element with ID "navbarResponsive" not found');
+    //                     }
+    //                 });
+    //             } else {
+    //                 console.error('Element with ID "navbarButton" not found');
+    //             }
+    //         }
+    //     });
 }
