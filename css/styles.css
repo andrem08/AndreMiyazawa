@@ -2969,7 +2969,7 @@ textarea.form-control-lg {
   --bs-btn-disabled-color: #1abc9c;
   --bs-btn-disabled-bg: transparent;
   --bs-btn-disabled-border-color: #1abc9c;
-  --bs-gradient: none;
+
 }
 
 .btn-outline-secondary {
@@ -2986,7 +2986,7 @@ textarea.form-control-lg {
   --bs-btn-disabled-color: #2c3e50;
   --bs-btn-disabled-bg: transparent;
   --bs-btn-disabled-border-color: #2c3e50;
-  --bs-gradient: none;
+
 }
 
 .btn-outline-success {
@@ -3003,7 +3003,7 @@ textarea.form-control-lg {
   --bs-btn-disabled-color: #198754;
   --bs-btn-disabled-bg: transparent;
   --bs-btn-disabled-border-color: #198754;
-  --bs-gradient: none;
+
 }
 
 .btn-outline-info {
@@ -3020,7 +3020,7 @@ textarea.form-control-lg {
   --bs-btn-disabled-color: #0dcaf0;
   --bs-btn-disabled-bg: transparent;
   --bs-btn-disabled-border-color: #0dcaf0;
-  --bs-gradient: none;
+
 }
 
 .btn-outline-warning {
@@ -3037,7 +3037,7 @@ textarea.form-control-lg {
   --bs-btn-disabled-color: #ffc107;
   --bs-btn-disabled-bg: transparent;
   --bs-btn-disabled-border-color: #ffc107;
-  --bs-gradient: none;
+
 }
 
 .btn-outline-danger {
@@ -3054,7 +3054,7 @@ textarea.form-control-lg {
   --bs-btn-disabled-color: #dc3545;
   --bs-btn-disabled-bg: transparent;
   --bs-btn-disabled-border-color: #dc3545;
-  --bs-gradient: none;
+
 }
 
 .btn-outline-light {
@@ -3071,7 +3071,7 @@ textarea.form-control-lg {
   --bs-btn-disabled-color: #f8f9fa;
   --bs-btn-disabled-bg: transparent;
   --bs-btn-disabled-border-color: #f8f9fa;
-  --bs-gradient: none;
+
 }
 
 .btn-outline-dark {
@@ -3088,7 +3088,7 @@ textarea.form-control-lg {
   --bs-btn-disabled-color: #212529;
   --bs-btn-disabled-bg: transparent;
   --bs-btn-disabled-border-color: #212529;
-  --bs-gradient: none;
+
 }
 
 .btn-link {
@@ -10926,7 +10926,6 @@ html {
 
 .padding-np {
   padding-top:  calc(4rem);
-  padding-bottom: 6rem;
   background: linear-gradient(to bottom, rgb(148,148,156) 2%, rgb(229, 229, 224) 20%);
 }
 
@@ -11000,7 +10999,7 @@ html {
 
 .footer {
   padding-top: 5rem;
-  padding-bottom: 1rem;
+  padding-bottom: 5rem;
   background-color: #2c3e50;
   color: #fff;
 }
