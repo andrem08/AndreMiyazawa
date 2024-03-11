@@ -769,6 +769,10 @@ button:not(:disabled),
   background: linear-gradient(to bottom, rgb(148,148,156) 40%, rgb(229, 229, 224) 60%);
 }
 
+#startButton:disabled {
+  background-color: red;
+}
+
 .rounded {
   border-radius: var(--bs-border-radius) !important;
 }

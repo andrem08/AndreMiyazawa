@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sorters</title>
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <div id="head"></div>
+</head>
+<body>
+<div id="header"></div>
+<div class="padding-np">
+    <div class="container">
+        <section class="page-section portfolio" id="sorters">
+            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Comparação de Algoritmos de
+                Ordenação</h2>
+            <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <div class="col-lg-8 mx-auto">
+                <p class="lead">
+                    &emsp;Aqui estão alguns dos algoritmos de ordenação que eu desenvolvi durante a minha graduação.
+                    Alguns
+                    deles
+                    foram feitos para disciplinas, outros para competições de programação e outros por hobby. Todos eles
+                    estão disponíveis no meu GitHub, onde você pode ver o código fonte e até mesmo baixar e executar os
+                    algoritmos.
+                </p>
+            </div>
+            <div class="col-lg-8 mx-auto">
+                <style>
+                    label {
+                        display: block;
+                        font-size: 1.2em;
+                        margin-top: 1em;
+                    }
+
+                    select, input[type="number"], button {
+                        width: 100%;
+                        padding: 10px;
+                        font-size: 1em;
+                        border: none;
+                        margin-top: 0.5em;
+                        box-sizing: border-box;
+                    }
+
+                    select {
+                        background: #f8f8f8;
+                    }
+
+                    input[type="number"] {
+                        background: #f0f0f0;
+                    }
+
+                    button {
+                        background: #007BFF;
+                        color: white;
+                        cursor: pointer;
+                    }
+
+                    button:hover {
+                        background: #0056b3;
+                    }
+                </style>
+
+                <label for="algorithm">Sorting Algorithm:</label>
+                <select id="algorithm">
+                    <option value="bubbleSort">Bubble Sort</option>
+                    <option value="quickSort">Quick Sort</option>
+                    <option value="mergeSort">Merge Sort</option>
+                    <option value="heapSort">Heap Sort</option>
+                    <option value="countingSort">Counting Sort</option>
+                    <option value="radixSort">Radix Sort</option>
+                </select>
+
+                <label for="arraySize">Array Size:</label>
+                <input type="number" id="arraySize" min="1" max="853" value="100">
+
+                <button id="startButton">Start Sorting</button>
+                <div id="canvasContainer"></div>
+                <script src="bib/p5.js"></script>
+                <script src="sorters.js"></script>
+            </div>
+        </section>
+    </div>
+    <div id="footer"></div>
+</div>
+<script src="scripts.js"></script>
+</body>
+</html>
