@@ -67,17 +67,27 @@
                 <label for="algorithm">Sorting Algorithm:</label>
                 <select id="algorithm">
                     <option value="bubbleSort">Bubble Sort</option>
+                    <option value="selectionSort">Selection Sort</option>
                     <option value="quickSort">Quick Sort</option>
                     <option value="mergeSort">Merge Sort</option>
                     <option value="heapSort">Heap Sort</option>
-                    <option value="countingSort">Counting Sort</option>
+<!--                    <option value="countingSort">Counting Sort</option>-->
                     <option value="radixSort">Radix Sort</option>
                 </select>
-
-                <label for="arraySize">Array Size:</label>
-                <input type="number" id="arraySize" min="1" max="853" value="100">
+                <div>
+                    <div>
+                        <label for="speed">Speed:</label>
+                        <input type="number" id="speed" min="1" max="100" value="1">
+                    </div>
+                    <div>
+                        <label for="arraySize">Array Size:</label>
+                        <input type="number" id="arraySize" min="1" max="853" value="100">
+                    </div>
+                </div>
 
                 <button id="startButton">Start Sorting</button>
+
+                <button id="stopButton" onclick="window.location.href='sorters.html'">Stop</button>
                 <div id="canvasContainer"></div>
                 <script src="bib/p5.js"></script>
                 <script src="sorters.js"></script>
