@@ -239,6 +239,7 @@ button:not(:disabled),
 
 .img-fluid {
   max-width: 100%;
+  border-radius: 5%;
   height: auto;
 }
 
@@ -673,15 +674,16 @@ button:not(:disabled),
   align-items: center !important;
 }
 
-.mx-0 {
-  margin-right: 0 !important;
-  margin-left: 0 !important;
+.mx-2 {
+  margin-right: 3rem !important;
+  margin-left: 3rem !important;
 }
 
 .mx-1 {
   margin-right: 0.25rem !important;
   margin-left: 0.25rem !important;
 }
+
 
 .mx-auto {
   margin-right: auto !important;
@@ -726,6 +728,10 @@ button:not(:disabled),
 .py-3 {
   padding-top: 1rem !important;
   padding-bottom: 1rem !important;
+}
+
+.py-4 {
+  padding-bottom: 5rem !important;
 }
 
 .fs-5 {
@@ -977,10 +983,10 @@ html {
   position: relative;
   display: block;
   max-width: 25rem;
-  border-radius: 0.5rem;
   overflow: hidden;
 }
 .portfolio .portfolio-item .portfolio-item-caption {
+  border-radius: 10%;
   position: absolute;
   top: 0;
   left: 0;
