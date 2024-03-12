@@ -47,6 +47,27 @@ async function selectionSort(a) {
     await sleep(time2);
 }
 
+async function insertionSort(a) {
+    for (let i = 1; i < a.length; i++) {
+        let key = a[i];
+        let j = i - 1;
+
+        /* Move elements of a[0..i-1], that are
+           greater than key, to one position ahead
+           of their current position */
+        while (j >= 0 && a[j] > key) {
+            a[j + 1] = a[j];
+            j = j - 1;
+            await sleep(time1);
+        }
+        a[j + 1] = key;
+        values = a.slice();
+    }
+    await sleep(time2);
+    document.getElementById('startButton').disabled = false;
+    document.getElementById('startButton').innerText = textSorting;
+}
+
 async function mergeSort(a) {
     for (let size = 1; size < a.length; size *= 2) {
         for (let leftStart = 0; leftStart < a.length; leftStart += 2 * size) {
@@ -245,12 +266,13 @@ async function radixSort(a) {
     await sleep(time2);
 }
 
+
 async function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
 function setup() {
-    let canvas = createCanvas(windowWidth * 4 / 9, windowHeight / 3);
+    let canvas = createCanvas(windowWidth * 0.407, windowHeight / 3);
     canvas.parent('canvasContainer');
 }
 
@@ -276,10 +298,11 @@ function draw() {
             case 'bubbleSort':
                 bubbleSort(values);
                 break;
+            case 'insertionSort':
+                insertionSort(values);
+                break;
             case 'mergeSort':
                 mergeSort(values);
-                // document.getElementById('startButton').disabled = false;
-                // document.getElementById('startButton').innerText = textSorting;
                 break;
             case 'radixSort':
                 radixSort(values);
@@ -298,7 +321,7 @@ function draw() {
                 break;
         }
     }
-    background(23);
+    background(12,12,28);
     if(numOfRects > 300)
         stroke(255);
     else
@@ -314,19 +337,6 @@ function startSorting() {
     document.getElementById('startButton').innerText = textWait;
     startSort = true;
     draw();
-}
-
-function reloadScript() {
-    // Remove the existing script
-    let oldScript = document.querySelector('script[src="sorters.js"]');
-    oldScript.parentNode.removeChild(oldScript);
-
-    // Create a new script
-    let newScript = document.createElement('script');
-    newScript.src = "sorters.js";
-
-    // Add the new script to the DOM
-    document.body.appendChild(newScript);
 }
 
 document.getElementById('startButton').addEventListener('click', startSorting);
