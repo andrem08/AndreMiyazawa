@@ -2,13 +2,16 @@
 
 .center-content {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+
 }
+
 
 .button {
     position: relative;
-    width: 350px; /* Define a largura fixa */
+    width: var(--width); /* Define a largura fixa */
     height: 120px; /* Define a altura fixa */
     font-size: 1.3rem; /* Adjust font size if necessary */
     color: var(--color);

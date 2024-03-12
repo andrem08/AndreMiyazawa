@@ -730,6 +730,11 @@ button:not(:disabled),
   padding-bottom: 1rem !important;
 }
 
+.py-10 {
+  padding-top: 6rem !important;
+  padding-bottom: 6rem !important;
+}
+
 .py-4 {
   padding-bottom: 5rem !important;
 }
@@ -810,7 +815,7 @@ button:not(:disabled),
 
 .bg-header{
     --bs-bg-opacity: 1;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.7);
 
 }
 
@@ -858,6 +863,18 @@ html {
 }
 @media (min-width: 992px) {
   .page-section .page-section-heading {
+    font-size: 3rem;
+    line-height: 2.5rem;
+  }
+}
+
+.page-heading {
+  font-size: 2.25rem;
+  line-height: 2rem;
+}
+
+@media (min-width: 992px) {
+  .page-heading {
     font-size: 3rem;
     line-height: 2.5rem;
   }
@@ -1006,4 +1023,8 @@ html {
   padding-bottom: 2.5rem;
   background-color: rgba(12,11,28,255);
   text-align: center;
+}
+
+.canvasContainer{
+  width: 20%;
 }

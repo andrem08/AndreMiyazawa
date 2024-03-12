@@ -11,7 +11,7 @@
 <div id="header"></div>
 <div class="bg-default">
     <div class="container text-white">
-        <h2 class="page-section-heading text-center text-uppercase mb-0">Desenhar Fractais</h2>
+        <h2 class="page-heading text-center text-uppercase mb-0">Desenhar Fractais</h2>
         <!-- Divisor-->
         <div class="divider-custom divider-light">
             <div class="divider-custom-line"></div>
@@ -26,6 +26,56 @@
                 iterações e a cor do fractal.
             </p>
         </div>
+
+
+        <div class="col-lg-8 mx-auto">
+            <style>
+                label {
+                    display: block;
+                    font-size: 1.2em;
+                    margin-top: 1em;
+                }
+
+                select, input[type="number"], button {
+                    width: 100%;
+                    padding: 10px;
+                    font-size: 1em;
+                    border: none;
+                    margin-top: 0.5em;
+                    box-sizing: border-box;
+                }
+
+                select {
+                    background: #f8f8f8;
+                }
+
+                input[type="number"] {
+                    background: #f0f0f0;
+                }
+
+                button {
+                    background: #007BFF;
+                    color: white;
+                    cursor: pointer;
+                }
+
+                button:hover {
+                    background: #0056b3;
+                }
+            </style>
+
+            <label for="fractalType">Sorting Algorithm:</label>
+            <select id="fractalType">
+                <option value="kochCurve">Koch Curve</option>
+                <option value="dragonCurve">Dragon Curve</option>
+                <!-- Add more options here for other fractals -->
+            </select>
+            <button id="startButton">Draw Fractal</button>
+            <div id="canvasContainer2"></div>
+            <script src="bib/p5.js"></script>
+            <script src="fractals.js"></script>
+        </div>
+
     </div>
 </div>
 <div id="footer"></div>
