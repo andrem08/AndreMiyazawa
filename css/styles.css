@@ -755,13 +755,57 @@ button:not(:disabled),
 }
 
 .bg-primary {
+  width: 100%;
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
+  background-image: url("../www/night-city.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-height: 600px) {
+  .bg-primary {
+    height: 100vh;
+  }
+}
+
+.padding-np {
+  padding-top:  8rem;
+  padding-bottom: 3rem;
+  background: linear-gradient(to bottom, rgb(148,148,156) 2%, rgb(229, 229, 224) 20%);
+}
+
+
+@media (max-width: 600px) {
+  .bg-primary {
+    order: 2;
+  }
+  .padding-np {
+    order: 1;
+  }
+}
+
+.container_primary {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .bg-secondary {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-secondary-rgb), var(--bs-bg-opacity)) !important;
+  background: linear-gradient(to bottom, rgb(148,148,156) 2%, rgb(229, 229, 224) 20%);
+}
+
+.bg-header{
+    --bs-bg-opacity: 1;
+    background-color: rgba(0, 0, 0, 0.4);
+
 }
 
 .bg-ice-white-gradient {
@@ -822,21 +866,21 @@ html {
 }
 .divider-custom .divider-custom-line {
   width: 100%;
-  max-width: 7rem;
-  height: 0.25rem;
+  max-width: 13vw;
+  height: 0.25vw;
   background-color: #2c3e50;
   border-radius: 1rem;
   border-color: #2c3e50;
 }
 .divider-custom .divider-custom-line:first-child {
-  margin-right: 1rem;
+  margin-right: 1vw;
 }
 .divider-custom .divider-custom-line:last-child {
-  margin-left: 1rem;
+  margin-left: 1vw;
 }
 .divider-custom .divider-custom-icon {
   color: #2c3e50;
-  font-size: 2rem;
+  font-size: 1.5vw;
 }
 .divider-custom.divider-light .divider-custom-line {
   background-color: #fff;
@@ -861,8 +905,8 @@ html {
 }
 
 #mainNav {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
 }
@@ -888,12 +932,12 @@ html {
 
 @media (min-width: 992px) {
   #mainNav {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.6rem;
     transition: padding-top 0.3s, padding-bottom 0.3s;
   }
   #mainNav .navbar-brand {
-    font-size: 1.75em;
+    font-size: 1.50em;
     transition: font-size 0.3s;
   }
   #mainNav .navbar-nav {
@@ -901,40 +945,34 @@ html {
   }
 }
 
-.padding-np {
-  padding-top:  calc(4rem);
-  background: linear-gradient(to bottom, rgb(148,148,156) 2%, rgb(229, 229, 224) 20%);
-}
-
 .masthead {
-  padding-top: calc(6rem + 74px);
-  padding-bottom: 6rem;
+  padding: 20vh 3rem;
 }
 .masthead .masthead-heading {
-  font-size: 2.75rem;
+  font-size: 4vw;
   line-height: 2.75rem;
 }
 .masthead .masthead-subheading {
-  font-size: 1.25rem;
+  font-size: 2vw;
 }
 .masthead .masthead-avatar {
-  width: 22rem;
+  width: 20vw;
   border-radius: 100%;
 }
 
-@media (min-width: 992px) {
-  .masthead {
-    padding-top: calc(6rem + 104px);
-    padding-bottom: 6rem;
+@media (max-width: 1000px){
+  .masthead .masthead-avatar {
+    width: 12.5rem;
   }
+
   .masthead .masthead-heading {
-    font-size: 4rem;
-    line-height: 3.5rem;
+    font-size: 2.75rem;
   }
   .masthead .masthead-subheading {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 }
+
 .portfolio .portfolio-item {
   cursor: pointer;
   position: relative;
@@ -959,8 +997,9 @@ html {
 }
 
 .footer {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 4rem;
+  padding-bottom: 2.5rem;
   background-color: #2c3e50;
   color: #fff;
+  text-align: center;
 }
