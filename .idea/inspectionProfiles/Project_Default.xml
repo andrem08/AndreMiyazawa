@@ -7,9 +7,10 @@
       <option name="myIgnoreVendorSpecificProperties" value="false" />
       <option name="myCustomPropertiesList">
         <value>
-          <list size="2">
+          <list size="3">
             <item index="0" class="java.lang.String" itemvalue="text-decoration" />
             <item index="1" class="java.lang.String" itemvalue="text-decoration-skip-ink" />
+            <item index="2" class="java.lang.String" itemvalue="border-botton-left-radius" />
           </list>
         </value>
       </option>

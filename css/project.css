@@ -5,9 +5,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
 
+.button_text {
+    font-size: 1.25rem;
+    line-height: 4rem;
+}
 
 .button {
     position: relative;
@@ -26,7 +29,6 @@
     display: flex; /* Added to center the text */
     justify-content: center; /* Centers the text horizontally */
     align-items: center; /* Centers the text vertically */
-    line-height: 3.5rem;
 }
 
 .button:hover {
@@ -35,6 +37,7 @@
 }
 
 .button::before {
+
     content: '';
     position: absolute;
     top: 0;
@@ -44,7 +47,7 @@
     background: var(--color);
     z-index: -1;
     transform: scale(0);
-    transition: 0.3s;
+    transition: 0.1s;
 }
 
 .button:hover::before {
