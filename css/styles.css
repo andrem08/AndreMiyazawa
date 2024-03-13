@@ -1028,3 +1028,7 @@ html {
 .canvasContainer{
   width: 20%;
 }
+
+*::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari and Opera */
+}
