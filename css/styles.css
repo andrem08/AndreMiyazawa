@@ -873,6 +873,11 @@ html {
   line-height: 2rem;
 }
 
+.page-subheading {
+  font-size: 1.75rem;
+  line-height: 1.5rem;
+}
+
 @media (min-width: 992px) {
   .page-heading {
     font-size: 3rem;
@@ -976,6 +981,11 @@ html {
 }
 .masthead .masthead-subheading {
   font-size: 2vw;
+  font-weight: bold;
+  text-shadow: -1px 1px 0 #000,
+  1px 1px 0 #000,
+  1px -1px 0 #000,
+  -1px -1px 0 #000;
 }
 .masthead .masthead-avatar {
   width: 20vw;
