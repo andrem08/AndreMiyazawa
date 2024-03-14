@@ -27,6 +27,15 @@
 
     }
 }
+
+.image-alone{
+    display: block;
+    /*text-align: left;*/
+    margin-top: -50px; /* Adjust this value as needed */
+    margin-bottom: 22px;
+    /*position: absolute;*/
+}
+
 .carousel {
     display: block;
     text-align: left;

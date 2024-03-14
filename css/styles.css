@@ -111,7 +111,7 @@ ul ul {
 
 
 strong {
-  font-weight: bolder;
+  font-weight: bold;
 }
 
 a {
@@ -120,7 +120,8 @@ a {
   /*font-weight: 800;*/
 }
 a:hover {
-  color: rgb(54,58,59);
+  color: rgb(88,86,94);
+  font-weight: bold;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
