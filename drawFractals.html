@@ -9,7 +9,7 @@
 <body>
 
 <div id="header"></div>
-<div class="bg-default">
+<div class="bg-default" id="page-fractals">
     <div class="container text-white">
         <h2 class="page-heading text-center text-uppercase mb-0">Desenhar Fractais</h2>
         <!-- Divisor-->
@@ -28,7 +28,7 @@
         </div>
 
 
-        <div class="col-lg-8 mx-auto">
+        <div class="col-lg-8 mx-auto" id="fractals-container">
             <style>
                 label {
                     display: block;
@@ -63,22 +63,25 @@
                     background: #0056b3;
                 }
             </style>
-
-            <label for="fractalType">Sorting Algorithm:</label>
-            <select id="fractalType">
-                <option value="kochCurve">Koch Curve</option>
-                <option value="dragonCurve">Dragon Curve</option>
+            <label for="fractal-select">Sorting Algorithm:</label>
+            <select id="fractal-select">
+                <option value="defaulc">Selecione um fractal para ser desenhado</option>
+                <option value="koch">Koch Curve</option>
+                <option value="sierpinski">Sierpinski Triangle</option>
+                <option value="levy">Levy C Courve</option>
+                <option value="dragon">Dragon Curve</option>
                 <!-- Add more options here for other fractals -->
             </select>
-            <button id="startButton">Draw Fractal</button>
-            <div id="canvasContainer2"></div>
-            <script src="bib/p5.js"></script>
-            <script src="fractals.js"></script>
+
+            <label for="iteration-fractals">Escolha o número de iterações:</label>
+            <input type="range" id="iteration-fractals" min="1" max="9" value="4" step="1">
+            <canvas id="canvas-fractals" width="100vw" height="600"></canvas>
         </div>
 
     </div>
 </div>
 <div id="footer"></div>
 <script src="scripts.js"></script>
+<script src="fractals.js"></script>
 </body>
 </html>
