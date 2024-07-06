@@ -276,6 +276,23 @@ button:not(:disabled),
     flex: 0 0 auto;
     width: 83.33333333%;
   }
+  .col-lg-7 {
+    padding-left: 12rem;
+    padding-right: 12rem;
+    flex: 0 0 auto;
+  }
+}
+
+.alittlePaddingX {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.alittlePaddingY {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.red-text{
+  color: red;
 }
 
 .btn {
