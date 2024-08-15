@@ -43,3 +43,10 @@ footer .btn-social:focus-visible {
     border-color: var(--bs-btn-disabled-border-color);
     opacity: var(--bs-btn-disabled-opacity);
 }
+.qrcode {
+    transition: transform 0.3s ease;
+}
+
+.qrcode:hover {
+    transform: scale(2.1);
+}

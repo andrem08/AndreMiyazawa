@@ -13,7 +13,7 @@
     <div class="container text-white scrollable-pages">
         <div id="page-more-experiences" class=" text-white side-page">
             <div class="container">
-                <h2 class="page-heading text-center text-uppercase ">Mais Experiências</h2>
+                <h2 id="more-experiences-title" class="page-heading text-center text-uppercase ">Mais Experiências</h2>
                 <a href="#/" class="close-button ">&#10005;</a>
                 <div class="divider-custom">
                     <div class="divider-custom-line"></div>
@@ -24,10 +24,10 @@
                 <div class="col-lg-8 mx-auto">
                     <img class="img-logo" src="www/dasi-usp.jpeg" alt="">
                     <div class="text-box">
-                        <h2>Designer na DASI</h2>
-                        <p class="ms-auto fs-5 time_opacity">Março 2020 - Dez 2021
+                        <h2 id="dasi-title">Designer na DASI</h2>
+                        <p id="dasi-date" class="ms-auto fs-5 time_opacity">Março 2020 - Dez 2021
                         <p>
-                        <p class="ms-auto fs-5">
+                        <p id="dasi-description" class="ms-auto fs-5">
                             A entidade estudantil <b>DASI (Diretório Acadêmico de Sistemas de Informação)</b>
                             foi o meu primeiro
                             contato com demandas, projetos e pessoas. Durante esse período, eu realizei a criação de
@@ -37,7 +37,7 @@
                         </p>
                     </div>
                     <br>
-                    <div class="list">
+                    <div id="dasi-tools" class="list">
                         <h2 class="ms-auto fs-5 time_opacity">Ferramentas: </h2>
                         <ul>
                             <li><span>Adobe Photoshop, Canvas</span>
@@ -50,10 +50,10 @@
                 <div class="col-lg-8 mx-auto">
                     <img class="img-logo" src="www/elite-logo.jpg" alt="">
                     <div class="text-box">
-                        <h2>Bolsa como corretor de Questões de Vestibular</h2>
-                        <p class="ms-auto fs-5 time_opacity">Fev 2019 - Fev 2020
+                        <h2 id="elite-title">Bolsista como corretor de Questões de Vestibular</h2>
+                        <p id="elite-date" class="ms-auto fs-5 time_opacity">Fev 2019 - Fev 2020
                         <p>
-                        <p class="ms-auto fs-5">
+                        <p id="elite-description" class="ms-auto fs-5">
                             Eu fui um estudante bolsista no colégio <b>Elite Pré-Vestibular</b> em <b>Campinas</b>,
                             onde eu corrigia questões, simulados e provas com matérias de vestibulares diversos de
                             diversas matérias, com auxilio de professores e plantonistas.<br>
@@ -63,7 +63,7 @@
                         </p>
                     </div>
                     <br>
-                    <div class="list">
+                    <div id="elite-tools" class="list">
                         <h2 class="ms-auto fs-5 time_opacity">Conhecimentos: </h2>
                         <ul>
                             <li><span>Matemática, Física, Biologia, Química, Português, Literatura, Inglês, Geografia e História</span>
@@ -75,7 +75,7 @@
         </div>
         <div >
             <!--Título-->
-            <h2 class="page-heading text-center text-uppercase mb-0">Minhas experiências</h2>
+            <h2 id="experiences-title" class="page-heading text-center text-uppercase mb-0">Minhas experiências</h2>
             <!-- Divisor-->
             <div class="divider-custom">
                 <div class="divider-custom-line"></div>
@@ -84,13 +84,11 @@
             </div>
             <br><br>
             <div class="col-lg-8 mx-auto">
-                <!--<a href="https://www.userede.com.br/" target="_blank">-->
                 <img class="img-logo" src="www/redecard-logo.jpeg" alt="">
-                <!--</a>-->
                 <div class="text-box">
-                    <h2>Estágio na Rede</h2>
-                    <p class="ms-auto fs-5 time_opacity">Junho 2023 - atual
-                    <p class="ms-auto fs-5">
+                    <h2 id="rede-title">Estágio na Rede</h2>
+                    <p id="rede-date" class="ms-auto fs-5 time_opacity">Junho 2023 - atual</p>
+                    <p id="rede-description" class="ms-auto fs-5">
                         Minha jornada como estagiário na <b>Rede</b> começou em junho de 2023, atuando como
                         Desenvolvedor Salesforce. Nesse período, desenvolvi o aplicativo de CRM (Customer
                         Relationship Management) da empresa, o que me permitiu adquirir conhecimento profundo
@@ -98,9 +96,7 @@
                         além de outras funcionalidades da Salesforce. Essa experiência proporcionou uma compreensão
                         clara do processo de desenvolvimento de software em uma grande corporação, incluindo testes,
                         integração de sistemas e o manejo de vastas quantidades de dados e interações com diversas equipes.
-                    </p>
-                    <p class="ms-auto fs-5">
-                        &emsp;&emsp;Adicionalmente, utilizei <b>AWS Cloud Computing</b> para gerenciar sistemas na nuvem, empregando
+                        <br>&emsp;&emsp;Adicionalmente, utilizei <b>AWS Cloud Computing</b> para gerenciar sistemas na nuvem, empregando
                         <b>Go</b> e <b>Python</b> para tal. Este estágio não só me ofereceu uma formação técnica
                         avançada, mas também a oportunidade de ser orientado por profissionais experientes e acessar
                         uma variedade de cursos e treinamentos gratuitos oferecidos por plataformas como Alura, Trailhead,
@@ -108,11 +104,10 @@
                     </p>
                 </div>
                 <br>
-                <div class="list">
+                <div id="rede-tools" class="list">
                     <h2 class="ms-auto fs-5 time_opacity">Ferramentas: </h2>
                     <ul>
-                        <li><span>Apex, JavaScript, Html, CSS, Python, Go e SQL</span>
-                        </li>
+                        <li><span>Apex, JavaScript, Html, CSS, Python, Go e SQL</span></li>
                         <li><span>LWC, Salesforce, AWS</span></li>
                         <li><span>Confluence, IUClick, VSCode, SharePoint</span></li>
                     </ul>
@@ -122,40 +117,35 @@
             <div class="col-lg-8 mx-auto">
                 <img class="img-logo" src="www/Itaú_Unibanco_logo.png" alt="">
                 <div class="text-box">
-                    <h2>Estágio no Itaú-Unibanco</h2>
-                    <p class="ms-auto fs-5 time_opacity">Dez 2022 - Maio 2023
-                    <p>
-                    <p class="ms-auto fs-5">
+                    <h2 id="itau-title">Estágio no Itaú-Unibanco</h2>
+                    <p id="itau-date" class="ms-auto fs-5 time_opacity">Dez 2022 - Maio 2023</p>
+                    <p id="itau-description" class="ms-auto fs-5">
                         O meu primeiro estágio foi no <b>Itaú Unibanco</b>, teve início em dezembro de 2022, onde
                         atuei como Estagiário em <b>Risco de Crédito</b>. Durante esse período, eu
                         desempenhei um papel crucial na modelagem e monitoramento de parâmetros de risco
-                        no <b>Itaú BBA</b>.<br>
-                        &emsp;&emsp;Neste meu primeiro estágio eu realizei a modelagem, o monitoramento e
+                        no <b>Itaú BBA</b>.<br>&emsp;&emsp;Neste meu primeiro estágio eu realizei a modelagem, o monitoramento e
                         automarização de parâmetros de risco utilizando <b>Python</b>, Mitigação de <b>LGD</b> para operações garantidas,
                         Monitoramento de esteiras de provisão <b>BRGAAP</b>, <b>MB</b>, <b>TVM</b>, <b>Câmbio</b> e <b>IFRS9</b> e a criação de relatórios,
                         apresentações, gráficos visuais, views, dashboards e testes estatísticos utilizando <b>SQL</b>, <b>VBA</b> e <b>Excel</b>.
                     </p>
-                    <br>
-                    <div class="list">
-                        <h2 class="ms-auto fs-5 time_opacity">Ferramentas: </h2>
-                        <ul>
-                            <li><span>Excel, PowerPoint, Outlook, Word e Macros envolvendo os softwares utilizando
-                            VBA</span>
-                            </li>
-                            <li><span>Python, SQL</span></li>
-                            <li><span>SAS, Teradata, DBeaver, Confluence</span></li>
-                        </ul>
-                    </div>
+                </div>
+                <br>
+                <div id="itau-tools" class="list">
+                    <h2 class="ms-auto fs-5 time_opacity">Ferramentas: </h2>
+                    <ul>
+                        <li><span>Excel, PowerPoint, Outlook, Word e Macros envolvendo os softwares utilizando VBA</span></li>
+                        <li><span>Python, SQL</span></li>
+                        <li><span>SAS, Teradata, DBeaver, Confluence</span></li>
+                    </ul>
                 </div>
             </div>
             <br>
             <div class="col-lg-8 mx-auto">
                 <img class="img-logo" src="www/inmetro_logo.png" alt="">
                 <div class="text-box">
-                    <h2>Bolsa de Pesquisa - Inmetro</h2>
-                    <p class="ms-auto fs-5 time_opacity">Abr 2022 - Abr 2023
-                    <p>
-                    <p class="ms-auto fs-5">
+                    <h2 id="inmetro-title">Bolsa de Pesquisa - Inmetro</h2>
+                    <p id="inmetro-date" class="ms-auto fs-5 time_opacity">Abr 2022 - Abr 2023</p>
+                    <p id="inmetro-description" class="ms-auto fs-5">
                         Durante a minha bolsa de pesquisa no <b>Inmetro</b> como Desenvolvedor de Aplicativos em
                         <b>Shiny R</b>, de abril de 2022 a abril de 2023, desenvolvi software para automatizar análises de machine learning em <b>R</b>,
                         <b>Python</b>, <b>Javascript</b>, <b>HTML</b> e <b>CSS</b>. Colaborei na gestão de bases de dados e na criação de scripts
@@ -169,7 +159,7 @@
                     </p>
                 </div>
                 <br>
-                <div class="list">
+                <div id="inmetro-tools" class="list">
                     <h2 class="ms-auto fs-5 time_opacity">Ferramentas: </h2>
                     <ul>
                         <li><span> Python, R, RShiny, JavaScript, HTML, CSS</span></li>
@@ -182,10 +172,10 @@
             <div class="col-lg-8 mx-auto">
                 <img class="img-logo" src="www/usp-logo.png" alt="">
                 <div class="text-box">
-                    <h2>Graduação em Sistemas de Informação - USP</h2>
-                    <p class="ms-auto fs-5 time_opacity">Jan 2020 - atual
+                    <h2 id="usp-title">Graduação em Sistemas de Informação - USP</h2>
+                    <p id="usp-date" class="ms-auto fs-5 time_opacity">Jan 2020 - atual
                     <p>
-                    <p class="ms-auto fs-5">
+                    <p id="usp-description" class="ms-auto fs-5">
                         A <b>Universidade de São Paulo</b> me proporcionou uma formação sólida em <b>Sistemas de
                         Informação</b>, onde eu pude aprender sobre diversas áreas da computação, tive uma boa formação em
                         <b>matemática</b>, <b>física</b>, <b>estatística</b>, <b>algoritmos</b> e <b>lógica de programação</b>, além de me ensinar a ser bem
@@ -200,7 +190,7 @@
                     </p>
                 </div>
                 <br>
-                <div class="list">
+                <div id="usp-tools" class="list">
                     <h2 class="ms-auto fs-5 time_opacity">Ferramentas e Conhecimentos: </h2>
                     <ul>
                         <li>
@@ -224,7 +214,7 @@
             </div>
             <br>
             <div class="text-center mt-4">
-                <a class="btn btn-xl btn-outline-light btn-side-page" href="#page-more-experiences">
+                <a id="more-experiences-button" class="btn btn-xl btn-outline-light btn-side-page" href="#page-more-experiences">
                     Mais Experiências
                 </a>
             </div>
@@ -234,4 +224,5 @@
 <div id="footer"></div>
 </body>
 <script src="scripts.js"></script>
+<script src="languageScriptExperience.js"></script>
 </html>
