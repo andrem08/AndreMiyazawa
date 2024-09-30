@@ -4,7 +4,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function updatePadding() {
         const topPageHeight = topPage.offsetHeight;
-        bottomPage.style.paddingTop = `${topPageHeight * 0.75}px`;
+        const isMobile = window.innerWidth <= 768; // Adjust the width threshold as needed
+        if (!isMobile) {
+            bottomPage.style.paddingTop = `${topPageHeight * 0.85}px`;
+        } else {
+            bottomPage.style.paddingTop = '';
+        }
     }
 
     // Initial padding update
@@ -15,7 +20,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
     window.addEventListener('scroll', () => {
         const scrollY = window.scrollY;
-        topPage.style.transform = `translate3d(0px, -${scrollY}px, 0px)`;
-        bottomPage.style.transform = `translate3d(0px, -${scrollY / 1.5}px, 0px)`;
+        const isMobile = window.innerWidth <= 768; // Adjust the width threshold as needed
+        if (!isMobile) {
+            topPage.style.transform = `translate3d(0px, -${scrollY}px, 0px)`;
+            bottomPage.style.transform = `translate3d(0px, -${scrollY / 1.5}px, 0px)`;
+        } else {
+            topPage.style.transform = '';
+            bottomPage.style.transform = '';
+        }
     });
 });
