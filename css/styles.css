@@ -553,7 +553,7 @@ button:not(:disabled),
     padding-left: var(--bs-navbar-nav-link-padding-x);
   }
   .navbar-expand-lg .navbar-collapse {
-    display: flex !important;
+    display: flex;
     flex-basis: auto;
   }
   .navbar-expand-lg .navbar-toggler {
@@ -630,104 +630,104 @@ button:not(:disabled),
 }
 
 .d-flex {
-  display: flex !important;
+  display: flex;
 }
 
 .w-100 {
-  width: 100% !important;
+  width: 100%;
 }
 
 .h-100 {
-  height: 100% !important;
+  height: 100%;
 }
 
 .flex-column {
-  flex-direction: column !important;
+  flex-direction: column;
 }
 
 .justify-content-center {
-  justify-content: center !important;
+  justify-content: center;
 }
 
 .align-items-center {
-  align-items: center !important;
+  align-items: center;
 }
 
 .mx-2 {
-  margin-right: 3rem !important;
-  margin-left: 3rem !important;
+  margin-right: 3rem;
+  margin-left: 3rem;
 }
 
 .mx-1 {
-  margin-right: 0.25rem !important;
-  margin-left: 0.25rem !important;
+  margin-right: 0.25rem;
+  margin-left: 0.25rem;
 }
 
 
 .mx-auto {
-  margin-right: auto !important;
-  margin-left: auto !important;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .mt-4 {
-  margin-top: 1.5rem !important;
+  margin-top: 1.5rem;
 }
 
 .me-2 {
-  margin-right: 0.5rem !important;
+  margin-right: 0.5rem;
 }
 
 .me-auto {
-  margin-right: auto !important;
+  margin-right: auto;
 }
 
 .mb-0 {
-  margin-bottom: 0 !important;
+  margin-bottom: 0;
 }
 
 .mb-4 {
-  margin-bottom: 1.5rem !important;
+  margin-bottom: 1.5rem;
 }
 
 .mb-5 {
-  margin-bottom: 3rem !important;
+  margin-bottom: 3rem;
 }
 
 .ms-auto {
   text-align: justify;
   text-justify: inter-word;
-  margin-left: auto !important;
+  margin-left: auto;
 }
 
 .px-0 {
-  padding-right: 0 !important;
-  padding-left: 0 !important;
+  padding-right: 0;
+  padding-left: 0;
 }
 
 .py-3 {
-  padding-top: 1rem !important;
-  padding-bottom: 1rem !important;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .py-10 {
-  padding-top: 6rem !important;
-  padding-bottom: 6rem !important;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
 }
 
 .py-4 {
-  padding-bottom: 5rem !important;
+  padding-bottom: 5rem;
 }
 
 .fs-5 {
-  font-size: 1.3rem !important;
+  font-size: 1.3rem;
 }
 
 .text-center {
-  text-align: center !important;
+  text-align: center;
 }
 
 .text-uppercase {
-  text-transform: uppercase !important;
+  text-transform: uppercase;
 }
 
 /* rtl:begin:remove */
@@ -736,12 +736,12 @@ button:not(:disabled),
 
 .text-secondary {
   --bs-text-opacity: 1;
-  color: rgba(var(--bs-secondary-rgb), var(--bs-text-opacity)) !important;
+  color: rgba(var(--bs-secondary-rgb), var(--bs-text-opacity));
 }
 
 .text-white {
   --bs-text-opacity: 1;
-  color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
+  color: rgba(var(--bs-white-rgb), var(--bs-text-opacity));
 }
 
 .bg-primary {
@@ -808,24 +808,24 @@ button:not(:disabled),
 }
 
 .rounded {
-  border-radius: var(--bs-border-radius) !important;
+  border-radius: var(--bs-border-radius);
 }
 @media (min-width: 768px) {
   .mb-md-0 {
-    margin-bottom: 0 !important;
+    margin-bottom: 0;
   }
 }
 @media (min-width: 992px) {
   .mx-lg-1 {
-    margin-right: 0.25rem !important;
-    margin-left: 0.25rem !important;
+    margin-right: 0.25rem;
+    margin-left: 0.25rem;
   }
   .mb-lg-0 {
-    margin-bottom: 0 !important;
+    margin-bottom: 0;
   }
   .px-lg-3 {
-    padding-right: 1rem !important;
-    padding-left: 1rem !important;
+    padding-right: 1rem;
+    padding-left: 1rem;
   }
 }
 html {
@@ -953,36 +953,60 @@ html {
 
 .masthead {
   padding: 20vh 3rem;
+  text-shadow: 4px 4px 4px #000000;
 }
 .masthead .masthead-heading {
   font-size: 4vw;
   line-height: 2.75rem;
 }
+.masthead-heading {
+  position: relative; /* Ensure the pseudo-element is positioned relative to the text */
+  z-index: 1; /* Ensure the text is above the pseudo-element */
+}
+
+.masthead-heading::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 105%;
+  height: 200%;
+  /*background-color: rgba(255, 255, 255, 0.1); !* Optional: Add a semi-transparent background color *!*/
+  backdrop-filter: blur(4px); /* Apply a blur effect to the background */
+  z-index: -1; /* Ensure the pseudo-element is behind the text */
+  padding: 0.5rem; /* Add some padding to make the blur effect more noticeable */
+  border-radius: 1.5rem; /* Optional: Add rounded corners */
+}
+.masthead-subheading {
+  position: relative; /* Ensure the pseudo-element is positioned relative to the text */
+  z-index: 1; /* Ensure the text is above the pseudo-element */
+}
+
+.masthead-subheading::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 103%;
+  height: 100%;
+  /*background-color: rgba(255, 255, 255, 0.1); !* Optional: Add a semi-transparent background color *!*/
+  backdrop-filter: blur(4px); /* Apply a blur effect to the background */
+  z-index: -1; /* Ensure the pseudo-element is behind the text */
+  padding: 0.5rem; /* Add some padding to make the blur effect more noticeable */
+  border-radius: 1.5rem; /* Optional: Add rounded corners */
+}
+
 .masthead .masthead-subheading {
   font-size: 2vw;
   font-weight: bold;
-  text-shadow: -1px 1px 0 #000,
-  1px 1px 0 #000,
-  1px -1px 0 #000,
-  -1px -1px 0 #000;
 }
 .masthead .masthead-avatar {
   width: 20vw;
   border-radius: 100%;
 }
 
-@media (max-width: 1000px){
-  .masthead .masthead-avatar {
-    width: 12.5rem;
-  }
-
-  .masthead .masthead-heading {
-    font-size: 2.75rem;
-  }
-  .masthead .masthead-subheading {
-    font-size: 1.25rem;
-  }
-}
 
 .portfolio .portfolio-item {
   cursor: pointer;
@@ -1020,4 +1044,81 @@ html {
 
 *::-webkit-scrollbar {
   display: none; /* For Chrome, Safari and Opera */
+}
+
+@media (max-width: 992px) {
+  .navbar-brand {
+    font-size: 1.5rem; /* Adjust the font size as needed */
+  }
+  .nav-link {
+    font-size: 1.25rem; /* Adjust the font size as needed */
+  }
+
+  .navbar-toggler {
+    font-size: 1.5rem; /* Adjust the font size as needed */
+  }
+  .masthead {
+    padding: 30vh 3rem;
+  }
+  .masthead .masthead-avatar {
+    width: 25rem; /* Adjust the width as needed for smaller screens */
+  }
+  .masthead-heading {
+    font-size: 4rem !important; /* Adjust the font size as needed */
+    margin-top: 4rem;
+  }
+
+  .masthead-subheading {
+    font-size: 1.75rem !important; /* Adjust the font size as needed */
+  }
+
+  .divider-custom .divider-custom-line {
+    width: 100%;
+    max-width: 30vw;
+    height: 0.25vw;
+    background-color: white;
+    border-radius: 1rem;
+    border-color: #2c3e50;
+  }
+}
+#aboutSkills p {
+  color: darkgray;
+}
+
+#aboutSkills p strong {
+  color: white; /* Keep the bold text the same color as the parent */
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.slide-in-right {
+  opacity: 1;
+  animation: slideInRight 1s forwards;
+}
+
+.bg-primary, .bg-secondary {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  transition: transform 0.5s ease-out;
+}
+
+.bg-primary {
+  z-index: 3;
+  transform: translateY(0); /* Ensure the first page is at the top */
+  border-bottom-left-radius: 20px; /* Adjust the value as needed */
+  border-bottom-right-radius: 20px; /* Adjust the value as needed */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Adjust the values as needed */
+}
+
+.bg-secondary {
+  z-index: 2;
+  transform: translateY(5rem); /* Adjust the value as needed */
 }
