@@ -2,16 +2,20 @@ document.addEventListener('DOMContentLoaded', function() {
     const topPage = document.querySelector('.bg-primary');
     const bottomPage = document.querySelector('.bg-secondary');
 
-    // Calculate the height of the bg-primary element
-    const topPageHeight = topPage.offsetHeight;
+    function updatePadding() {
+        const topPageHeight = topPage.offsetHeight;
+        bottomPage.style.paddingTop = `${topPageHeight * 0.75}px`;
+    }
 
-    // Add 90% of the height to the padding of the bg-secondary element
-    bottomPage.style.paddingTop = `${topPageHeight}px`;
-    bottomPage.style.paddingBottom = `${topPageHeight}px`;
+    // Initial padding update
+    updatePadding();
+
+    // Update padding on window resize to handle mobile orientation changes
+    window.addEventListener('resize', updatePadding);
 
     window.addEventListener('scroll', () => {
         const scrollY = window.scrollY;
         topPage.style.transform = `translate3d(0px, -${scrollY}px, 0px)`;
-        bottomPage.style.transform = `translate3d(0px, -${scrollY / 2}px, 0px)`;
+        bottomPage.style.transform = `translate3d(0px, -${scrollY / 1.5}px, 0px)`;
     });
 });
