@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const topPageHeight = topPage.offsetHeight;
 
     // Add 90% of the height to the padding of the bg-secondary element
-    bottomPage.style.paddingTop = `${topPageHeight * 0.7}px`;
+    bottomPage.style.paddingTop = `${topPageHeight}px`;
     bottomPage.style.paddingBottom = `${topPageHeight}px`;
 
     window.addEventListener('scroll', () => {
