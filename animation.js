@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const topPageHeight = topPage.offsetHeight;
         const isMobile = window.innerWidth <= 768; // Adjust the width threshold as needed
         if (!isMobile) {
-            bottomPage.style.paddingTop = `${topPageHeight * 0.85}px`;
+            bottomPage.style.paddingTop = `${topPageHeight * 0.9}px`;
         } else {
             bottomPage.style.paddingTop = '';
         }
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const isMobile = window.innerWidth <= 768; // Adjust the width threshold as needed
         if (!isMobile) {
             topPage.style.transform = `translate3d(0px, -${scrollY}px, 0px)`;
-            bottomPage.style.transform = `translate3d(0px, -${scrollY / 1.5}px, 0px)`;
+            bottomPage.style.transform = `translate3d(0px, -${scrollY / 2}px, 0px)`;
         } else {
             topPage.style.transform = '';
             bottomPage.style.transform = '';
