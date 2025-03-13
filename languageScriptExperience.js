@@ -251,6 +251,8 @@ function updateLanguageExperience(language) {
     document.getElementById('experiences-title').innerText = content[language]['experiences-title'];
     document.getElementById('rede-title').innerText = content[language]['rede-title'];
     document.getElementById('rede-date').innerText = content[language]['rede-date'];
+    document.getElementById('rede-title').innerText = content[language]['rede-title2'];
+    document.getElementById('rede-date').innerText = content[language]['rede-date2'];
     document.getElementById('rede-description').innerHTML = content[language]['rede-description'];
     document.getElementById('rede-tools').innerHTML = content[language]['rede-tools'];
 
