@@ -25,10 +25,12 @@ function updateLanguageExperience(language) {
     const content = {
         'pt': {
             'experiences-title': 'Minhas Experiências',
-            'rede-title': 'Estágio na Rede',
-            'rede-date': 'Junho 2023 - atual',
+            'rede-title': 'Engenheiro de Software Junior na Rede',
+            'rede-date': 'Dez 2024 - atual',
+            'rede-title2': 'Estágio na Rede',
+            'rede-date2': 'Junho 2023 - Dezembro 2024',
             'rede-description': `
-                Minha jornada como estagiário na <b>Rede</b> começou em junho de 2023, atuando como
+                Minha jornada, desde estagiário na <b>Rede</b> até analista jr. começou em junho de 2023, atuando como
                 Desenvolvedor Salesforce. Nesse período, desenvolvi o aplicativo de CRM (Customer
                 Relationship Management) da empresa, o que me permitiu adquirir conhecimento profundo
                 sobre <b>Apex, Visualforce, SOQL, Flow</b> e <b>LWCs (Lightning Web Components)</b>,
@@ -36,10 +38,7 @@ function updateLanguageExperience(language) {
                 clara do processo de desenvolvimento de software em uma grande corporação, incluindo testes,
                 integração de sistemas e o manejo de vastas quantidades de dados e interações com diversas equipes.
                 <br>&emsp;&emsp;Adicionalmente, utilizei <b>AWS Cloud Computing</b> para gerenciar sistemas na nuvem, empregando
-                <b>Go</b> e <b>Python</b> para tal. Este estágio não só me ofereceu uma formação técnica
-                avançada, mas também a oportunidade de ser orientado por profissionais experientes e acessar
-                uma variedade de cursos e treinamentos gratuitos oferecidos por plataformas como Alura, Trailhead,
-                Udemy e LinkedIn Learning.
+                <b>Go</b> e <b>Python</b> para tal.
             `,
             'rede-tools': `<h2 class="ms-auto fs-5 time_opacity">Ferramentas: </h2>
                     <ul>
@@ -151,17 +150,17 @@ function updateLanguageExperience(language) {
         },
         'en': {
             'experiences-title': 'My Experiences',
-            'rede-title': 'Internship at Rede',
-            'rede-date': 'June 2023 - current',
+            'rede-title': 'Junior Software Engineer',
+            'rede-date': 'Dez 2024 - current',
+            'rede-title2': 'Internship at Rede',
+            'rede-date2': 'June 2023 - Dez 2024',
             'rede-description': `
-                My journey as an intern at <b>Rede</b> began in June 2023, working as a Salesforce Developer. During this period, 
+                My journey, from intern at <b>Rede</b> to Jr. Analyst, began in June 2023, working as a Salesforce Developer. During this period, 
                 I developed the company's CRM (Customer Relationship Management) application, which allowed me to gain in-depth 
                 knowledge of <b>Apex, Visualforce, SOQL, Flow</b>, and <b>LWCs (Lightning Web Components)</b>, among other Salesforce 
                 functionalities. This experience provided a clear understanding of the software development process in a large corporation, 
                 including testing, system integration, and handling large amounts of data and interactions with various teams.
                 <br>&emsp;&emsp;Additionally, I used <b>AWS Cloud Computing</b> to manage cloud systems, employing <b>Go</b> and <b>Python</b> for this purpose. 
-                This internship not only offered me advanced technical training but also the opportunity to be mentored by experienced professionals 
-                and access a variety of free courses and training offered by platforms such as Alura, Trailhead, Udemy, and LinkedIn Learning.
             `,
             'rede-tools': `<h2 class="ms-auto fs-5 time_opacity">Tools: </h2>
                     <ul>
