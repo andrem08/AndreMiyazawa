@@ -1,122 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
-    <meta charset="UTF-8">
-    <link rel="icon" href="www/LogoCoffeeWhite.ico" type="image/x-icon" />
-    <div id="head"></div>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="icon" href="assets/LogoCoffeeWhite.ico" type="image/x-icon" />
+    <title>Experiência - André Miyazawa</title>
+    <link rel="stylesheet" href="css/modern-new.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic&display=swap" rel="stylesheet" />
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-    <link href="css/experience.css" rel="stylesheet">
-    <title>Minhas experiências</title>
 </head>
-<body id="scrollable-pages">
-<div id="header"></div>
-<div class="bg-default">
-    <div class="container text-white scrollable-pages">
-        <div id="page-more-experiences" class="text-white side-page fade-in">
-            <div class="container">
-                <h2 id="more-experiences-title" class="page-heading text-center text-uppercase">Mais Experiências</h2>
-                <a href="#/" class="close-button">&#10005;</a>
-                <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <br><br>
-                <div class="col-lg-8 mx-auto">
-                    <img class="img-logo" src="www/dasi-usp.jpeg" alt="">
-                    <div class="text-box">
-                        <h2 id="dasi-title">Designer na DASI</h2>
-                        <p id="dasi-date" class="ms-auto fs-5 time_opacity">Março 2020 - Dez 2021</p>
-                        <p id="dasi-description" class="ms-auto fs-5">
-                            A entidade estudantil <b>DASI (Diretório Acadêmico de Sistemas de Informação)</b>
-                            foi o meu primeiro
-                            contato com demandas, projetos e pessoas. Durante esse período, eu realizei a criação de
-                            artes, logos, banners e cartazes para eventos. Consegui aprender bastante sobre <b>design
-                            e Interface Humana Computador</b>, e pude trabalhar com diversos softwares como o <b>Adobe
-                            Photoshop</b> e o <b>Canvas</b>.
-                        </p>
-                    </div>
-                    <br>
-                    <div id="dasi-tools" class="list">
-                        <h2 class="ms-auto fs-5 time_opacity">Ferramentas: </h2>
-                        <ul>
-                            <li><span>Adobe Photoshop, Canvas</span></li>
-                            <li><span>Google Drive</span></li>
-                        </ul>
-                    </div>
-                </div>
-                <br>
-                <div class="col-lg-8 mx-auto fade-in">
-                    <img class="img-logo" src="www/elite-logo.jpg" alt="">
-                    <div class="text-box">
-                        <h2 id="elite-title">Bolsista como corretor de Questões de Vestibular</h2>
-                        <p id="elite-date" class="ms-auto fs-5 time_opacity">Fev 2019 - Fev 2020</p>
-                        <p id="elite-description" class="ms-auto fs-5">
-                            Eu fui um estudante bolsista no colégio <b>Elite Pré-Vestibular</b> em <b>Campinas</b>,
-                            onde eu corrigia questões, simulados e provas com matérias de vestibulares diversos de
-                            diversas matérias, com auxilio de professores e plantonistas.<br>
-                            &emsp;&emsp;Também auxiliava na formulação de <b>testes</b> e <b>provas</b> do colégio, avaliando a
-                            qualidade das questões criadas e obtendo uma amostra de como o teste seria e a possível compreensão dos
-                            estudantes. Com isso pude aprender bastante sobre as matérias e me ajudou muito com o <b>vestibular</b>.
-                        </p>
-                    </div>
-                    <br>
-                    <div id="elite-tools" class="list">
-                        <h2 class="ms-auto fs-5 time_opacity">Conhecimentos: </h2>
-                        <ul>
-                            <li><span>Matemática, Física, Biologia, Química, Português, Literatura, Inglês, Geografia e História</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+<body>
+    <!-- Header/Navbar -->
+    <header class="header-glass">
+        <nav class="navbar">
+            <a class="navbar-logo" href="index.html">
+                <img src="assets/LogoCoffeeWhite.ico" alt="Logo" style="height:38px;">
+                André Miyazawa
+            </a>
+            <div class="navbar-links">
+                <a href="index.html#hero" data-nav="home"><i class="fas fa-home"></i>Home</a>
+                <a href="index.html#about" data-nav="about"><i class="fas fa-user"></i>Sobre</a>
+                <a href="index.html#skills" data-nav="skills"><i class="fas fa-code"></i>Habilidades</a>
+                <a href="experience.html" class="active" data-nav="experience"><i class="fas fa-briefcase"></i>Experiência</a>
             </div>
-        </div>
-        <div class="fade-in">
-            <!--Título-->
-            <h2 id="experiences-title" class="page-heading text-center text-uppercase mb-0">Minhas experiências</h2>
-            <!-- Divisor-->
-            <div class="divider-custom">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                <div class="divider-custom-line"></div>
+            <div class="language-switch">
+                <select id="lang-combobox" class="lang-combobox">
+                    <option value="pt" data-flag="assets/br-flag.png">BR</option>
+                    <option value="en" data-flag="assets/us-flag.png">EN</option>
+                </select>
+                <img id="lang-flag" class="lang-flag" alt="Bandeira" />
             </div>
-            <br><br>
-            <div class="col-lg-8 mx-auto fade-in">
-                <img class="img-logo" src="www/redecard-logo.jpeg" alt="">
-                <div class="text-box">
-                    <h2 id="rede-title">Engenheiro de Software Junior na Rede</h2>
-                    <p id="rede-date" class="ms-auto fs-5 time_opacity">Dez 2024 - atual</p>
-                    <h2 id="rede-title2">Estágio na Rede</h2>
-                    <p id="rede-date2" class="ms-auto fs-5 time_opacity">Junho 2023 - Dezembro 2024</p>
-                    <p id="rede-description" class="ms-auto fs-5">
-                        Minha jornada, desde estagiário na <b>Rede</b> até analista jr. começou em junho de 2023, atuando como
-                        Desenvolvedor Salesforce. Nesse período, desenvolvi o aplicativo de CRM (Customer
-                        Relationship Management) da empresa, o que me permitiu adquirir conhecimento profundo
-                        sobre <b>Apex, Visualforce, SOQL, Flow</b> e <b>LWCs (Lightning Web Components)</b>,
-                        além de outras funcionalidades da Salesforce. Essa experiência proporcionou uma compreensão
-                        clara do processo de desenvolvimento de software em uma grande corporação, incluindo testes integrados,
-                        integração de sistemas e o manejo de vastas quantidades de dados e interações com diversas equipes.
-                        <br>&emsp;&emsp;Adicionalmente, utilizei <b>AWS Cloud Computing</b> para gerenciar sistemas na nuvem, empregando
-                        <b>Go</b> e <b>Python</b> para tal.
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <div class="experience-page-content">
+        <!-- Main Experiences -->
+        <section class="section experience-main-section">
+            <div class="section-title" id="exp-main-title">Minhas Experiências</div>
+            <div class="section-divider"></div>
+
+            <!-- Rede -->
+            <div class="experience-item">
+                <img class="company-logo" src="www/redecard-logo.jpeg" alt="Rede Logo">
+                <div class="experience-details">
+                    <h3 class="experience-job-title" id="rede-title">Engenheiro de Software Junior</h3>
+                    <p class="experience-date" id="rede-date">Dez 2024 - atual</p>
+                    <p class="experience-description" id="rede-description">
+                        Como <b>Engenheiro de Software Junior</b> na <b>Rede</b>, continuo atuando no desenvolvimento e manutenção do sistema de CRM da empresa, com foco em soluções <b>Salesforce</b>. Nesta posição, assumo maior responsabilidade técnica, liderando iniciativas de otimização de código, implementando <b>best practices</b> de desenvolvimento e mentorando novos membros da equipe.<br>&emsp;&emsp;Trabalho ativamente na arquitetura de soluções complexas utilizando <b>Apex</b>, <b>Lightning Web Components</b>, e <b>Flow</b>, além de integrar sistemas externos via <b>APIs REST</b>. Também atuo com <b>AWS Cloud Computing</b>, utilizando <b>Go</b> e <b>Python</b> para desenvolver microserviços e automatizar processos críticos de negócio, garantindo escalabilidade e performance dos sistemas.
                     </p>
-                </div>
-                <br>
-                <div id="rede-tools" class="list">
-                    <h2 class="ms-auto fs-5 time_opacity">Ferramentas: </h2>
-                    <ul>
-                        <li><span>Apex, JavaScript, Html, CSS, Python, Go e SQL</span></li>
-                        <li><span>LWC, Salesforce, AWS</span></li>
-                        <li><span>Confluence, IUClick, VSCode, SharePoint</span></li>
-                    </ul>
+                    <h3 class="experience-job-title" id="rede-title2">Estágio de Desenvolvedor de Software</h3>
+                    <p class="experience-date" id="rede-date2">Junho 2023 - Dezembro 2024</p>
+                    <p class="experience-description" id="rede-description2">
+                        Minha jornada na <b>Rede</b> começou em junho de 2023 como estagiário, atuando como <b>Desenvolvedor Salesforce</b>. Nesse período, desenvolvi funcionalidades para o aplicativo de <b>CRM (Customer Relationship Management)</b> da empresa, adquirindo conhecimento profundo sobre <b>Apex, Visualforce, SOQL, Flow</b> e <b>LWCs (Lightning Web Components)</b>.<br>&emsp;&emsp;Esta experiência me proporcionou compreensão clara do processo de desenvolvimento de software em uma grande corporação, incluindo <b>testes integrados</b>, <b>integração de sistemas</b> e o manejo de vastas quantidades de dados. Colaborei com diversas equipes e aprendi a trabalhar com metodologias ágeis, versionamento de código e processos de <b>CI/CD</b>.
+                    </p>
+                    <div class="experience-tools">
+                        <h4 id="rede-tools-title">Ferramentas:</h4>
+                        <ul>
+                            <li>Apex, JavaScript, Html, CSS, Python, Go e SQL</li>
+                            <li>LWC, Salesforce, AWS</li>
+                            <li>Confluence, IUClick, VSCode, SharePoint</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <br>
-            <div class="col-lg-8 mx-auto fade-in">
-                <img class="img-logo" src="www/Itaú_Unibanco_logo.png" alt="">
-                <div class="text-box">
-                    <h2 id="itau-title">Estágio no Itaú-Unibanco</h2>
-                    <p id="itau-date" class="ms-auto fs-5 time_opacity">Dez 2022 - Maio 2023</p>
-                    <p id="itau-description" class="ms-auto fs-5">
+
+            <!-- Itaú -->
+            <div class="experience-item">
+                <img class="company-logo" src="www/Itaú_Unibanco_logo.png" alt="Itaú Logo">
+                <div class="experience-details">
+                    <h3 class="experience-job-title" id="itau-title">Estágio no Itaú-Unibanco</h3>
+                    <p class="experience-date" id="itau-date">Dez 2022 - Maio 2023</p>
+                    <p class="experience-description" id="itau-description">
                         O meu primeiro estágio foi no <b>Itaú Unibanco</b>, teve início em dezembro de 2022, onde
                         atuei como Estagiário em <b>Risco de Crédito</b>. Durante esse período, eu
                         desempenhei um papel crucial na modelagem e monitoramento de parâmetros de risco
@@ -125,24 +81,24 @@
                         Monitoramento de esteiras de provisão <b>BRGAAP</b>, <b>MB</b>, <b>TVM</b>, <b>Câmbio</b> e <b>IFRS9</b> e a criação de relatórios,
                         apresentações, gráficos visuais, views, dashboards e testes estatísticos utilizando <b>SQL</b>, <b>VBA</b> e <b>Excel</b>.
                     </p>
-                </div>
-                <br>
-                <div id="itau-tools" class="list">
-                    <h2 class="ms-auto fs-5 time_opacity">Ferramentas: </h2>
-                    <ul>
-                        <li><span>Excel, PowerPoint, Outlook, Word e Macros envolvendo os softwares utilizando VBA</span></li>
-                        <li><span>Python, SQL</span></li>
-                        <li><span>SAS, Teradata, DBeaver, Confluence</span></li>
-                    </ul>
+                    <div class="experience-tools">
+                        <h4 id="itau-tools-title">Ferramentas:</h4>
+                        <ul>
+                            <li>Excel, PowerPoint, Outlook, Word e Macros envolvendo os softwares utilizando VBA</li>
+                            <li>Python, SQL</li>
+                            <li>SAS, Teradata, DBeaver, Confluence</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <br>
-            <div class="col-lg-8 mx-auto fade-in">
-                <img class="img-logo" src="www/inmetro_logo.png" alt="">
-                <div class="text-box">
-                    <h2 id="inmetro-title">Bolsa de Pesquisa - Inmetro</h2>
-                    <p id="inmetro-date" class="ms-auto fs-5 time_opacity">Abr 2022 - Abr 2023</p>
-                    <p id="inmetro-description" class="ms-auto fs-5">
+
+            <!-- Inmetro -->
+            <div class="experience-item">
+                <img class="company-logo" src="www/inmetro_logo.png" alt="Inmetro Logo">
+                <div class="experience-details">
+                    <h3 class="experience-job-title" id="inmetro-title">Bolsa de Pesquisa - Inmetro</h3>
+                    <p class="experience-date" id="inmetro-date">Abr 2022 - Abr 2023</p>
+                    <p class="experience-description" id="inmetro-description">
                         Durante a minha bolsa de pesquisa no <b>Inmetro</b> como Desenvolvedor de Aplicativos em
                         <b>Shiny R</b>, de abril de 2022 a abril de 2023, desenvolvi software para automatizar análises de machine learning em <b>R</b>,
                         <b>Python</b>, <b>Javascript</b>, <b>HTML</b> e <b>CSS</b>. Colaborei na gestão de bases de dados e na criação de scripts
@@ -154,24 +110,24 @@
                         principalmente em desenvolvimento de software, onde este foi meu primeiro desenvolvimento, onde trabalhei com
                         praticamente 100% do <b>backend</b> e <b>frontend</b>, e eu pude aprender muito.
                     </p>
-                </div>
-                <br>
-                <div id="inmetro-tools" class="list">
-                    <h2 class="ms-auto fs-5 time_opacity">Ferramentas: </h2>
-                    <ul>
-                        <li><span> Python, R, RShiny, JavaScript, HTML, CSS</span></li>
-                        <li><span>WebScrapping com Selenium, e Api's do Google, Twitter e Facebook</span></li>
-                        <li><span>MiniTab, Excel e Tableau</span></li>
-                    </ul>
+                    <div class="experience-tools">
+                        <h4 id="inmetro-tools-title">Ferramentas:</h4>
+                        <ul>
+                            <li>Python, R, RShiny, JavaScript, HTML, CSS</li>
+                            <li>WebScrapping com Selenium, e Api's do Google, Twitter e Facebook</li>
+                            <li>MiniTab, Excel e Tableau</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <br>
-            <div class="col-lg-8 mx-auto fade-in">
-                <img class="img-logo" src="www/usp-logo.png" alt="">
-                <div class="text-box">
-                    <h2 id="usp-title">Graduação em Sistemas de Informação - USP</h2>
-                    <p id="usp-date" class="ms-auto fs-5 time_opacity">Jan 2020 - atual</p>
-                    <p id="usp-description" class="ms-auto fs-5">
+
+            <!-- USP -->
+            <div class="experience-item">
+                <img class="company-logo" src="www/usp-logo.png" alt="USP Logo">
+                <div class="experience-details">
+                    <h3 class="experience-job-title" id="usp-title">Graduação em Sistemas de Informação - USP</h3>
+                    <p class="experience-date" id="usp-date">Jan 2020 - atual</p>
+                    <p class="experience-description" id="usp-description">
                         A <b>Universidade de São Paulo</b> me proporcionou uma formação sólida em <b>Sistemas de
                         Informação</b>, onde eu pude aprender sobre diversas áreas da computação, tive uma boa formação em
                         <b>matemática</b>, <b>física</b>, <b>estatística</b>, <b>algoritmos</b> e <b>lógica de programação</b>, além de me ensinar a ser bem
@@ -184,41 +140,119 @@
                         &emsp;&emsp;Por fim, a <b>USP</b> também me proporcionou cursos de <b>administração</b>, <b>economia</b> e <b>marketing</b>,
                         que me ajudaram a ter uma visão mais ampla do mercado de trabalho.
                     </p>
-                </div>
-                <br>
-                <div id="usp-tools" class="list">
-                    <h2 class="ms-auto fs-5 time_opacity">Ferramentas e Conhecimentos: </h2>
-                    <ul>
-                        <li>
-                            <span> C, C++, Java, Python, R, Julia, NodeJS, SQL, PostgreSQL, Oracle, OpenMP, Assembly x86, Bash, Lua</span>
-                        </li>
-                        <li><span> GitHub, GitLab, JetBrains IDE, Sistema Linux</span></li>
-                        <li>
-                            <span> Matemática Discreta, Orientação à Objetos, Análise de Algoritmos e Estruturas de Dados</span>
-                        </li>
-                        <li>
-                            <span> Cálculo, Estatísticca e Geometria Analítica, Programação em Nuvem, Programação Paralela</span>
-                        </li>
-                        <li>
-                            <span> IHC, Redes de Computadores, Banco de Dados, Inteligência Artificial e Ciência de Dados </span>
-                        </li>
-                        <li>
-                            <span> Marketing, Administração, e Economia </span>
-                        </li>
-                    </ul>
+                    <div class="experience-tools">
+                        <h4 id="usp-tools-title">Ferramentas e Conhecimentos:</h4>
+                        <ul>
+                            <li>C, C++, Java, Python, R, Julia, NodeJS, SQL, PostgreSQL, Oracle, OpenMP, Assembly x86, Bash, Lua</li>
+                            <li>GitHub, GitLab, JetBrains IDE, Sistema Linux</li>
+                            <li>Matemática Discreta, Orientação à Objetos, Análise de Algoritmos e Estruturas de Dados</li>
+                            <li>Cálculo, Estatísticca e Geometria Analítica, Programação em Nuvem, Programação Paralela</li>
+                            <li>IHC, Redes de Computadores, Banco de Dados, Inteligência Artificial e Ciência de Dados</li>
+                            <li>Marketing, Administração, e Economia</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <br>
-            <div class="text-center mt-4">
-                <a id="more-experiences-button" class="btn btn-xl btn-outline-light btn-side-page" href="#page-more-experiences">
-                    Mais Experiências
+
+            <!-- More Experiences Button -->
+            <div class="more-experiences-btn-container">
+                <button id="more-experiences-btn" class="btn-more-exp">Mais Experiências</button>
+            </div>
+        </section>
+
+        <!-- Additional Experiences (Hidden by default) -->
+        <section id="more-experiences-section" class="section experience-additional-section" style="display: none;">
+            <div class="section-title" id="exp-additional-title">Mais Experiências</div>
+            <div class="section-divider"></div>
+
+            <!-- DASI -->
+            <div class="experience-item">
+                <img class="company-logo" src="www/dasi-usp.jpeg" alt="DASI Logo">
+                <div class="experience-details">
+                    <h3 class="experience-job-title" id="dasi-title">Designer na DASI</h3>
+                    <p class="experience-date" id="dasi-date">Março 2020 - Dez 2021</p>
+                    <p class="experience-description" id="dasi-description">
+                        A entidade estudantil <b>DASI (Diretório Acadêmico de Sistemas de Informação)</b>
+                        foi o meu primeiro
+                        contato com demandas, projetos e pessoas. Durante esse período, eu realizei a criação de
+                        artes, logos, banners e cartazes para eventos. Consegui aprender bastante sobre <b>design
+                        e Interface Humana Computador</b>, e pude trabalhar com diversos softwares como o <b>Adobe
+                        Photoshop</b> e o <b>Canvas</b>.
+                    </p>
+                    <div class="experience-tools">
+                        <h4 id="dasi-tools-title">Ferramentas:</h4>
+                        <ul>
+                            <li>Adobe Photoshop, Canvas</li>
+                            <li>HTML, CSS</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Elite -->
+            <div class="experience-item">
+                <img class="company-logo" src="www/elite-logo.jpg" alt="Elite Logo">
+                <div class="experience-details">
+                    <h3 class="experience-job-title" id="elite-title">Bolsista como corretor de Questões de Vestibular</h3>
+                    <p class="experience-date" id="elite-date">Fev 2019 - Fev 2020</p>
+                    <p class="experience-description" id="elite-description">
+                        Eu fui um estudante bolsista no colégio <b>Elite Pré-Vestibular</b> em <b>Campinas</b>,
+                        onde eu corrigia questões, simulados e provas com matérias de vestibulares diversos de
+                        diversas matérias, com auxilio de professores e plantonistas.<br>
+                        &emsp;&emsp;Também auxiliava na formulação de <b>testes</b> e <b>provas</b> do colégio, avaliando a
+                        qualidade das questões criadas e obtendo uma amostra de como o teste seria e a possível compreensão dos
+                        estudantes. Com isso pude aprender bastante sobre as matérias e me ajudou muito com o <b>vestibular</b>.
+                    </p>
+                    <div class="experience-tools">
+                        <h4 id="elite-tools-title">Conhecimentos:</h4>
+                        <ul>
+                            <li>Matemática, Física, Biologia, Química, Português, Literatura, Inglês, Geografia e História</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Back Button -->
+            <div class="more-experiences-btn-container">
+                <button id="back-to-main-btn" class="btn-more-exp">Voltar</button>
+            </div>
+        </section>
+    </div>
+
+    <!-- Contato/Rodapé -->
+    <footer id="contact" class="footer">
+        <div class="footer-left">
+            <h3 class="footer-section-title" id="footer-location-title">Localização</h3>
+            <div class="footer-location" id="footer-location">
+                <div class="location-line">Brazil - São Paulo (SP)</div>
+                <div class="location-line">Vila Mariana - Zona Sul</div>
+            </div>
+        </div>
+        <div class="footer-center">
+            <h3 class="footer-section-title" id="footer-social-title">Redes Sociais</h3>
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/in/andre-miyazawa-2446a21b7/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/andrem08" target="_blank" title="Github"><i class="fa-brands fa-github"></i></a>
+                <a href="https://gitlab.com/andrem08" target="_blank" title="Gitlab"><i class="fa-brands fa-gitlab"></i></a>
+                <a href="https://t.me/andrmiyazawa" target="_blank" title="Telegram"><i class="fab fa-telegram-plane"></i></a>
+                <a href="mailto:andre08.m@usp.br" target="_blank" title="Gmail"><i class="fa fa-envelope"></i></a>
+            </div>
+            <div class="footer-cv">
+                <button class="btn-cv" id="download-cv" onclick="window.open('https://drive.google.com/file/d/1AgKb1Tqo-zFxGUcyc_7c2yVHY-F7OPeC/view?usp=drive_link','_blank')">
+                    Download CV
+                </button>
+            </div>
+        </div>
+        <div class="footer-right">
+            <h3 class="footer-section-title" id="footer-beacons-title">Beacons</h3>
+            <div class="footer-beacons">
+                <a href="https://beacons.ai/andre.miyazawa" target="_blank">
+                    <img src="assets/andre.miyazawa_beacons.png" alt="Beacons QR" title="Beacons - André" />
                 </a>
             </div>
         </div>
-    </div>
-</div>
-<div id="footer"></div>
+    </footer>
+
+    <script src="js/experience.js"></script>
 </body>
-<script src="scripts.js"></script>
-<script src="languageScriptExperience.js"></script>
 </html>

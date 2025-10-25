@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="icon" href="assets/LogoCoffeeWhite.ico" type="image/x-icon" />
     <title>André Miyazawa</title>
-    <link rel="stylesheet" href="css/modern.css" />
+    <link rel="stylesheet" href="css/modern-new.css" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic&display=swap" rel="stylesheet" />
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
@@ -20,10 +20,10 @@
                 André Miyazawa
             </a>
             <div class="navbar-links">
-                <a href="#hero" class="active" data-nav="home">Home</a>
-                <a href="#about" data-nav="about">Sobre</a>
-                <a href="#skills" data-nav="skills">Habilidades</a>
-                <a href="#contact" data-nav="contact">Contato</a>
+                <a href="#hero" class="active" data-nav="home"><i class="fas fa-home"></i>Home</a>
+                <a href="#about" data-nav="about"><i class="fas fa-user"></i>Sobre</a>
+                <a href="#skills" data-nav="skills"><i class="fas fa-code"></i>Habilidades</a>
+                <a href="experience.html" data-nav="experience"><i class="fas fa-briefcase"></i>Experiência</a>
             </div>
             <div class="language-switch">
                 <select id="lang-combobox" class="lang-combobox">
@@ -60,6 +60,26 @@
         <div class="section-divider"></div>
         <div class="skills-grid" id="skills-grid">
             <!-- Cards preenchidos via JS -->
+        </div>
+    </section>
+
+    <!-- Experiência -->
+    <section id="experience" class="section experience-section">
+        <div class="section-title" id="experience-title">Experiência</div>
+        <div class="section-divider"></div>
+        <div class="experience-card" id="experience-card-link">
+            <div class="experience-icon">
+                <i class="fas fa-briefcase"></i>
+            </div>
+            <h3 id="experience-summary-title" class="experience-card-title">Trajetória Profissional</h3>
+            <p id="experience-summary-text" class="experience-card-text">
+                Desde 2022, atuando em desenvolvimento de software, análise de dados e engenharia de software. 
+                Experiência em Salesforce, AWS, Python, e diversas tecnologias modernas.
+            </p>
+            <div class="experience-cta">
+                <span id="experience-cta-text">Ver Experiências Completas</span>
+                <i class="fas fa-arrow-right"></i>
+            </div>
         </div>
     </section>
 
