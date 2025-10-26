@@ -40,7 +40,7 @@ const EXP_LANGUAGES = {
   }
 };
 
-let expCurrentLang = navigator.language.startsWith('pt') ? 'pt' : 'en';
+let expCurrentLang = navigator.language.startsWith('en') ? 'en' : 'pt';
 
 function expSwitchLanguage(lang) {
   expCurrentLang = lang;

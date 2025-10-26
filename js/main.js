@@ -35,18 +35,19 @@ const LANGUAGES = {
       beacons: 'Beacons'
     },
     aboutText: [
-      `Meu nome é André Miyazawa, ${age} anos, sou aluno da Universidade de São Paulo (USP) e estou fazendo bacharelado em Sistemas de Informação, no período noturno. Estou no meu nono semestre e atualmente morando em São Paulo, SP. Tenho bastante interesse em algoritmos, estatística e probabilidade e desenvolvimento de sites, aplicativos e jogos. Tenho várias experiencias pessoais na criação e otimização de algoritmos, sites, diversas resoluções para competições de programação e hackathons, e diversas funcionalidades específicas.`,
-      'Sou bem competente, muito comprometido com meu ofício e prazos, estou sempre em busca de novos desafios e oportunidades para aprender e crescer profissionalmente. Estou sempre disposto a ajudar e colaborar com meus colegas de trabalho e estudo, e estou sempre disposto a aprender e ensinar novas tecnologias e ferramentas, e tenho bastante vontade de trabalhar.',
-      'Tenho bastante experiência com Java, C e Python com o conhecimento de diversas bibliotecas e tendo 2 anos de experiencia com Python e 2 anos com Java, Tambem utilizo bastante JavaScript no meu trabalho, com 1 ano de experiência, 1 ano de experiencia em manipulação e gerenciamento de Banco de Dados e mexi bastante com Julia, Bash, C++, e um pouco de Assembly e Lua, todas estas na faculdade e em alguns cursos.'
+      `Meu nome é André Miyazawa, ${age} anos, Engenheiro de Software Júnior na Rede, com foco principal em soluções Salesforce e desenvolvimento de microserviços em nuvem (AWS).`,
+      'Fiz Bacharel em Sistemas de Informação pela Universidade de São Paulo (USP), formação que me proporcionou uma base robusta em algoritmos, estatística e arquitetura de software.',
+      'Minha trajetória profissional foi construída sobre um forte alicerce analítico. Iniciei minha carreira no Itaú Unibanco, atuando com modelagem de Risco de Crédito (Python, SQL, SAS), e no Inmetro, onde desenvolvi uma aplicação completa de machine learning (R, Python, JS).',
+      'Essa experiência em dados foi fundamental para minha transição para a engenharia de software na Rede. Comecei como estagiário focado em desenvolvimento Salesforce (Apex, LWC, Flow) e, após a efetivação, assumi maiores responsabilidades técnicas como Engenheiro. Hoje, além de liderar otimizações na plataforma de CRM, também atuo na arquitetura e desenvolvimento de microserviços em AWS utilizando Go e Python.'
     ],
     skillsTitle: 'Habilidades',
     skills: [
-      {cat: 'Principais Linguagens', items: ['Java', 'Python', 'C++', 'NodeJS', 'R']},
-      {cat: 'Web & Mobile', items: ['React', 'Tailwind', 'Material Design', 'DJango', 'RShiny Apps']},
-      {cat: 'Banco de Dados', items: ['SQL', 'PostgreSQL', 'MongoDB', 'SOQL', 'MySQL']},
-      {cat: 'Salesforce', items: ['Apex', 'Lightning Web Components', 'Visualforce', 'SOQL/SOSL', 'Flows', 'Process Builder']},
-      {cat: 'Ferramentas', items: ['GitHub', 'GitLab', 'PowerBI', 'Excel', 'Salesforce', 'AWS']},
-      {cat: 'Outros', items: ['Julia', 'Lua', 'Go', 'PowerQuery', 'OpenMP', 'Assembly x86', 'HTML', 'CSS']}
+      {cat: 'Linguagens', items: ['Python', 'Java', 'Go', 'JavaScript', 'SQL', 'R']},
+      {cat: 'Salesforce', items: ['Apex', 'LWC', 'Flow', 'SOQL/SOSL', 'Aura', 'Visualforce']},
+      {cat: 'Cloud & DevOps', items: ['AWS (EC2, Lambda, S3)', 'Docker', 'Kubernetes', 'CI/CD', 'Terraform']},
+      {cat: 'Bancos de Dados', items: ['PostgreSQL', 'MongoDB', 'MySQL', 'DynamoDB']},
+      {cat: 'Frameworks', items: ['React', 'Django', 'Node.js', 'RShiny']},
+      {cat: 'Ferramentas', items: ['Git', 'Datadog', 'Grafana', 'PowerBI', 'Excel']}
     ],
     contactTitle: 'Contato',
     location: 'Brazil - São Paulo (SP) - Vila Mariana - Zona Sul',
@@ -74,19 +75,19 @@ const LANGUAGES = {
       beacons: 'Beacons'
     },
     aboutText: [
-      `My name is André Miyazawa, I'm ${age} years old, a student at the University of São Paulo (USP), pursuing a Bachelor's degree in Information Systems (evening program). I'm in my ninth semester and currently living in São Paulo, SP. I'm passionate about algorithms, statistics, probability, and developing websites, apps, and games. I have extensive personal experience in creating and optimizing algorithms, websites, various solutions for programming competitions and hackathons, and specific functionalities.`,
-      'I\'m highly competent, very committed to my craft and deadlines, always seeking new challenges and opportunities to learn and grow professionally. I\'m always willing to help and collaborate with my colleagues at work and school, eager to learn and teach new technologies and tools, and very motivated to work.',
-      'I have solid experience with Java, C, and Python, knowledge of several libraries, 2 years of experience with Python and 2 years with Java. I also use JavaScript frequently at work (1 year of experience), 1 year of experience in database management, and have worked with Julia, Bash, C++, and a bit of Assembly and Lua, all during college and some courses.'
-
+      `Hello, I'm André Miyazawa, ${age} years old, Junior Software Engineer at Rede, with a primary focus on Salesforce solutions and cloud microservices development (AWS).`,
+      'I hold a Bachelor\'s degree in Information Systems from the University of São Paulo (USP), which provided me with a solid foundation in algorithms, statistics, and software architecture.',
+      'My professional journey was built on a strong analytical foundation. I started my career at Itaú Unibanco, working with Credit Risk modeling (Python, SQL, SAS), and at Inmetro, where I developed a complete machine learning application (R, Python, JS).',
+      'This data experience was fundamental for my transition to software engineering at Rede. I started as an intern focused on Salesforce development (Apex, LWC, Flow) and, after becoming a full-time employee, I took on greater technical responsibilities as an Engineer. Today, in addition to leading optimizations on the CRM platform, I also work on the architecture and development of microservices on AWS using Go and Python.'
     ],
     skillsTitle: 'Skills',
     skills: [
-      {cat: 'Main Languages', items: ['Java', 'Python', 'C++', 'NodeJS', 'R']},
-      {cat: 'Web & Mobile', items: ['React', 'Tailwind', 'Material Design', 'DJango', 'RShiny Apps']},
-      {cat: 'Databases', items: ['SQL', 'PostgreSQL', 'MongoDB', 'SOQL', 'MySQL']},
-      {cat: 'Salesforce', items: ['Apex', 'Lightning Web Components', 'Visualforce', 'SOQL/SOSL', 'Flows', 'Process Builder']},
-      {cat: 'Tools', items: ['GitHub', 'GitLab', 'PowerBI', 'Excel', 'Salesforce', 'AWS']},
-      {cat: 'Other', items: ['Julia', 'Lua', 'Go', 'PowerQuery', 'OpenMP', 'Assembly x86', 'HTML', 'CSS']}
+      {cat: 'Languages', items: ['Python', 'Java', 'Go', 'JavaScript', 'SQL', 'R']},
+      {cat: 'Salesforce', items: ['Apex', 'LWC', 'Flow', 'SOQL/SOSL', 'Aura', 'Visualforce']},
+      {cat: 'Cloud & DevOps', items: ['AWS (EC2, Lambda, S3)', 'Docker', 'Kubernetes', 'CI/CD', 'Terraform']},
+      {cat: 'Databases', items: ['PostgreSQL', 'MongoDB', 'MySQL', 'DynamoDB']},
+      {cat: 'Frameworks', items: ['React', 'Django', 'Node.js', 'RShiny']},
+      {cat: 'Tools', items: ['Git', 'Datadog', 'Grafana', 'PowerBI', 'Excel']}
     ],
     contactTitle: 'Contact',
     location: 'Brazil - São Paulo (SP) - Vila Mariana - Zona Sul',
@@ -100,7 +101,7 @@ const LANGUAGES = {
   }
 };
 
-let currentLang = navigator.language.startsWith('pt') ? 'pt' : 'en';
+let currentLang = navigator.language.startsWith('en') ? 'en' : 'pt';
 
 function switchLanguage(lang) {
   currentLang = lang;
@@ -128,7 +129,37 @@ function renderContent() {
   // About
   document.getElementById('about-title').textContent = lang.aboutTitle;
   const aboutText = document.getElementById('about-text');
-  aboutText.innerHTML = lang.aboutText.map(p => `<p>${p}</p>`).join('');
+  
+  // Typing animation for about text
+  const paragraphs = lang.aboutText;
+  aboutText.innerHTML = '';
+  let currentParagraph = 0;
+  let currentChar = 0;
+  
+  function typeAboutText() {
+    if (currentParagraph < paragraphs.length) {
+      if (currentChar === 0) {
+        const p = document.createElement('p');
+        aboutText.appendChild(p);
+      }
+      
+      const currentP = aboutText.children[currentParagraph];
+      const fullText = paragraphs[currentParagraph];
+      
+      if (currentChar < fullText.length) {
+        currentP.innerHTML = fullText.substring(0, currentChar + 1);
+        currentChar++;
+        setTimeout(typeAboutText, 5); // 10ms para digitação rápida
+      } else {
+        currentChar = 0;
+        currentParagraph++;
+        setTimeout(typeAboutText, 100); // Pausa entre parágrafos
+      }
+    }
+  }
+  
+  typeAboutText();
+  
   // Skills
   document.getElementById('skills-title').textContent = lang.skillsTitle;
   const skillsGrid = document.getElementById('skills-grid');
