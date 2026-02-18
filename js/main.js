@@ -336,4 +336,16 @@ document.addEventListener('DOMContentLoaded', () => {
       window.location.href = 'experience.html';
     });
   }
+
+  // Download CV button with language-specific links
+  const downloadCvBtn = document.getElementById('download-cv');
+  if (downloadCvBtn) {
+    downloadCvBtn.addEventListener('click', function() {
+      const cvLinks = {
+        pt: 'https://drive.google.com/file/d/1Ude0Vm_1FZltb0pz0Drosp5sxIMLiiWy/view?usp=drive_link',
+        en: 'https://drive.google.com/file/d/1zvGWS2D4R06-BvagxDCS6yuw3JzI0Xu8/view?usp=drive_link'
+      };
+      window.open(cvLinks[currentLang], '_blank');
+    });
+  }
 });
