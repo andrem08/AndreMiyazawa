@@ -2057,57 +2057,6 @@ button.contact-item {
   color: var(--border);
 }
 
-/* ---------- Formação complementar (Cultura Inglesa) ---------- */
-.edu-mini {
-  display: flex;
-  align-items: center;
-  gap: 18px;
-  max-width: 960px;
-  margin: 18px auto 0;
-  padding: 20px 26px;
-}
-
-.edu-mini h3 {
-  margin: 0;
-  font-size: 1.08rem;
-  color: var(--heading);
-}
-
-.edu-mini .company-meta {
-  margin: 2px 0 0;
-}
-
-.edu-mini .date-pill {
-  margin-left: auto;
-  flex-shrink: 0;
-}
-
-@media (max-width: 760px) {
-  .edu-mini {
-    flex-wrap: wrap;
-    padding: 18px 20px;
-    gap: 14px;
-  }
-  .edu-mini > div {
-    flex: 1 1 calc(100% - 70px);
-    min-width: 0;
-  }
-  /* selo/pílula desce para a linha de baixo, alinhado ao texto */
-  .edu-mini .date-pill {
-    margin-left: 62px;
-  }
-}
-
-a.edu-mini .date-pill {
-  gap: 6px;
-  transition: color 0.2s ease, border-color 0.2s ease;
-}
-
-a.edu-mini:hover .date-pill {
-  color: #9ecbff;
-  border-color: rgba(59, 130, 246, 0.45);
-}
-
 /* Segundo card de formação (Cultura Inglesa) */
 .edu-card-secondary {
   margin-top: 18px;
@@ -2116,4 +2065,57 @@ a.edu-mini:hover .date-pill {
 /* o logo já vem com fundo branco arredondado */
 .edu-card-secondary .company-logo {
   padding: 0;
+}
+
+/* ---------- Grupos de chips (USP, Salesforce) ---------- */
+.chip-groups {
+  display: grid;
+  gap: 14px;
+  margin-top: 6px;
+}
+
+.chip-group .tools-label {
+  margin-bottom: 8px;
+}
+
+.star-chips {
+  margin: 4px 0 18px;
+}
+
+.chip-star {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #fde68a;
+  background: rgba(250, 204, 21, 0.08);
+  border-color: rgba(250, 204, 21, 0.35);
+}
+
+.chip-star i {
+  font-size: 0.7rem;
+  color: #facc15;
+}
+
+.text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 18px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #9ecbff;
+}
+
+.text-link i {
+  font-size: 0.75rem;
+  transition: transform 0.25s ease;
+}
+
+.text-link:hover i {
+  transform: translate(2px, -2px);
+}
+
+/* logo da Salesforce: nuvem azul sobre o fundo branco do card */
+.company-logo.logo-salesforce {
+  padding: 14px 10px;
 }
