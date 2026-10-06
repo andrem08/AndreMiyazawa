@@ -256,7 +256,12 @@ const LANGUAGES = {
       ],
       tools: ['C / C++', 'Java', 'Python', 'R', 'Julia', 'SQL', 'OpenMP', 'Assembly x86', 'Bash', 'IA & Ciência de Dados', 'Redes', 'Programação Paralela', 'Computação em Nuvem', 'IHC'],
       trailhead: { rank: 'Ranger', meta: '108 badges · 83.225 pontos · 23 trilhas · Superbadges: LWC Specialist e Prompt Builder Templates', cta: 'Ver perfil' },
-      english: { title: 'Inglês · Cultura Inglesa', meta: '2013 — 2017 · do Intermediate ao Upper Advanced', badge: 'Fluente' },
+      english: {
+        title: 'Curso de Inglês',
+        meta: 'Cultura Inglesa · Campinas, SP · 2013 — 2017',
+        text: 'Quatro anos de curso, do nível <b>Intermediate</b> ao <b>Upper Advanced</b>. A base que me permite usar o inglês no dia a dia profissional: documentação técnica, cursos e certificações internacionais.',
+        tags: ['Intermediate → Upper Advanced', 'Inglês fluente', 'Proficiência profissional plena']
+      },
       credsTitle: 'Certificações',
       awardsTitle: 'Reconhecimentos',
       awards: [
@@ -440,7 +445,12 @@ const LANGUAGES = {
       ],
       tools: ['C / C++', 'Java', 'Python', 'R', 'Julia', 'SQL', 'OpenMP', 'x86 Assembly', 'Bash', 'AI & Data Science', 'Networks', 'Parallel Programming', 'Cloud Computing', 'HCI'],
       trailhead: { rank: 'Ranger', meta: '108 badges · 83,225 points · 23 trails · Superbadges: LWC Specialist and Prompt Builder Templates', cta: 'View profile' },
-      english: { title: 'English · Cultura Inglesa', meta: '2013 — 2017 · from Intermediate to Upper Advanced', badge: 'Fluent' },
+      english: {
+        title: 'English Course',
+        meta: 'Cultura Inglesa · Campinas, Brazil · 2013 — 2017',
+        text: 'Four years of study, from <b>Intermediate</b> to <b>Upper Advanced</b>. The foundation that lets me use English every day at work: technical documentation, courses and international certifications.',
+        tags: ['Intermediate → Upper Advanced', 'Fluent English', 'Full professional proficiency']
+      },
       credsTitle: 'Certifications',
       awardsTitle: 'Recognition',
       awards: [

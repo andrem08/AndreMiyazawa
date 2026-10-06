@@ -150,6 +150,7 @@
     const ed = t().education;
     $('#edu-text').innerHTML = ed.text.map(p => `<p>${p}</p>`).join('');
     $('#edu-tools').innerHTML = ed.tools.map(s => `<span class="chip">${s}</span>`).join('');
+    $('#english-tags').innerHTML = ed.english.tags.map(s => `<span class="chip">${s}</span>`).join('');
     const credItem = c => `<li><i class="${c.icon}"></i><span>${c.name}</span><span class="cred-year">${c.year}</span></li>`;
     $('#creds').innerHTML = CREDENTIALS.map(credItem).join('');
     $('#awards').innerHTML = ed.awards.map(credItem).join('');

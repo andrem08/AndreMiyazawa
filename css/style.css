@@ -2107,3 +2107,13 @@ a.edu-mini:hover .date-pill {
   color: #9ecbff;
   border-color: rgba(59, 130, 246, 0.45);
 }
+
+/* Segundo card de formação (Cultura Inglesa) */
+.edu-card-secondary {
+  margin-top: 18px;
+}
+
+/* o logo já vem com fundo branco arredondado */
+.edu-card-secondary .company-logo {
+  padding: 0;
+}

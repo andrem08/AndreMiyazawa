@@ -45,7 +45,7 @@ const STORY = {
       {
         year: '2013 — 2017', icon: 'fa-solid fa-language', title: 'O inglês veio antes do código',
         text: [
-          'Antes de escrever qualquer linha de código, passei quatro anos na <b>Cultura Inglesa</b>. Entrei no nível Intermediate e saí no Upper Advanced.',
+          'Antes de escrever qualquer linha de código, passei quatro anos na <b>Cultura Inglesa</b>, em Campinas. Entrei no nível Intermediate e saí no Upper Advanced.',
           'Na época, não tinha como saber o quanto isso ia pesar depois: documentação, cursos, comunidades e boa parte do que eu aprendo até hoje é em inglês.'
         ]
       },
@@ -166,7 +166,7 @@ const STORY = {
       {
         year: '2013 — 2017', icon: 'fa-solid fa-language', title: 'English came before code',
         text: [
-          'Before writing a single line of code, I spent four years at <b>Cultura Inglesa</b>, going from Intermediate to Upper Advanced.',
+          'Before writing a single line of code, I spent four years at <b>Cultura Inglesa</b> in Campinas, going from Intermediate to Upper Advanced.',
           "Back then I had no idea how much it would matter: documentation, courses, communities and most of what I learn today is in English."
         ]
       },
