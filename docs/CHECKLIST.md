@@ -2,7 +2,7 @@
 
 Cada item foi implementado e validado com testes automatizados em navegador real (Microsoft Edge headless) e revisão visual por screenshots em celular, tablet e desktop.
 
-**Resultado final: 65/65 testes passando.**
+**Resultado final: 75/75 testes passando.**
 
 ## Design
 
@@ -75,6 +75,11 @@ Esses itens costumam fazer diferença, mas precisam de dados que não estão no 
 - [x] **36. Faixa compacta de certificações e reconhecimentos** na seção Formação (AWS, Salesforce JS Developer, Salesforce AI Associate, Claude Code in Action, mérito Itaú, Time de Fenômenos). *Validado: 6 itens.*
 - [x] **37. Selo `#ituber`** na experiência da Rede.
 - [x] **38. Página não listada "Além do currículo"**, com jornada em capítulos, como trabalho, recomendações, certificações e curiosidades, em PT/EN. Não tem links no site, fica fora do sitemap e tem `noindex`. *Validado em 7 dispositivos, sem erros nem overflow, nos dois idiomas.*
+
+## Rodada 4: rodapé e página legal
+
+- [x] **39. Rodapé** "© ano André Miyazawa. Todos os direitos reservados. · Privacidade · Termos · Cookies" em todas as páginas, substituindo o "Feito com HTML, CSS e JavaScript". *Validado: links abrem a seção certa.*
+- [x] **40. Página única `legal.html`** (sem índice, PT/EN) com privacidade, termos e cookies, descrevendo o que o site **realmente** faz: nenhum cookie, rastreador ou formulário; terceiros (GitHub Pages, Google Fonts, cdnjs, API do GitHub); só a preferência de idioma (`lang`) fica no navegador. *Validado em 7 dispositivos: sem erros nem overflow, `document.cookie` vazio.*
 
 ## Matriz de testes
 

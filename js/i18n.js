@@ -158,8 +158,7 @@ const LANGUAGES = {
               bullets: [
                 'Liderei a <b>refatoração da jornada de credenciamento de clientes</b>, reconstruindo telas e integrações de API com <b>Apex</b>, <b>LWC</b> e <b>Flow</b>, o que reduziu o tempo de formalização e melhorou a conversão de novos clientes.',
                 'Desenvolvi um <b>painel de gestão tática em LWC</b> que centraliza dados de performance (visitas e agendamentos) em gráficos e tabelas, dando aos gestores visibilidade em tempo real das metas.',
-                'Desenvolvo <b>microserviços em AWS</b> com <b>Go</b> e <b>Python</b> para integrações e automação de processos de negócio.',
-                'Lidero iniciativas de otimização de código, defino <b>boas práticas</b> de desenvolvimento e faço mentoria de novos membros do time.'
+                'Desenvolvo <b>microserviços em AWS</b> com <b>Go</b> e <b>Python</b> para integrações e automação de processos de negócio.'
               ]
             },
             {
@@ -247,13 +246,14 @@ const LANGUAGES = {
     },
     education: {
       eyebrow: '// formação',
-      title: 'Formação Acadêmica',
+      title: 'Formação',
       degree: 'Bacharelado em Sistemas de Informação',
       school: 'Universidade de São Paulo (USP) · 2020 — 2024',
       text: [
         'Formação com base sólida em <b>algoritmos</b>, <b>estruturas de dados</b>, <b>estatística</b>, <b>banco de dados</b> e <b>arquitetura de software</b>, além de disciplinas de <b>administração</b>, <b>economia</b> e <b>marketing</b>.'
       ],
       tools: ['C / C++', 'Java', 'Python', 'R', 'Julia', 'SQL', 'OpenMP', 'Assembly x86', 'Bash', 'IA & Ciência de Dados', 'Redes', 'Programação Paralela', 'Computação em Nuvem', 'IHC'],
+      english: { title: 'Inglês · Cultura Inglesa', meta: '2013 — 2017 · do Intermediate ao Upper Advanced', badge: 'Fluente' },
       credsTitle: 'Certificações',
       awardsTitle: 'Reconhecimentos',
       awards: [
@@ -273,7 +273,7 @@ const LANGUAGES = {
       beacons: 'Todos os links',
       share: 'Compartilhar'
     },
-    footer: 'Feito com HTML, CSS e JavaScript.',
+    footer: { rights: 'Todos os direitos reservados.', privacy: 'Privacidade', terms: 'Termos' },
     toTop: 'Voltar ao topo',
     skip: 'Pular para o conteúdo',
     copied: 'E-mail copiado!'
@@ -434,6 +434,7 @@ const LANGUAGES = {
         'Solid foundation in <b>algorithms</b>, <b>data structures</b>, <b>statistics</b>, <b>databases</b> and <b>software architecture</b>, plus courses in <b>business administration</b>, <b>economics</b> and <b>marketing</b>.'
       ],
       tools: ['C / C++', 'Java', 'Python', 'R', 'Julia', 'SQL', 'OpenMP', 'x86 Assembly', 'Bash', 'AI & Data Science', 'Networks', 'Parallel Programming', 'Cloud Computing', 'HCI'],
+      english: { title: 'English · Cultura Inglesa', meta: '2013 — 2017 · from Intermediate to Upper Advanced', badge: 'Fluent' },
       credsTitle: 'Certifications',
       awardsTitle: 'Recognition',
       awards: [
@@ -453,7 +454,7 @@ const LANGUAGES = {
       beacons: 'All my links',
       share: 'Share'
     },
-    footer: 'Built with HTML, CSS and JavaScript.',
+    footer: { rights: 'All rights reserved.', privacy: 'Privacy', terms: 'Terms' },
     toTop: 'Back to top',
     skip: 'Skip to content',
     copied: 'Email copied!'

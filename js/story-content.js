@@ -140,7 +140,7 @@ const STORY = {
       email: 'Enviar e-mail',
       back: 'Ver portfólio'
     },
-    footer: 'Você encontrou a página secreta. ✨'
+    footer: { rights: 'Todos os direitos reservados.', privacy: 'Privacidade', terms: 'Termos' }
   },
 
   en: {
@@ -261,6 +261,6 @@ const STORY = {
       email: 'Send an email',
       back: 'View portfolio'
     },
-    footer: 'You found the secret page. ✨'
+    footer: { rights: 'All rights reserved.', privacy: 'Privacy', terms: 'Terms' }
   }
 };
