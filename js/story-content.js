@@ -15,6 +15,8 @@ const STORY_CERTS = [
   { icon: 'fa-brands fa-aws', name: 'AWS Certified Cloud Practitioner', issuer: 'Amazon Web Services', date: { pt: 'Jun 2026', en: 'Jun 2026' }, id: '206eb7493f17414497b4ebc09108727a' },
   { icon: 'fa-brands fa-salesforce', name: 'Salesforce Certified JavaScript Developer', issuer: 'Salesforce', date: { pt: 'Abr 2026', en: 'Apr 2026' }, id: '7621296' },
   { icon: 'fa-solid fa-diagram-project', name: 'n8n Course for Beginners', issuer: 'n8n', date: { pt: 'Abr 2026', en: 'Apr 2026' } },
+  { icon: 'fa-solid fa-mountain-sun', name: 'Superbadge: Lightning Web Components Specialist', issuer: 'Trailhead', date: { pt: 'Ago 2025', en: 'Aug 2025' } },
+  { icon: 'fa-solid fa-mountain-sun', name: 'Superbadge: Prompt Builder Templates', issuer: 'Trailhead', date: { pt: 'Fev 2025', en: 'Feb 2025' } },
   { icon: 'fa-brands fa-salesforce', name: 'Salesforce Certified AI Associate', issuer: 'Salesforce', date: { pt: 'Out 2024', en: 'Oct 2024' }, id: '282904' },
   { icon: 'fa-solid fa-building-columns', name: 'Practitioner Foundation', issuer: 'Itaú Unibanco', date: { pt: 'Abr 2023', en: 'Apr 2023' }, id: '462762012' },
   { icon: 'fa-solid fa-chart-line', name: 'Python and Statistics for Financial Analysis', issuer: 'HKUST', date: { pt: 'Abr 2023', en: 'Apr 2023' } },
@@ -34,7 +36,7 @@ const STORY = {
     },
     numbers: [
       { value: STORY_AGE, label: 'anos de idade' },
-      { value: 8, label: 'certificações e cursos em destaque' },
+      { value: 108, label: 'badges no Trailhead (Ranger)' },
       { value: 2, label: 'reconhecimentos no Itaú' },
       { value: 21, label: 'repositórios públicos', github: true }
     ],
@@ -155,7 +157,7 @@ const STORY = {
     },
     numbers: [
       { value: STORY_AGE, label: 'years old' },
-      { value: 8, label: 'featured certifications & courses' },
+      { value: 108, label: 'Trailhead badges (Ranger)' },
       { value: 2, label: 'recognitions at Itaú' },
       { value: 21, label: 'public repositories', github: true }
     ],

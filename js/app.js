@@ -111,7 +111,7 @@
           <div class="timeline-top">
             <img class="company-logo" src="${meta.logo}" alt="Logo ${meta.company}" width="58" height="58" loading="lazy" />
             <div>
-              <h3 class="company-name">${meta.company}${meta.badge ? ` <span class="company-badge">${meta.badge}</span>` : ''}</h3>
+              <h3 class="company-name">${meta.company}</h3>
               <p class="company-meta">${item.meta}</p>
             </div>
           </div>

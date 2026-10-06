@@ -74,7 +74,6 @@ const EXPERIENCE_META = {
   rede: {
     logo: 'www/redecard-logo.jpeg',
     company: 'Rede',
-    badge: '#ituber',
     tools: ['Apex', 'LWC', 'Flow', 'SOQL', 'Aura', 'REST / SOAP', 'SFDX', 'Go', 'Python', 'AWS Lambda', 'S3', 'EC2', 'RDS', 'DynamoDB', 'CloudWatch', 'Docker', 'Kubernetes', 'Terraform', 'Datadog', 'Grafana']
   },
   itau: {
@@ -103,7 +102,7 @@ const LANGUAGES = {
     htmlLang: 'pt-BR',
     nav: { home: 'Início', experienceShort: 'Carreira', about: 'Sobre', skills: 'Habilidades', experience: 'Experiência', projects: 'Projetos', education: 'Formação', contact: 'Contato' },
     hero: {
-      badge: 'Engenheiro de Software @ Rede',
+      badge: 'Engenheiro de Software #ituber',
       greeting: 'Olá, eu sou',
       roles: ['Engenheiro de Software', 'Desenvolvedor Salesforce', 'Back-end em Go e Python', 'Analista de Dados'],
       desc: 'Desenvolvo soluções <b>Salesforce</b> full-stack e microserviços em <b>AWS</b> com <b>Go</b> e <b>Python</b>, com base em análise de dados e formação em Sistemas de Informação pela <b>USP</b>.',
@@ -256,6 +255,7 @@ const LANGUAGES = {
         'Formação com base sólida em <b>algoritmos</b>, <b>estruturas de dados</b>, <b>estatística</b>, <b>banco de dados</b> e <b>arquitetura de software</b>, além de disciplinas de <b>administração</b>, <b>economia</b> e <b>marketing</b>.'
       ],
       tools: ['C / C++', 'Java', 'Python', 'R', 'Julia', 'SQL', 'OpenMP', 'Assembly x86', 'Bash', 'IA & Ciência de Dados', 'Redes', 'Programação Paralela', 'Computação em Nuvem', 'IHC'],
+      trailhead: { rank: 'Ranger', meta: '108 badges · 83.225 pontos · 23 trilhas · Superbadges: LWC Specialist e Prompt Builder Templates', cta: 'Ver perfil' },
       english: { title: 'Inglês · Cultura Inglesa', meta: '2013 — 2017 · do Intermediate ao Upper Advanced', badge: 'Fluente' },
       credsTitle: 'Certificações',
       awardsTitle: 'Reconhecimentos',
@@ -286,7 +286,7 @@ const LANGUAGES = {
     htmlLang: 'en',
     nav: { home: 'Home', experienceShort: 'Career', about: 'About', skills: 'Skills', experience: 'Experience', projects: 'Projects', education: 'Education', contact: 'Contact' },
     hero: {
-      badge: 'Software Engineer @ Rede',
+      badge: 'Software Engineer #ituber',
       greeting: "Hi, I'm",
       roles: ['Software Engineer', 'Salesforce Developer', 'Go & Python Back-end', 'Data Analyst'],
       desc: 'I build full-stack <b>Salesforce</b> solutions and <b>AWS</b> microservices with <b>Go</b> and <b>Python</b>, backed by a data analysis background and an Information Systems degree from <b>USP</b>.',
@@ -439,6 +439,7 @@ const LANGUAGES = {
         'Solid foundation in <b>algorithms</b>, <b>data structures</b>, <b>statistics</b>, <b>databases</b> and <b>software architecture</b>, plus courses in <b>business administration</b>, <b>economics</b> and <b>marketing</b>.'
       ],
       tools: ['C / C++', 'Java', 'Python', 'R', 'Julia', 'SQL', 'OpenMP', 'x86 Assembly', 'Bash', 'AI & Data Science', 'Networks', 'Parallel Programming', 'Cloud Computing', 'HCI'],
+      trailhead: { rank: 'Ranger', meta: '108 badges · 83,225 points · 23 trails · Superbadges: LWC Specialist and Prompt Builder Templates', cta: 'View profile' },
       english: { title: 'English · Cultura Inglesa', meta: '2013 — 2017 · from Intermediate to Upper Advanced', badge: 'Fluent' },
       credsTitle: 'Certifications',
       awardsTitle: 'Recognition',

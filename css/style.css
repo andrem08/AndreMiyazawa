@@ -2034,21 +2034,6 @@ button.contact-item {
   }
 }
 
-/* Selo ao lado do nome da empresa (ex.: #ituber na Rede) */
-.company-badge {
-  display: inline-block;
-  margin-left: 6px;
-  padding: 2px 10px;
-  border-radius: 999px;
-  vertical-align: middle;
-  font-family: "JetBrains Mono", ui-monospace, monospace;
-  font-size: 0.72rem;
-  font-weight: 500;
-  color: #ff9a3d;
-  background: rgba(236, 112, 0, 0.12);
-  border: 1px solid rgba(236, 112, 0, 0.4);
-}
-
 /* ---------- Links legais no rodapé ---------- */
 .footer-legal {
   display: flex;
@@ -2104,10 +2089,21 @@ button.contact-item {
     gap: 14px;
   }
   .edu-mini > div {
-    flex: 1 1 0;
+    flex: 1 1 calc(100% - 70px);
     min-width: 0;
   }
+  /* selo/pílula desce para a linha de baixo, alinhado ao texto */
   .edu-mini .date-pill {
-    margin-left: 0;
+    margin-left: 62px;
   }
+}
+
+a.edu-mini .date-pill {
+  gap: 6px;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+a.edu-mini:hover .date-pill {
+  color: #9ecbff;
+  border-color: rgba(59, 130, 246, 0.45);
 }
