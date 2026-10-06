@@ -1,0 +1,14 @@
+{
+  "name": "André Miyazawa — Portfólio",
+  "short_name": "André M.",
+  "description": "Engenheiro de Software · Salesforce · AWS · Dados",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0d1117",
+  "theme_color": "#0d1117",
+  "icons": [
+    { "src": "assets/favicon.svg", "sizes": "any", "type": "image/svg+xml" },
+    { "src": "assets/LogoCoffeeWhite.png", "sizes": "269x321", "type": "image/png" }
+  ]
+}

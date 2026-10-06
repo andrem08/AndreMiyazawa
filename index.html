@@ -1,119 +1,290 @@
-
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
 <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <link rel="icon" href="assets/LogoCoffeeWhite.ico" type="image/x-icon" />
-    <title>André Miyazawa</title>
-    <link rel="stylesheet" href="css/modern-new.css" />
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic&display=swap" rel="stylesheet" />
-    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>André Miyazawa — Engenheiro de Software | Salesforce · AWS · Dados</title>
+    <meta name="description" content="Portfólio de André Miyazawa, Engenheiro de Software na Rede com foco em Salesforce (Apex, LWC, Flow), microserviços AWS em Go e Python, e análise de dados. Formado em Sistemas de Informação pela USP." />
+    <meta name="author" content="André Miyazawa" />
+    <meta name="theme-color" content="#0d1117" />
+    <meta name="color-scheme" content="dark" />
+    <link rel="canonical" href="https://andrem08.github.io/AndreMiyazawa/" />
+
+    <!-- Open Graph / Twitter -->
+    <meta property="og:type" content="profile" />
+    <meta property="og:url" content="https://andrem08.github.io/AndreMiyazawa/" />
+    <meta property="og:title" content="André Miyazawa — Engenheiro de Software" />
+    <meta property="og:description" content="Salesforce · AWS · Go · Python · Dados. Conheça minha trajetória e projetos." />
+    <meta property="og:image" content="https://andrem08.github.io/AndreMiyazawa/assets/Eu.png" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="André Miyazawa — Engenheiro de Software" />
+    <meta name="twitter:description" content="Salesforce · AWS · Go · Python · Dados." />
+    <meta name="twitter:image" content="https://andrem08.github.io/AndreMiyazawa/assets/Eu.png" />
+
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="alternate icon" href="assets/LogoCoffeeWhite.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="assets/LogoCoffeeWhite.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/print.css" media="print" />
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "André Miyazawa",
+        "url": "https://andrem08.github.io/AndreMiyazawa/",
+        "image": "https://andrem08.github.io/AndreMiyazawa/assets/Eu.png",
+        "jobTitle": "Software Engineer",
+        "worksFor": { "@type": "Organization", "name": "Rede" },
+        "alumniOf": { "@type": "CollegeOrUniversity", "name": "Universidade de São Paulo" },
+        "address": { "@type": "PostalAddress", "addressLocality": "São Paulo", "addressRegion": "SP", "addressCountry": "BR" },
+        "knowsAbout": ["Salesforce", "Apex", "Lightning Web Components", "AWS", "Go", "Python", "Data Analysis"],
+        "sameAs": [
+            "https://www.linkedin.com/in/andre-miyazawa-2446a21b7/",
+            "https://github.com/andrem08",
+            "https://gitlab.com/andrem08"
+        ]
+    }
+    </script>
+    <script src="js/i18n.js" defer></script>
+    <script src="js/app.js" defer></script>
 </head>
 <body>
-    <!-- Header/Navbar -->
-    <header class="header-glass">
-        <nav class="navbar">
-            <a class="navbar-logo" href="#hero">
-                <img src="assets/LogoCoffeeWhite.ico" alt="Logo" style="height:38px;">
-                André Miyazawa
+    <a class="skip-link" href="#main" data-i18n="skip">Pular para o conteúdo</a>
+    <div class="scroll-progress" aria-hidden="true"></div>
+
+    <!-- ===== Navbar ===== -->
+    <header class="nav" id="nav">
+        <div class="container nav-inner">
+            <a class="brand" href="#hero" aria-label="André Miyazawa — início">
+                <span class="brand-mark" aria-hidden="true">AM</span>
+                <span class="brand-name">André Miyazawa</span>
             </a>
-            <div class="navbar-links">
-                <a href="#hero" class="active" data-nav="home"><i class="fas fa-home"></i>Home</a>
-                <a href="#about" data-nav="about"><i class="fas fa-user"></i>Sobre</a>
-                <a href="#skills" data-nav="skills"><i class="fas fa-code"></i>Habilidades</a>
-                <a href="experience.html" data-nav="experience"><i class="fas fa-briefcase"></i>Experiência</a>
+
+            <nav aria-label="Principal" class="nav-desktop">
+                <ul class="nav-links">
+                    <li><a href="#about" data-i18n="nav.about">Sobre</a></li>
+                    <li><a href="#skills" data-i18n="nav.skills">Habilidades</a></li>
+                    <li><a href="#experience" data-i18n="nav.experience">Experiência</a></li>
+                    <li><a href="#education" data-i18n="nav.education">Formação</a></li>
+                    <li><a href="#contact" data-i18n="nav.contact">Contato</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <div class="lang-toggle" role="group" aria-label="Idioma / Language">
+                    <button type="button" data-lang="pt" aria-pressed="true"><img src="assets/br-flag.png" alt="" width="16" height="11" />PT</button>
+                    <button type="button" data-lang="en" aria-pressed="false"><img src="assets/us-flag.png" alt="" width="16" height="11" />EN</button>
+                </div>
             </div>
-            <div class="language-switch">
-                <select id="lang-combobox" class="lang-combobox">
-                    <option value="pt" data-flag="assets/br-flag.png">BR</option>
-                    <option value="en" data-flag="assets/us-flag.png">EN</option>
-                </select>
-                <img id="lang-flag" class="lang-flag" alt="Bandeira" />
-            </div>
-        </nav>
+        </div>
     </header>
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero">
-        <div class="hero-bg"></div>
-        <div class="hero-content">
-            <img src="assets/Eu.png" alt="André Miyazawa" class="hero-avatar" />
-            <h1 id="hero-title" class="hero-title">André Miyazawa</h1>
-            <div id="hero-subtitle" class="hero-subtitle">Engenheiro de Software - Desenvolvedor de Software - Analista de Dados</div>
-        </div>
-    </section>
+    <main id="main">
+        <!-- ===== Hero ===== -->
+        <section class="hero" id="hero">
+            <div class="hero-bg" aria-hidden="true">
+                <div class="hero-grid"></div>
+                <div class="blob blob-1"></div>
+                <div class="blob blob-2"></div>
+                <div class="blob blob-3"></div>
+                <div class="hero-spotlight"></div>
+            </div>
 
-    <!-- Sobre Mim -->
-    <section id="about" class="section">
-        <div class="section-title" id="about-title">Sobre mim</div>
-        <div class="section-divider"></div>
-        <div class="section-content" id="about-text">
-            <!-- Texto preenchido via JS -->
-        </div>
-    </section>
+            <div class="container hero-inner">
+                <div class="hero-text">
+                    <div class="badge reveal"><span class="pulse-dot"></span><span data-i18n="hero.badge">Engenheiro de Software @ Rede</span></div>
+                    <p class="hero-greeting reveal" style="--delay:.05s" data-i18n="hero.greeting">Olá, eu sou</p>
+                    <h1 class="hero-title reveal" style="--delay:.1s">André <span class="gradient-text">Miyazawa</span></h1>
+                    <p class="hero-role reveal" style="--delay:.15s">
+                        <span class="prefix" data-i18n="hero.rolePrefix">Eu sou</span>
+                        <span class="typed" id="typed"></span><span class="caret" aria-hidden="true"></span>
+                    </p>
+                    <p class="hero-desc reveal" style="--delay:.2s" data-i18n-html="hero.desc"></p>
+                    <div class="hero-cta reveal" style="--delay:.25s">
+                        <a class="btn btn-primary" href="#experience"><span data-i18n="hero.ctaPrimary">Ver experiência</span><i class="fa-solid fa-arrow-down"></i></a>
+                        <a class="btn btn-ghost cv-link" href="#" target="_blank" rel="noopener"><i class="fa-solid fa-file-arrow-down"></i><span data-i18n="hero.ctaSecondary">Baixar CV</span></a>
+                    </div>
+                    <div class="hero-social reveal" style="--delay:.3s">
+                        <a class="icon-link" href="https://www.linkedin.com/in/andre-miyazawa-2446a21b7/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a class="icon-link" href="https://github.com/andrem08" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a class="icon-link" href="https://gitlab.com/andrem08" target="_blank" rel="noopener" aria-label="GitLab"><i class="fa-brands fa-gitlab"></i></a>
+                        <a class="icon-link" href="https://t.me/andrmiyazawa" target="_blank" rel="noopener" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+                        <a class="icon-link" href="mailto:andre08.m@usp.br" aria-label="E-mail"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
 
-    <!-- Habilidades -->
-    <section id="skills" class="section">
-        <div class="section-title" id="skills-title">Habilidades</div>
-        <div class="section-divider"></div>
-        <div class="skills-grid" id="skills-grid">
-            <!-- Cards preenchidos via JS -->
-        </div>
-    </section>
+                <div class="avatar-wrap reveal" style="--delay:.2s">
+                    <div class="avatar-ring" aria-hidden="true"></div>
+                    <div class="avatar"><img src="assets/Eu.png" alt="Foto de André Miyazawa" width="768" height="797" fetchpriority="high" /></div>
+                    <div class="float-chip chip-a" aria-hidden="true"><i class="fa-brands fa-salesforce"></i>Salesforce</div>
+                    <div class="float-chip chip-b" aria-hidden="true"><i class="fa-brands fa-aws"></i>AWS</div>
+                    <div class="float-chip chip-c" aria-hidden="true"><i class="fa-brands fa-golang"></i>Go · Python</div>
+                </div>
+            </div>
+            <a href="#stats" class="scroll-hint" aria-label="Rolar para baixo"></a>
+        </section>
 
-    <!-- Experiência -->
-    <section id="experience" class="section experience-section">
-        <div class="section-title" id="experience-title">Experiência</div>
-        <div class="section-divider"></div>
-        <div class="experience-card" id="experience-card-link">
-            <h3 id="experience-summary-title" class="experience-card-title">Trajetória Profissional</h3>
-            <p id="experience-summary-text" class="experience-card-text">
-                Desde 2022, atuando em desenvolvimento de software, análise de dados e engenharia de software. 
-                Experiência em Salesforce, AWS, Python, e diversas tecnologias modernas.
-            </p>
-            <div class="experience-cta">
-                <span id="experience-cta-text">Ver Experiências Completas</span>
-                <i class="fas fa-arrow-right"></i>
-            </div>
+        <!-- ===== Tech marquee ===== -->
+        <div class="marquee" aria-hidden="true">
+            <div class="marquee-track" id="marquee-track"></div>
         </div>
-    </section>
 
-    <!-- Contato/Rodapé -->
-    <footer id="contact" class="footer">
-        <div class="footer-left">
-            <h3 class="footer-section-title" id="footer-location-title">Localização</h3>
-            <div class="footer-location" id="footer-location">
-                <div class="location-line">Brazil - São Paulo (SP)</div>
-                <div class="location-line">Vila Mariana - Zona Sul</div>
+        <!-- ===== Stats ===== -->
+        <section class="section" id="stats" style="padding-bottom:0" aria-label="Números">
+            <div class="container">
+                <div class="stats" id="stats-grid"></div>
             </div>
-        </div>
-        <div class="footer-center">
-            <h3 class="footer-section-title" id="footer-social-title">Redes Sociais</h3>
-            <div class="footer-social">
-                <a href="https://www.linkedin.com/in/andre-miyazawa-2446a21b7/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://github.com/andrem08" target="_blank" title="Github"><i class="fa-brands fa-github"></i></a>
-                <a href="https://gitlab.com/andrem08" target="_blank" title="Gitlab"><i class="fa-brands fa-gitlab"></i></a>
-                <a href="https://t.me/andrmiyazawa" target="_blank" title="Telegram"><i class="fab fa-telegram-plane"></i></a>
-                <a href="mailto:andre08.m@usp.br" target="_blank" title="Gmail"><i class="fa fa-envelope"></i></a>
+        </section>
+
+        <!-- ===== About ===== -->
+        <section class="section" id="about" aria-labelledby="about-title">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="eyebrow" data-i18n="about.eyebrow">// sobre mim</span><br />
+                    <h2 class="section-title" id="about-title" data-i18n="about.title">Quem sou eu</h2>
+                </div>
+                <div class="about-grid">
+                    <div class="about-photo reveal">
+                        <img src="assets/Eu.jpg" alt="André Miyazawa" width="709" height="703" loading="lazy" />
+                        <div class="code-tag" aria-hidden="true">
+                            <span class="tok-k">const</span> <span class="tok-v">andre</span> = {<br />
+                            &nbsp;&nbsp;<span class="tok-p">role</span>: <span class="tok-s">'SWE'</span>,<br />
+                            &nbsp;&nbsp;<span class="tok-p">stack</span>: [<span class="tok-s">'SF'</span>, <span class="tok-s">'AWS'</span>],<br />
+                            &nbsp;&nbsp;<span class="tok-p">coffee</span>: <span class="tok-v">Infinity</span><br />
+                            };
+                        </div>
+                    </div>
+                    <div>
+                        <div class="about-text reveal" id="about-text"></div>
+                        <div class="highlights" id="highlights"></div>
+                    </div>
+                </div>
             </div>
-            <div class="footer-cv">
-                <button class="btn-cv" id="download-cv">
-                    Download CV 
-                </button>
+        </section>
+
+        <!-- ===== Skills ===== -->
+        <section class="section section-alt" id="skills" aria-labelledby="skills-title">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="eyebrow" data-i18n="skills.eyebrow">// stack</span><br />
+                    <h2 class="section-title" id="skills-title" data-i18n="skills.title">Habilidades</h2>
+                    <p class="section-sub" data-i18n="skills.sub"></p>
+                </div>
+                <div class="skills-grid" id="skills-grid"></div>
+                <div class="swipe-dots" id="skills-dots" aria-hidden="true"></div>
             </div>
-        </div>
-        <div class="footer-right">
-            <h3 class="footer-section-title" id="footer-beacons-title">Beacons</h3>
-            <div class="footer-beacons">
-                <a href="https://beacons.ai/andre.miyazawa" target="_blank">
-                    <img src="assets/andre.miyazawa_beacons.png" alt="Beacons QR" title="Beacons - André" />
-                </a>
+        </section>
+
+        <!-- ===== Experience ===== -->
+        <section class="section" id="experience" aria-labelledby="experience-title">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="eyebrow" data-i18n="experience.eyebrow">// trajetória</span><br />
+                    <h2 class="section-title" id="experience-title" data-i18n="experience.title">Experiência</h2>
+                    <p class="section-sub" data-i18n="experience.sub"></p>
+                </div>
+                <div class="timeline" id="timeline">
+                    <div class="timeline-line" aria-hidden="true"></div>
+                    <div id="timeline-main"></div>
+                    <div class="more-wrap" id="more-wrap"><div id="timeline-more"></div></div>
+                </div>
+                <div class="center">
+                    <button class="btn btn-ghost" id="more-btn" type="button" aria-expanded="false" aria-controls="more-wrap">
+                        <span data-i18n="experience.moreBtn">Mostrar mais experiências</span><i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                </div>
             </div>
+        </section>
+
+        <!-- ===== Education ===== -->
+        <section class="section section-alt" id="education" aria-labelledby="education-title">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="eyebrow" data-i18n="education.eyebrow">// formação</span><br />
+                    <h2 class="section-title" id="education-title" data-i18n="education.title">Formação Acadêmica</h2>
+                </div>
+                <article class="card edu-card reveal">
+                    <i class="fa-solid fa-graduation-cap edu-watermark" aria-hidden="true"></i>
+                    <img class="company-logo" src="www/usp-logo.png" alt="Logo USP" width="96" height="96" loading="lazy" />
+                    <div>
+                        <h3 data-i18n="education.degree">Bacharelado em Sistemas de Informação</h3>
+                        <p class="company-meta" data-i18n="education.school"></p>
+                        <div id="edu-text"></div>
+                        <div class="chips" id="edu-tools"></div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- ===== Contact ===== -->
+        <section class="section" id="contact" aria-labelledby="contact-title">
+            <div class="container">
+                <div class="contact-card reveal">
+                    <span class="eyebrow" data-i18n="contact.eyebrow">// contato</span>
+                    <h2 id="contact-title" data-i18n="contact.title">Vamos construir algo juntos?</h2>
+                    <p data-i18n="contact.text"></p>
+                    <div class="contact-actions">
+                        <a class="btn btn-primary" href="mailto:andre08.m@usp.br"><i class="fa-solid fa-paper-plane"></i><span data-i18n="contact.email">Enviar e-mail</span></a>
+                        <a class="btn btn-ghost cv-link" href="#" target="_blank" rel="noopener"><i class="fa-solid fa-file-arrow-down"></i><span data-i18n="contact.cv">Baixar Currículo</span></a>
+                        <button class="btn btn-ghost share-btn" type="button" hidden><i class="fa-solid fa-share-nodes"></i><span data-i18n="contact.share">Compartilhar</span></button>
+                    </div>
+
+                    <div class="contact-grid">
+                        <button class="card contact-item copy-email" type="button" data-email="andre08.m@usp.br">
+                            <span class="highlight-icon"><i class="fa-solid fa-envelope"></i></span>
+                            <span><small data-i18n="contact.emailLabel">E-mail</small><strong>andre08.m@usp.br</strong></span>
+                            <i class="fa-regular fa-copy copy-icon" aria-hidden="true"></i>
+                        </button>
+                        <div class="card contact-item">
+                            <span class="highlight-icon"><i class="fa-solid fa-location-dot"></i></span>
+                            <span><small data-i18n="contact.location">Localização</small><strong data-i18n="contact.locationValue"></strong></span>
+                        </div>
+                        <a class="card qr" href="https://beacons.ai/andre.miyazawa" target="_blank" rel="noopener">
+                            <img src="assets/andre.miyazawa_beacons.png" alt="QR code Beacons" width="84" height="84" loading="lazy" />
+                            <span><small class="muted">Beacons</small><br /><strong data-i18n="contact.beacons">Todos os links</strong></span>
+                        </a>
+                    </div>
+
+                    <div class="contact-social">
+                        <a class="icon-link" href="https://www.linkedin.com/in/andre-miyazawa-2446a21b7/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a class="icon-link" href="https://github.com/andrem08" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a class="icon-link" href="https://gitlab.com/andrem08" target="_blank" rel="noopener" aria-label="GitLab"><i class="fa-brands fa-gitlab"></i></a>
+                        <a class="icon-link" href="https://t.me/andrmiyazawa" target="_blank" rel="noopener" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <span>&copy; <span id="year"></span> André Miyazawa</span>
+            <span data-i18n-html="footer"></span>
         </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <!-- Barra de navegação inferior (celular) -->
+    <nav class="tabbar" aria-label="Navegação móvel">
+        <a href="#hero" class="active"><i class="fa-solid fa-house"></i><span data-i18n="nav.home">Início</span></a>
+        <a href="#about"><i class="fa-solid fa-user"></i><span data-i18n="nav.about">Sobre</span></a>
+        <a href="#skills"><i class="fa-solid fa-code"></i><span data-i18n="nav.skills">Habilidades</span></a>
+        <a href="#experience" data-also="education"><i class="fa-solid fa-briefcase"></i><span data-i18n="nav.experienceShort">Carreira</span></a>
+        <a href="#contact"><i class="fa-solid fa-paper-plane"></i><span data-i18n="nav.contact">Contato</span></a>
+    </nav>
+
+    <button class="to-top" id="to-top" type="button" data-i18n-aria="toTop" aria-label="Voltar ao topo"><i class="fa-solid fa-arrow-up"></i></button>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
 </body>
 </html>
