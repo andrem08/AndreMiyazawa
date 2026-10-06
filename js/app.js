@@ -149,7 +149,14 @@
   function renderEducation() {
     const ed = t().education;
     $('#edu-text').innerHTML = ed.text.map(p => `<p>${p}</p>`).join('');
-    $('#edu-tools').innerHTML = ed.tools.map(s => `<span class="chip">${s}</span>`).join('');
+    const groupsHTML = groups => groups.map(g => `
+      <div class="chip-group">
+        <p class="tools-label">${g.label}</p>
+        <div class="chips">${g.items.map(s => `<span class="chip">${s}</span>`).join('')}</div>
+      </div>`).join('');
+    $('#usp-groups').innerHTML = groupsHTML(ed.groups);
+    $('#sf-groups').innerHTML = groupsHTML(ed.salesforce.groups);
+    $('#sf-highlights').innerHTML = ed.salesforce.highlights.map(s => `<span class="chip chip-star"><i class="fa-solid fa-star"></i>${s}</span>`).join('');
     $('#english-tags').innerHTML = ed.english.tags.map(s => `<span class="chip">${s}</span>`).join('');
     const credItem = c => `<li><i class="${c.icon}"></i><span>${c.name}</span><span class="cred-year">${c.year}</span></li>`;
     $('#creds').innerHTML = CREDENTIALS.map(credItem).join('');

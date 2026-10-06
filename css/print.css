@@ -357,15 +357,11 @@ strong,
   display: none !important;
 }
 
-.edu-mini {
-  padding: 6pt 10pt;
-  margin-top: 6pt;
+
+.text-link {
+  display: none !important;
 }
 
-.edu-mini .skill-icon {
-  display: none;
-}
-
-.edu-mini h3 {
-  color: #0d1117 !important;
+.chip-star {
+  color: #1f2328 !important;
 }

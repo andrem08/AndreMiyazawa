@@ -250,12 +250,27 @@ const LANGUAGES = {
       eyebrow: '// formação',
       title: 'Formação',
       degree: 'Bacharelado em Sistemas de Informação',
-      school: 'Universidade de São Paulo (USP) · 2020 — 2024',
+      school: 'Universidade de São Paulo (USP) · EACH · 2020 — 2024',
       text: [
-        'Formação com base sólida em <b>algoritmos</b>, <b>estruturas de dados</b>, <b>estatística</b>, <b>banco de dados</b> e <b>arquitetura de software</b>, além de disciplinas de <b>administração</b>, <b>economia</b> e <b>marketing</b>.'
+        'Formação em computação com base sólida em <b>algoritmos e estruturas de dados</b>, <b>banco de dados</b>, <b>sistemas operacionais</b>, <b>redes</b>, <b>sistemas distribuídos</b> e <b>inteligência artificial</b>, somada a estatística e análise multivariada.',
+        'O curso também tem um lado de <b>negócio e produto</b>, com gestão de projetos de TI, empreendedorismo, administração e economia, e design de interfaces (IHC): a base para transformar requisitos em produtos que as pessoas querem usar.'
       ],
-      tools: ['C / C++', 'Java', 'Python', 'R', 'Julia', 'SQL', 'OpenMP', 'Assembly x86', 'Bash', 'IA & Ciência de Dados', 'Redes', 'Programação Paralela', 'Computação em Nuvem', 'IHC'],
-      trailhead: { rank: 'Ranger', meta: '108 badges · 83.225 pontos · 23 trilhas · Superbadges: LWC Specialist e Prompt Builder Templates', cta: 'Ver perfil' },
+      groups: [
+        { label: 'Computação', items: ['Algoritmos e Estruturas de Dados I e II', 'Análise de Algoritmos', 'Orientação a Objetos', 'Banco de Dados I e II', 'Sistemas Operacionais', 'Redes de Computadores', 'Arquitetura de Computadores', 'Sistemas Distribuídos', 'Inteligência Artificial', 'Teoria da Computação', 'Estatística e Análise Multivariada', 'Desafios de Programação'] },
+        { label: 'Negócios & produto', items: ['Engenharia de Sistemas de Informação', 'Gestão de Projetos de TI', 'Empreendedorismo em Informática', 'Administração e Economia', 'IHC e Design de Interfaces', 'Cultura Digital'] }
+      ],
+      salesforce: {
+        title: 'Salesforce Trailhead',
+        meta: 'Trailblazer Ranger · 108 badges · 83.225 pontos · 23 trilhas',
+        text: 'Aprendizado contínuo na plataforma da Salesforce, com <b>2 superbadges</b> (desafios práticos avaliados) e <b>2 certificações oficiais</b>.',
+        highlights: ['Superbadge: LWC Specialist', 'Superbadge: Prompt Builder Templates', 'Certified JavaScript Developer', 'Certified AI Associate'],
+        groups: [
+          { label: 'Desenvolvimento', items: ['Apex (Triggers, Testes, Integrações)', 'Lightning Web Components', 'Testes de LWC', 'JavaScript moderno', 'SOQL', 'Salesforce CLI / VS Code', 'Apex Replay Debugger', 'APIs & Postman', 'Lightning Design System', 'Acessibilidade web'] },
+          { label: 'Automação & integração', items: ['Flow (Screen, Record-Triggered, Scheduled)', 'Flow Orchestration', 'External Services', 'MuleSoft Composer', 'OmniStudio', 'Approval Processes'] },
+          { label: 'IA & Agentforce', items: ['Agentforce', 'Agent Actions', 'Prompt Builder', 'Data 360', 'Trust Layer', 'IA Generativa', 'NLP'] }
+        ],
+        cta: 'Ver perfil no Trailhead'
+      },
       english: {
         title: 'Curso de Inglês',
         meta: 'Cultura Inglesa · Campinas, SP · 2013 — 2017',
@@ -439,12 +454,27 @@ const LANGUAGES = {
       eyebrow: '// education',
       title: 'Education',
       degree: "Bachelor's in Information Systems",
-      school: 'University of São Paulo (USP) · 2020 — 2024',
+      school: 'University of São Paulo (USP) · EACH · 2020 — 2024',
       text: [
-        'Solid foundation in <b>algorithms</b>, <b>data structures</b>, <b>statistics</b>, <b>databases</b> and <b>software architecture</b>, plus courses in <b>business administration</b>, <b>economics</b> and <b>marketing</b>.'
+        'A computing degree with a solid foundation in <b>algorithms and data structures</b>, <b>databases</b>, <b>operating systems</b>, <b>networks</b>, <b>distributed systems</b> and <b>artificial intelligence</b>, plus statistics and multivariate analysis.',
+        'The program also has a <b>business and product</b> side, with IT project management, entrepreneurship, business administration and economics, and interface design (HCI): the foundation for turning requirements into products people want to use.'
       ],
-      tools: ['C / C++', 'Java', 'Python', 'R', 'Julia', 'SQL', 'OpenMP', 'x86 Assembly', 'Bash', 'AI & Data Science', 'Networks', 'Parallel Programming', 'Cloud Computing', 'HCI'],
-      trailhead: { rank: 'Ranger', meta: '108 badges · 83,225 points · 23 trails · Superbadges: LWC Specialist and Prompt Builder Templates', cta: 'View profile' },
+      groups: [
+        { label: 'Computing', items: ['Algorithms & Data Structures I and II', 'Algorithm Analysis', 'Object-Oriented Programming', 'Databases I and II', 'Operating Systems', 'Computer Networks', 'Computer Architecture', 'Distributed Systems', 'Artificial Intelligence', 'Theory of Computation', 'Statistics & Multivariate Analysis', 'Programming Challenges'] },
+        { label: 'Business & product', items: ['Information Systems Engineering', 'IT Project Management', 'Entrepreneurship in Computing', 'Business Administration & Economics', 'HCI & Interface Design', 'Digital Culture'] }
+      ],
+      salesforce: {
+        title: 'Salesforce Trailhead',
+        meta: 'Trailblazer Ranger · 108 badges · 83,225 points · 23 trails',
+        text: 'Continuous learning on the Salesforce platform, with <b>2 superbadges</b> (graded hands-on challenges) and <b>2 official certifications</b>.',
+        highlights: ['Superbadge: LWC Specialist', 'Superbadge: Prompt Builder Templates', 'Certified JavaScript Developer', 'Certified AI Associate'],
+        groups: [
+          { label: 'Development', items: ['Apex (Triggers, Testing, Integrations)', 'Lightning Web Components', 'LWC Testing', 'Modern JavaScript', 'SOQL', 'Salesforce CLI / VS Code', 'Apex Replay Debugger', 'APIs & Postman', 'Lightning Design System', 'Web Accessibility'] },
+          { label: 'Automation & integration', items: ['Flow (Screen, Record-Triggered, Scheduled)', 'Flow Orchestration', 'External Services', 'MuleSoft Composer', 'OmniStudio', 'Approval Processes'] },
+          { label: 'AI & Agentforce', items: ['Agentforce', 'Agent Actions', 'Prompt Builder', 'Data 360', 'Trust Layer', 'Generative AI', 'NLP'] }
+        ],
+        cta: 'View Trailhead profile'
+      },
       english: {
         title: 'English Course',
         meta: 'Cultura Inglesa · Campinas, Brazil · 2013 — 2017',
