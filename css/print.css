@@ -34,9 +34,9 @@ body {
 .read-more,
 #more-btn,
 .swipe-dots,
-.about-photo,
 .qr,
 .edu-watermark,
+#projects .btn,
 #stats {
   display: none !important;
 }
@@ -75,7 +75,6 @@ body {
 .company-name,
 .edu-card h3,
 .contact-card h2,
-.highlight h4,
 .skill-card h3 {
   color: #0d1117 !important;
 }
@@ -113,7 +112,6 @@ body {
 .section-sub,
 .company-meta,
 .edu-card p,
-.highlight p,
 .hero-social {
   color: #1f2328 !important;
 }
@@ -178,20 +176,6 @@ body {
 .contact-card::before {
   display: none;
 }
-
-.about-grid {
-  display: block;
-}
-
-.highlights {
-  grid-template-columns: repeat(4, 1fr);
-  gap: 6pt;
-}
-
-.highlight {
-  padding: 6pt;
-}
-
 .highlight-icon,
 .skill-icon {
   display: none;
@@ -307,4 +291,51 @@ strong,
 .timeline-desc b,
 .hero-desc b {
   color: #0d1117 !important;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 12pt;
+}
+
+.facts {
+  padding: 8pt;
+}
+
+.facts-list {
+  gap: 4pt;
+}
+
+.facts-list .highlight-icon,
+.facts-actions,
+.project-link {
+  display: none !important;
+}
+
+.facts-list strong,
+.project-card h3 {
+  color: #0d1117 !important;
+}
+
+.projects-grid {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6pt;
+}
+
+.project-card {
+  padding: 8pt;
+}
+
+.project-top {
+  display: none;
+}
+
+.project-card p,
+.bullets li {
+  color: #1f2328 !important;
+}
+
+.bullets li::before {
+  background: #3b82f6;
 }

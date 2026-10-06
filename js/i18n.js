@@ -1,5 +1,5 @@
 // i18n.js - Todo o conteúdo do site (PT / EN)
-// Para editar textos, experiências ou habilidades, altere apenas este arquivo.
+// Para editar textos, experiências, projetos ou habilidades, altere apenas este arquivo.
 
 const BIRTH_DATE = '2001-04-08';
 const CAREER_START = '2022-04-01';
@@ -42,35 +42,45 @@ const TECH_MARQUEE = [
 const SKILL_ICONS = ['fa-solid fa-code', 'fa-brands fa-salesforce', 'fa-solid fa-cloud', 'fa-solid fa-database', 'fa-solid fa-layer-group', 'fa-solid fa-screwdriver-wrench'];
 
 const SKILL_ITEMS = [
-  ['Python', 'Java', 'Go', 'JavaScript', 'SQL', 'R'],
-  ['Apex', 'LWC', 'Flow', 'SOQL/SOSL', 'Aura', 'Visualforce'],
+  ['Python', 'Go', 'Java', 'JavaScript', 'SQL', 'R'],
+  ['Apex', 'LWC', 'Flow', 'SOQL / SOSL', 'Aura', 'Visualforce'],
   ['AWS (EC2, Lambda, S3)', 'Docker', 'Kubernetes', 'CI/CD', 'Terraform'],
-  ['PostgreSQL', 'MongoDB', 'MySQL', 'DynamoDB'],
-  ['React', 'Django', 'Node.js', 'RShiny'],
-  ['Git', 'Datadog', 'Grafana', 'PowerBI', 'Excel']
+  ['PostgreSQL', 'DynamoDB', 'MySQL', 'MongoDB'],
+  ['Node.js', 'React', 'Django', 'RShiny'],
+  ['Git', 'Datadog', 'Grafana', 'Power BI', 'Excel']
 ];
 
-// Dados de experiência compartilhados entre idiomas (logos, ferramentas, flags)
+// Projetos públicos no GitHub (github.com/andrem08)
+const PROJECTS = [
+  { repo: 'ShinyHealthCare', icon: 'fa-solid fa-heart-pulse', tags: ['R', 'Shiny', 'Estatística'] },
+  { repo: 'InmetroAnalize', icon: 'fa-solid fa-spider', tags: ['Python', 'Selenium', 'Web Scraping'] },
+  { repo: 'generatorTools', icon: 'fa-solid fa-id-card', tags: ['HTML', 'JavaScript'] },
+  { repo: 'BashChat', icon: 'fa-solid fa-terminal', tags: ['Bash', 'Sockets'] },
+  { repo: 'EstruturasDeDados', icon: 'fa-solid fa-sitemap', tags: ['Java', 'Algoritmos'] },
+  { repo: 'x86_prime_numbers', icon: 'fa-solid fa-microchip', tags: ['Assembly x86'] }
+];
+
+// Dados de experiência compartilhados entre idiomas
 const EXPERIENCE_META = {
   rede: {
     logo: 'www/redecard-logo.jpeg',
     company: 'Rede',
-    tools: ['Apex', 'LWC', 'SOQL', 'SOSL', 'Flow', 'Aura', 'REST / SOAP', 'SFDX', 'Flosum', 'AWS EC2', 'S3', 'VPC', 'RDS', 'Lambda', 'DynamoDB', 'CloudWatch', 'Go', 'Python', 'Grafana', 'Kubernetes', 'Docker', 'Datadog', 'Terraform']
+    tools: ['Apex', 'LWC', 'Flow', 'SOQL', 'Aura', 'REST / SOAP', 'SFDX', 'Go', 'Python', 'AWS Lambda', 'S3', 'EC2', 'RDS', 'DynamoDB', 'CloudWatch', 'Docker', 'Kubernetes', 'Terraform', 'Datadog', 'Grafana']
   },
   itau: {
     logo: 'www/Itaú_Unibanco_logo.png',
     company: 'Itaú Unibanco',
-    tools: ['Python', 'SQL', 'SAS', 'Teradata', 'DBeaver', 'VBA', 'Excel', 'PowerPoint', 'Confluence']
+    tools: ['Python', 'SQL', 'SAS', 'Teradata', 'VBA', 'Excel']
   },
   inmetro: {
     logo: 'www/inmetro_logo.png',
     company: 'Inmetro',
-    tools: ['R', 'RShiny', 'Python', 'JavaScript', 'HTML', 'CSS', 'Selenium', 'Google API', 'Twitter API', 'Facebook API', 'Excel']
+    tools: ['R', 'RShiny', 'Python', 'JavaScript', 'HTML / CSS', 'Selenium']
   },
   dasi: {
     logo: 'www/dasi-usp.jpeg',
     company: 'DASI USP',
-    tools: ['Adobe Photoshop', 'Canva', 'HTML', 'CSS']
+    tools: ['Photoshop', 'Canva']
   },
   elite: {
     logo: 'www/elite-logo.jpg',
@@ -81,13 +91,12 @@ const EXPERIENCE_META = {
 const LANGUAGES = {
   pt: {
     htmlLang: 'pt-BR',
-    nav: { home: 'Início', experienceShort: 'Carreira', about: 'Sobre', skills: 'Habilidades', experience: 'Experiência', education: 'Formação', contact: 'Contato' },
+    nav: { home: 'Início', experienceShort: 'Carreira', about: 'Sobre', skills: 'Habilidades', experience: 'Experiência', projects: 'Projetos', education: 'Formação', contact: 'Contato' },
     hero: {
       badge: 'Engenheiro de Software @ Rede',
       greeting: 'Olá, eu sou',
-      rolePrefix: 'Eu sou',
-      roles: ['Engenheiro de Software', 'Desenvolvedor Salesforce', 'Dev de Microserviços AWS', 'Analista de Dados'],
-      desc: 'Construo soluções em <b>Salesforce</b> e microserviços em <b>AWS</b> com Go e Python — unindo uma base analítica forte em dados a engenharia de software moderna.',
+      roles: ['Engenheiro de Software', 'Desenvolvedor Salesforce', 'Back-end em Go e Python', 'Analista de Dados'],
+      desc: 'Desenvolvo soluções <b>Salesforce</b> full-stack e microserviços em <b>AWS</b> com <b>Go</b> e <b>Python</b>, com base em análise de dados e formação em Sistemas de Informação pela <b>USP</b>.',
       ctaPrimary: 'Ver experiência',
       ctaSecondary: 'Baixar CV'
     },
@@ -95,87 +104,90 @@ const LANGUAGES = {
       { value: YEARS_EXP, suffix: '+', label: 'anos de experiência' },
       { value: 3, suffix: '', label: 'empresas' },
       { value: 30, suffix: '+', label: 'tecnologias' },
-      { value: '∞', suffix: '', label: 'cafés ☕' }
+      { value: 2, suffix: '', label: 'idiomas' }
     ],
     about: {
       eyebrow: '// sobre mim',
       title: 'Quem sou eu',
       text: [
-        `Meu nome é <b>André Miyazawa</b>, tenho ${AGE} anos e sou <b>Engenheiro de Software</b> na <b>Rede</b>, com foco principal em soluções <b>Salesforce</b> e desenvolvimento de <b>microserviços em nuvem (AWS)</b>.`,
-        'Sou Bacharel em <b>Sistemas de Informação pela Universidade de São Paulo (USP)</b>, formação que me proporcionou uma base robusta em algoritmos, estatística e arquitetura de software.',
-        'Minha trajetória foi construída sobre um forte alicerce analítico: comecei no <b>Itaú Unibanco</b>, com modelagem de Risco de Crédito (Python, SQL, SAS), e no <b>Inmetro</b>, onde desenvolvi uma aplicação completa de machine learning (R, Python, JS).',
-        'Hoje, além de liderar otimizações na plataforma de CRM, atuo na arquitetura e desenvolvimento de microserviços em AWS utilizando <b>Go</b> e <b>Python</b>.'
+        `Sou <b>Engenheiro de Software</b> na <b>Rede</b> (Itaú Unibanco), onde desenvolvo soluções <b>Salesforce</b> full-stack e microserviços em <b>AWS</b> com <b>Go</b> e <b>Python</b>.`,
+        'Comecei pela área de dados: modelagem de <b>risco de crédito</b> no Itaú BBA e uma aplicação de <b>machine learning</b> no Inmetro. Essa base analítica ainda orienta a forma como trabalho: decisões guiadas por dados, código testável e foco no resultado para o negócio.',
+        'Na Rede, entrei como estagiário e hoje lidero iniciativas de otimização do CRM, defino boas práticas de desenvolvimento e ajudo a integrar novos membros do time.'
       ],
-      highlights: [
-        { icon: 'fa-solid fa-graduation-cap', title: 'USP', text: 'Sistemas de Informação' },
-        { icon: 'fa-brands fa-salesforce', title: 'Salesforce', text: 'Apex · LWC · Flow' },
-        { icon: 'fa-brands fa-aws', title: 'Cloud', text: 'Microserviços em Go e Python' },
-        { icon: 'fa-solid fa-chart-pie', title: 'Dados', text: 'Risco de crédito e ML' }
+      facts: [
+        { icon: 'fa-solid fa-location-dot', label: 'Localização', value: 'São Paulo, SP' },
+        { icon: 'fa-solid fa-graduation-cap', label: 'Formação', value: 'Sistemas de Informação — USP' },
+        { icon: 'fa-solid fa-language', label: 'Idiomas', value: 'Português (nativo) · Inglês (fluente)' },
+        { icon: 'fa-solid fa-cake-candles', label: 'Idade', value: `${AGE} anos` },
+        { icon: 'fa-solid fa-gamepad', label: 'Interesses', value: 'Origami, games, física, música e design' }
       ]
     },
     skills: {
       eyebrow: '// stack',
       title: 'Habilidades',
-      sub: 'Ferramentas e tecnologias que uso no dia a dia para construir produtos de ponta a ponta.',
+      sub: 'Tecnologias que uso no dia a dia, do CRM à nuvem.',
       cats: ['Linguagens', 'Salesforce', 'Cloud & DevOps', 'Bancos de Dados', 'Frameworks', 'Ferramentas']
     },
     experience: {
       eyebrow: '// trajetória',
       title: 'Experiência',
-      sub: 'Da análise de dados à engenharia de software — uma linha do tempo da minha carreira.',
+      sub: 'Da análise de dados à engenharia de software.',
       toolsLabel: 'Tecnologias',
       knowledgeLabel: 'Conhecimentos',
-      readMore: 'Ler mais',
+      readMore: 'Ver detalhes',
       readLess: 'Mostrar menos',
-      moreBtn: 'Mostrar mais experiências',
-      lessBtn: 'Mostrar menos',
-      current: 'atual',
+      moreBtn: 'Experiências anteriores',
+      lessBtn: 'Ocultar experiências anteriores',
       items: {
         rede: {
-          meta: 'Serviços financeiros · São Paulo',
+          meta: 'Meios de pagamento · Grupo Itaú Unibanco',
           roles: [
             {
               title: 'Engenheiro de Software Júnior',
               date: 'Dez 2024 — atual',
               current: true,
-              desc: [
-                'Como <b>Engenheiro de Software Júnior</b> na <b>Rede</b>, foco no desenvolvimento de soluções complexas em <b>Salesforce</b> e <b>AWS</b>. Minhas responsabilidades incluem a liderança técnica em iniciativas de otimização, a implementação de <b>best practices</b> e a mentoria de novos membros da equipe.',
-                'Liderei a refatoração estratégica da jornada de credenciamento de clientes, utilizando <b>Apex</b>, <b>LWC</b> e <b>Flow</b> para reconstruir telas e integrar APIs — reduzindo significativamente o tempo de formalização e otimizando a conversão de novos clientes.',
-                'Desenvolvi também um painel de gestão tática em <b>LWC</b>, que centraliza dados de performance (visitas, agendamentos) em gráficos e tabelas, dando aos gestores visibilidade em tempo real para acompanhamento de metas.'
+              bullets: [
+                'Liderei a <b>refatoração da jornada de credenciamento de clientes</b>, reconstruindo telas e integrações de API com <b>Apex</b>, <b>LWC</b> e <b>Flow</b>, o que reduziu o tempo de formalização e melhorou a conversão de novos clientes.',
+                'Desenvolvi um <b>painel de gestão tática em LWC</b> que centraliza dados de performance (visitas e agendamentos) em gráficos e tabelas, dando aos gestores visibilidade em tempo real das metas.',
+                'Desenvolvo <b>microserviços em AWS</b> com <b>Go</b> e <b>Python</b> para integrações e automação de processos de negócio.',
+                'Lidero iniciativas de otimização de código, defino <b>boas práticas</b> de desenvolvimento e faço mentoria de novos membros do time.'
               ]
             },
             {
-              title: 'Estágio em Desenvolvimento de Software',
+              title: 'Estagiário — Desenvolvedor Salesforce',
               date: 'Jun 2023 — Dez 2024',
-              desc: [
-                'Como <b>Estagiário Desenvolvedor Salesforce</b>, adquiri uma base técnica robusta no ecossistema da plataforma, dominando <b>Apex</b>, <b>Visualforce</b>, <b>SOQL</b>, <b>Aura</b> e <b>LWC</b>. Atuei no novo fluxo de credenciamento para Pessoa Física e implementei um sistema de monitoramento de logs, automatizando o envio para a <b>AWS</b> e a montagem de dashboards dinâmicos.',
-                'Colaborei na criação de <b>APIs em Go</b> para integração de serviços externos com o Salesforce, ganhando experiência prática em metodologias ágeis, <b>CI/CD</b> e integração de sistemas em larga escala.'
+              bullets: [
+                'Desenvolvi o novo <b>fluxo de credenciamento para Pessoa Física</b>.',
+                'Criei um <b>sistema de monitoramento de logs</b> da jornada de credenciamento, automatizando o tratamento dos dados, o envio para a <b>AWS</b> e dashboards de performance.',
+                'Colaborei na criação de <b>APIs em Go</b> para integrar serviços externos ao Salesforce, com <b>CI/CD</b> e metodologias ágeis.'
               ]
             }
           ]
         },
         itau: {
-          meta: 'Itaú BBA · São Paulo',
+          meta: 'Risco de Crédito · Itaú BBA',
           roles: [
             {
-              title: 'Estágio em Risco de Crédito',
+              title: 'Estagiário em Risco de Crédito',
               date: 'Dez 2022 — Mai 2023',
-              desc: [
-                'Na área de <b>Risco de Crédito</b> do <b>Itaú BBA</b>, fui responsável pela modelagem, monitoramento e automação de parâmetros de risco. Utilizei <b>Python</b> para desenvolver automações e para a mitigação de <b>LGD (Loss Given Default)</b> em operações garantidas.',
-                'Também monitorei esteiras de provisão (<b>BRGAAP</b>, <b>IFRS9</b>, <b>Câmbio</b>) e criei relatórios, dashboards, views e testes estatísticos com <b>SQL</b>, <b>VBA</b> e <b>Excel</b> para suportar decisões de negócio.'
+              bullets: [
+                'Modelei, monitorei e automatizei <b>parâmetros de risco</b> com <b>Python</b>, incluindo a mitigação de <b>LGD (Loss Given Default)</b> em operações garantidas.',
+                'Monitorei esteiras de provisão (<b>BRGAAP</b>, <b>IFRS 9</b>, câmbio).',
+                'Construí relatórios, dashboards, views e testes estatísticos com <b>SQL</b>, <b>VBA</b> e <b>Excel</b> para apoiar decisões da área.'
               ]
             }
           ]
         },
         inmetro: {
-          meta: 'Bolsa de pesquisa · Rio de Janeiro (remoto)',
+          meta: 'Bolsa de pesquisa',
           roles: [
             {
-              title: 'Desenvolvedor de Aplicativos',
+              title: 'Desenvolvedor de Aplicações (R Shiny)',
               date: 'Abr 2022 — Abr 2023',
-              desc: [
-                'Projetei e implementei um software <b>full-stack</b> para automação de análises estatísticas e de <b>machine learning</b>. Com <b>RShiny</b>, <b>JavaScript</b> e <b>HTML/CSS</b>, criei uma plataforma interativa onde usuários importam dados, geram visualizações 2D/3D e personalizam relatórios.',
-                'O <b>back-end</b>, em <b>R</b> e <b>Python</b>, automatizava a transformação de dados e testes de hipótese (<b>ANOVA</b>, <b>Teste-T</b>, <b>MANOVA</b>). Também desenvolvi scripts de <b>Web Scraping (Selenium)</b> para coleta de dados de redes sociais.'
+              bullets: [
+                'Projetei e implementei uma <b>aplicação web full-stack</b> em <b>RShiny</b> para automatizar análises estatísticas e de <b>machine learning</b>: importação de dados, gráficos 2D/3D e relatórios personalizáveis.',
+                'Back-end em <b>R</b> e <b>Python</b> automatizando a transformação de dados e testes de hipótese (<b>ANOVA</b>, <b>Teste-T</b>, <b>MANOVA</b>).',
+                'Desenvolvi scripts de <b>web scraping (Selenium)</b> para coletar dados de redes sociais sobre o Inmetro.'
               ]
             }
           ]
@@ -186,51 +198,67 @@ const LANGUAGES = {
             {
               title: 'Designer',
               date: 'Mar 2020 — Dez 2021',
-              desc: [
-                'O <b>DASI (Diretório Acadêmico de Sistemas de Informação)</b> foi meu primeiro contato com demandas, projetos e pessoas. Criei artes, logos, banners e cartazes para eventos, aprendendo bastante sobre <b>design e Interação Humano-Computador</b>.'
+              bullets: [
+                'Criei identidade visual, logos, banners e cartazes para os eventos do <b>Diretório Acadêmico de Sistemas de Informação</b>.',
+                'Primeiro contato com demandas reais, prazos e trabalho em equipe.'
               ]
             }
           ]
         },
         elite: {
-          meta: 'Campinas · SP',
+          meta: 'Campinas, SP',
           roles: [
             {
-              title: 'Bolsista — Corretor de Questões de Vestibular',
+              title: 'Bolsista — Correção de Provas',
               date: 'Fev 2019 — Fev 2020',
-              desc: [
-                'Corrigi questões, simulados e provas de diversas matérias, colaborando com professores e plantonistas. Também participei da formulação de novos testes, analisando a qualidade das questões e sua eficácia pedagógica.'
+              bullets: [
+                'Corrigi questões, simulados e provas de vestibular em diversas matérias, junto a professores e plantonistas.',
+                'Participei da elaboração de novos testes, avaliando a qualidade e a clareza das questões.'
               ]
             }
           ],
-          tools: ['Matemática', 'Física', 'Química', 'Biologia', 'Português', 'Inglês', 'História', 'Geografia']
+          tools: ['Matemática', 'Física', 'Química', 'Português', 'Inglês']
         }
+      }
+    },
+    projects: {
+      eyebrow: '// projetos',
+      title: 'Projetos',
+      sub: 'Projetos pessoais e acadêmicos com código aberto no GitHub.',
+      code: 'Código',
+      all: 'Ver todos no GitHub',
+      items: {
+        ShinyHealthCare: 'Aplicação Shiny para testes estatísticos de independência (Qui-Quadrado e Exato de Fisher) em dados de saúde.',
+        InmetroAnalize: 'Web scraping de redes sociais para análise de dados sobre o Inmetro.',
+        generatorTools: 'Gerador de RG, CPF e CNPJ válidos para testes de software.',
+        BashChat: 'Chat cliente-servidor entre terminais, escrito inteiramente em Bash.',
+        EstruturasDeDados: 'Implementações próprias de estruturas de dados clássicas em Java.',
+        x86_prime_numbers: 'Cálculo de números primos em Assembly x86, manipulando ponteiros e endereços diretamente.'
       }
     },
     education: {
       eyebrow: '// formação',
       title: 'Formação Acadêmica',
       degree: 'Bacharelado em Sistemas de Informação',
-      school: 'Universidade de São Paulo (USP) · Jan 2020 — Dez 2024',
+      school: 'Universidade de São Paulo (USP) · 2020 — 2024',
       text: [
-        'A <b>USP</b> me proporcionou uma formação sólida em computação, com base forte em <b>matemática</b>, <b>estatística</b>, <b>algoritmos</b> e <b>lógica de programação</b> — além de me ensinar a ser autodidata.',
-        'Trabalhei com diversas linguagens e projetos que uniam teoria e prática, e cursei disciplinas de <b>administração</b>, <b>economia</b> e <b>marketing</b>, que ampliaram minha visão de negócio.'
+        'Formação com base sólida em <b>algoritmos</b>, <b>estruturas de dados</b>, <b>estatística</b>, <b>banco de dados</b> e <b>arquitetura de software</b>, além de disciplinas de <b>administração</b>, <b>economia</b> e <b>marketing</b>.'
       ],
-      tools: ['C', 'C++', 'Java', 'Python', 'R', 'Julia', 'SQL', 'Oracle', 'OpenMP', 'Assembly x86', 'Bash', 'Lua', 'Estruturas de Dados', 'IA & Ciência de Dados', 'Redes', 'Programação Paralela', 'Cloud']
+      tools: ['C / C++', 'Java', 'Python', 'R', 'Julia', 'SQL', 'OpenMP', 'Assembly x86', 'Bash', 'IA & Ciência de Dados', 'Redes', 'Programação Paralela', 'Computação em Nuvem', 'IHC']
     },
     contact: {
       eyebrow: '// contato',
-      title: 'Vamos construir algo juntos?',
-      text: 'Estou aberto a novas conversas, projetos e oportunidades. Me mande uma mensagem — respondo rápido!',
+      title: 'Vamos conversar?',
+      text: 'Aberto a oportunidades, projetos e conversas sobre engenharia de software, Salesforce e cloud.',
       email: 'Enviar e-mail',
       cv: 'Baixar Currículo',
       location: 'Localização',
-      locationValue: 'Vila Mariana, São Paulo — SP',
+      locationValue: 'São Paulo, SP — Brasil',
       emailLabel: 'E-mail',
       beacons: 'Todos os links',
       share: 'Compartilhar'
     },
-    footer: 'Feito com <i class="fa-solid fa-heart heart"></i> e muito café.',
+    footer: 'Feito com HTML, CSS e JavaScript.',
     toTop: 'Voltar ao topo',
     skip: 'Pular para o conteúdo',
     copied: 'E-mail copiado!'
@@ -238,13 +266,12 @@ const LANGUAGES = {
 
   en: {
     htmlLang: 'en',
-    nav: { home: 'Home', experienceShort: 'Career', about: 'About', skills: 'Skills', experience: 'Experience', education: 'Education', contact: 'Contact' },
+    nav: { home: 'Home', experienceShort: 'Career', about: 'About', skills: 'Skills', experience: 'Experience', projects: 'Projects', education: 'Education', contact: 'Contact' },
     hero: {
       badge: 'Software Engineer @ Rede',
       greeting: "Hi, I'm",
-      rolePrefix: "I'm a",
-      roles: ['Software Engineer', 'Salesforce Developer', 'AWS Microservices Dev', 'Data Analyst'],
-      desc: 'I build <b>Salesforce</b> solutions and <b>AWS</b> microservices with Go and Python — combining a strong analytical data background with modern software engineering.',
+      roles: ['Software Engineer', 'Salesforce Developer', 'Go & Python Back-end', 'Data Analyst'],
+      desc: 'I build full-stack <b>Salesforce</b> solutions and <b>AWS</b> microservices with <b>Go</b> and <b>Python</b>, backed by a data analysis background and an Information Systems degree from <b>USP</b>.',
       ctaPrimary: 'View experience',
       ctaSecondary: 'Download CV'
     },
@@ -252,87 +279,90 @@ const LANGUAGES = {
       { value: YEARS_EXP, suffix: '+', label: 'years of experience' },
       { value: 3, suffix: '', label: 'companies' },
       { value: 30, suffix: '+', label: 'technologies' },
-      { value: '∞', suffix: '', label: 'coffees ☕' }
+      { value: 2, suffix: '', label: 'languages' }
     ],
     about: {
       eyebrow: '// about me',
       title: 'Who I am',
       text: [
-        `I'm <b>André Miyazawa</b>, ${AGE} years old, a <b>Software Engineer</b> at <b>Rede</b>, focused on <b>Salesforce</b> solutions and <b>cloud microservices (AWS)</b>.`,
-        "I hold a Bachelor's degree in <b>Information Systems from the University of São Paulo (USP)</b>, which gave me a solid foundation in algorithms, statistics and software architecture.",
-        'My journey was built on a strong analytical foundation: I started at <b>Itaú Unibanco</b>, working on Credit Risk modeling (Python, SQL, SAS), and at <b>Inmetro</b>, where I built a complete machine learning application (R, Python, JS).',
-        'Today, besides leading optimizations on the CRM platform, I work on the architecture and development of AWS microservices using <b>Go</b> and <b>Python</b>.'
+        `I'm a <b>Software Engineer</b> at <b>Rede</b> (Itaú Unibanco), building full-stack <b>Salesforce</b> solutions and <b>AWS</b> microservices with <b>Go</b> and <b>Python</b>.`,
+        'I started in data: <b>credit risk</b> modeling at Itaú BBA and a <b>machine learning</b> application at Inmetro. That analytical foundation still shapes how I work: data-driven decisions, testable code and a focus on business outcomes.',
+        'At Rede, I joined as an intern and today I lead CRM optimization initiatives, set development best practices and help onboard new team members.'
       ],
-      highlights: [
-        { icon: 'fa-solid fa-graduation-cap', title: 'USP', text: 'Information Systems' },
-        { icon: 'fa-brands fa-salesforce', title: 'Salesforce', text: 'Apex · LWC · Flow' },
-        { icon: 'fa-brands fa-aws', title: 'Cloud', text: 'Microservices in Go & Python' },
-        { icon: 'fa-solid fa-chart-pie', title: 'Data', text: 'Credit risk & ML' }
+      facts: [
+        { icon: 'fa-solid fa-location-dot', label: 'Location', value: 'São Paulo, Brazil' },
+        { icon: 'fa-solid fa-graduation-cap', label: 'Education', value: 'Information Systems — USP' },
+        { icon: 'fa-solid fa-language', label: 'Languages', value: 'Portuguese (native) · English (fluent)' },
+        { icon: 'fa-solid fa-cake-candles', label: 'Age', value: `${AGE} years old` },
+        { icon: 'fa-solid fa-gamepad', label: 'Interests', value: 'Origami, games, physics, music and design' }
       ]
     },
     skills: {
       eyebrow: '// stack',
       title: 'Skills',
-      sub: 'Tools and technologies I use every day to build products end to end.',
+      sub: 'Technologies I use every day, from CRM to the cloud.',
       cats: ['Languages', 'Salesforce', 'Cloud & DevOps', 'Databases', 'Frameworks', 'Tools']
     },
     experience: {
       eyebrow: '// journey',
       title: 'Experience',
-      sub: 'From data analysis to software engineering — a timeline of my career.',
+      sub: 'From data analysis to software engineering.',
       toolsLabel: 'Technologies',
       knowledgeLabel: 'Knowledge',
-      readMore: 'Read more',
+      readMore: 'Show details',
       readLess: 'Show less',
-      moreBtn: 'Show more experience',
-      lessBtn: 'Show less',
-      current: 'present',
+      moreBtn: 'Earlier experience',
+      lessBtn: 'Hide earlier experience',
       items: {
         rede: {
-          meta: 'Financial services · São Paulo',
+          meta: 'Payments · Itaú Unibanco group',
           roles: [
             {
               title: 'Junior Software Engineer',
               date: 'Dec 2024 — present',
               current: true,
-              desc: [
-                'As a <b>Junior Software Engineer</b> at <b>Rede</b>, I focus on building complex solutions in <b>Salesforce</b> and <b>AWS</b>. My responsibilities include technical leadership on optimization initiatives, implementing development <b>best practices</b> and mentoring new team members.',
-                'I led the strategic refactoring of the customer onboarding journey, using <b>Apex</b>, <b>LWC</b> and <b>Flow</b> to rebuild screens and integrate APIs — significantly reducing formalization time and improving new-customer conversion.',
-                'I also built a tactical management dashboard in <b>LWC</b> that centralizes performance data (visits, appointments) in charts and tables, giving managers real-time visibility for goal tracking.'
+              bullets: [
+                'Led the <b>refactoring of the client onboarding journey</b>, rebuilding screens and API integrations with <b>Apex</b>, <b>LWC</b> and <b>Flow</b>, which reduced formalization time and improved new-client conversion.',
+                'Built a <b>tactical management dashboard in LWC</b> that centralizes performance data (visits and appointments) in charts and tables, giving managers real-time visibility into goals.',
+                'Develop <b>AWS microservices</b> in <b>Go</b> and <b>Python</b> for integrations and business process automation.',
+                'Lead code optimization initiatives, set development <b>best practices</b> and mentor new team members.'
               ]
             },
             {
-              title: 'Software Engineering Intern',
+              title: 'Salesforce Developer Intern',
               date: 'Jun 2023 — Dec 2024',
-              desc: [
-                'As a <b>Salesforce Developer Intern</b>, I built a robust technical foundation in the platform, mastering <b>Apex</b>, <b>Visualforce</b>, <b>SOQL</b>, <b>Aura</b> and <b>LWC</b>. I worked on the new onboarding flow for individual customers and implemented a log monitoring system, automating delivery to <b>AWS</b> and building dynamic dashboards.',
-                'I helped create <b>Go APIs</b> to integrate external services with Salesforce, gaining hands-on experience with agile methodologies, <b>CI/CD</b> and large-scale system integration.'
+              bullets: [
+                'Developed the new <b>onboarding flow for individual customers</b>.',
+                'Built a <b>log monitoring system</b> for the onboarding journey, automating data processing, delivery to <b>AWS</b> and performance dashboards.',
+                'Helped build <b>Go APIs</b> integrating external services with Salesforce, using <b>CI/CD</b> and agile methodologies.'
               ]
             }
           ]
         },
         itau: {
-          meta: 'Itaú BBA · São Paulo',
+          meta: 'Credit Risk · Itaú BBA',
           roles: [
             {
               title: 'Credit Risk Intern',
               date: 'Dec 2022 — May 2023',
-              desc: [
-                'In the <b>Credit Risk</b> area at <b>Itaú BBA</b>, I was responsible for modeling, monitoring and automating risk parameters. I used <b>Python</b> to build automations and to mitigate <b>LGD (Loss Given Default)</b> on secured operations.',
-                'I also monitored provisioning pipelines (<b>BRGAAP</b>, <b>IFRS9</b>, <b>FX</b>) and built reports, dashboards, views and statistical tests with <b>SQL</b>, <b>VBA</b> and <b>Excel</b> to support business decisions.'
+              bullets: [
+                'Modeled, monitored and automated <b>risk parameters</b> with <b>Python</b>, including <b>LGD (Loss Given Default)</b> mitigation for secured operations.',
+                'Monitored provisioning pipelines (<b>BRGAAP</b>, <b>IFRS 9</b>, FX).',
+                'Built reports, dashboards, views and statistical tests with <b>SQL</b>, <b>VBA</b> and <b>Excel</b> to support business decisions.'
               ]
             }
           ]
         },
         inmetro: {
-          meta: 'Research grant · Rio de Janeiro (remote)',
+          meta: 'Research grant',
           roles: [
             {
-              title: 'Application Developer',
+              title: 'Application Developer (R Shiny)',
               date: 'Apr 2022 — Apr 2023',
-              desc: [
-                'I designed and built a <b>full-stack</b> application to automate statistical and <b>machine learning</b> analyses. Using <b>RShiny</b>, <b>JavaScript</b> and <b>HTML/CSS</b>, I created an interactive platform where users import data, generate 2D/3D visualizations and customize reports.',
-                'The <b>back-end</b>, in <b>R</b> and <b>Python</b>, automated data transformation and hypothesis tests (<b>ANOVA</b>, <b>T-Test</b>, <b>MANOVA</b>). I also wrote <b>Web Scraping (Selenium)</b> scripts to collect social media data.'
+              bullets: [
+                'Designed and built a <b>full-stack web application</b> in <b>RShiny</b> to automate statistical and <b>machine learning</b> analyses: data import, 2D/3D charts and customizable reports.',
+                'Back-end in <b>R</b> and <b>Python</b> automating data transformation and hypothesis tests (<b>ANOVA</b>, <b>T-Test</b>, <b>MANOVA</b>).',
+                'Wrote <b>web scraping (Selenium)</b> scripts to collect social media data about Inmetro.'
               ]
             }
           ]
@@ -343,51 +373,67 @@ const LANGUAGES = {
             {
               title: 'Designer',
               date: 'Mar 2020 — Dec 2021',
-              desc: [
-                '<b>DASI (Information Systems Student Association)</b> was my first contact with real demands, projects and people. I created artwork, logos, banners and posters for events, learning a lot about <b>design and Human-Computer Interaction</b>.'
+              bullets: [
+                'Created visual identity, logos, banners and posters for <b>Information Systems Student Association</b> events.',
+                'First experience with real requests, deadlines and teamwork.'
               ]
             }
           ]
         },
         elite: {
-          meta: 'Campinas · SP',
+          meta: 'Campinas, Brazil',
           roles: [
             {
-              title: 'Scholar — Entrance Exam Question Reviewer',
+              title: 'Scholarship — Exam Reviewer',
               date: 'Feb 2019 — Feb 2020',
-              desc: [
-                'I reviewed questions, mock exams and tests across many subjects, working closely with teachers and tutors. I also helped design new tests, analyzing question quality and pedagogical effectiveness.'
+              bullets: [
+                'Reviewed university entrance exam questions, mock tests and exams across subjects, alongside teachers and tutors.',
+                'Helped write new tests, assessing question quality and clarity.'
               ]
             }
           ],
-          tools: ['Math', 'Physics', 'Chemistry', 'Biology', 'Portuguese', 'English', 'History', 'Geography']
+          tools: ['Math', 'Physics', 'Chemistry', 'Portuguese', 'English']
         }
+      }
+    },
+    projects: {
+      eyebrow: '// projects',
+      title: 'Projects',
+      sub: 'Personal and academic open-source projects on GitHub.',
+      code: 'Code',
+      all: 'See all on GitHub',
+      items: {
+        ShinyHealthCare: "Shiny app for statistical independence tests (Chi-Square and Fisher's Exact) on health data.",
+        InmetroAnalize: 'Social media web scraping for data analysis about Inmetro.',
+        generatorTools: 'Generator of valid Brazilian RG, CPF and CNPJ numbers for software testing.',
+        BashChat: 'Client-server chat between terminals, written entirely in Bash.',
+        EstruturasDeDados: 'My own implementations of classic data structures in Java.',
+        x86_prime_numbers: 'Prime number calculation in x86 Assembly, handling pointers and addresses directly.'
       }
     },
     education: {
       eyebrow: '// education',
       title: 'Education',
       degree: "Bachelor's in Information Systems",
-      school: 'University of São Paulo (USP) · Jan 2020 — Dec 2024',
+      school: 'University of São Paulo (USP) · 2020 — 2024',
       text: [
-        '<b>USP</b> gave me a solid computing education, with a strong base in <b>mathematics</b>, <b>statistics</b>, <b>algorithms</b> and <b>programming logic</b> — and taught me to be self-taught.',
-        'I worked with many languages and on projects combining theory and practice, and took courses in <b>administration</b>, <b>economics</b> and <b>marketing</b> that broadened my business perspective.'
+        'Solid foundation in <b>algorithms</b>, <b>data structures</b>, <b>statistics</b>, <b>databases</b> and <b>software architecture</b>, plus courses in <b>business administration</b>, <b>economics</b> and <b>marketing</b>.'
       ],
-      tools: ['C', 'C++', 'Java', 'Python', 'R', 'Julia', 'SQL', 'Oracle', 'OpenMP', 'Assembly x86', 'Bash', 'Lua', 'Data Structures', 'AI & Data Science', 'Networks', 'Parallel Programming', 'Cloud']
+      tools: ['C / C++', 'Java', 'Python', 'R', 'Julia', 'SQL', 'OpenMP', 'x86 Assembly', 'Bash', 'AI & Data Science', 'Networks', 'Parallel Programming', 'Cloud Computing', 'HCI']
     },
     contact: {
       eyebrow: '// contact',
-      title: "Let's build something together?",
-      text: "I'm open to new conversations, projects and opportunities. Send me a message — I reply fast!",
+      title: "Let's talk?",
+      text: 'Open to opportunities, projects and conversations about software engineering, Salesforce and cloud.',
       email: 'Send an email',
       cv: 'Download CV',
       location: 'Location',
-      locationValue: 'Vila Mariana, São Paulo — Brazil',
+      locationValue: 'São Paulo — Brazil',
       emailLabel: 'Email',
       beacons: 'All my links',
       share: 'Share'
     },
-    footer: 'Made with <i class="fa-solid fa-heart heart"></i> and lots of coffee.',
+    footer: 'Built with HTML, CSS and JavaScript.',
     toTop: 'Back to top',
     skip: 'Skip to content',
     copied: 'Email copied!'

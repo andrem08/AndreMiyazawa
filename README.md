@@ -19,7 +19,9 @@ Visual *dark tech* com gradientes neon, animações e versão dedicada para celu
 | 🌌 **Hero animado** | Blobs "aurora", grid em movimento, spotlight que segue o cursor, cargos digitados e avatar com anel em gradiente |
 | 📱 **Experiência mobile de app** | Barra de navegação inferior, carrossel de habilidades com swipe, safe areas (iPhone com notch), feedback de toque |
 | 💻 **Tablet otimizado** | Layouts próprios para retrato e paisagem |
-| 🧭 **Linha do tempo** | Experiências em timeline que "acende" conforme a rolagem, com "ler mais" e "mais experiências" |
+| 🧭 **Linha do tempo** | Experiências em timeline que "acende" conforme a rolagem, em bullets focados em resultados |
+| 🗂️ **Projetos** | Cards com os principais repositórios do GitHub, com link direto para o código |
+| 🪪 **Fatos rápidos** | Localização, formação, idiomas e interesses num card ao lado da bio |
 | 🌐 **PT / EN** | Detecção automática, troca instantânea, escolha salva e suporte a `?lang=en` |
 | 🖨️ **Vira currículo em PDF** | `Ctrl+P` / "Salvar como PDF" gera um currículo limpo, em fundo branco |
 | 📲 **Instalável** | Web App Manifest: dá para adicionar à tela inicial do celular |
@@ -29,7 +31,7 @@ Visual *dark tech* com gradientes neon, animações e versão dedicada para celu
 ## 🗂️ Estrutura
 
 ```
-├── index.html            # Página única: hero, sobre, habilidades, experiência, formação, contato
+├── index.html            # Página única: hero, sobre, habilidades, experiência, projetos, formação, contato
 ├── experience.html       # Redireciona links antigos para index.html#experience
 ├── 404.html              # Página de erro personalizada (GitHub Pages)
 ├── manifest.webmanifest  # PWA / instalação no celular
@@ -48,7 +50,8 @@ Visual *dark tech* com gradientes neon, animações e versão dedicada para celu
 
 Todo o texto fica em **[`js/i18n.js`](js/i18n.js)**. Não é preciso mexer no HTML.
 
-- **Nova experiência:** adicione a chave em `EXPERIENCE_META` (logo, empresa, tecnologias) e o texto em `LANGUAGES.pt.experience.items` e `LANGUAGES.en.experience.items`. Depois inclua a chave em `MAIN_EXPERIENCES` ou `MORE_EXPERIENCES`, no topo de [`js/app.js`](js/app.js).
+- **Nova experiência:** adicione a chave em `EXPERIENCE_META` (logo, empresa, tecnologias) e os bullets em `LANGUAGES.pt.experience.items` e `LANGUAGES.en.experience.items`. Depois inclua a chave em `MAIN_EXPERIENCES` ou `MORE_EXPERIENCES`, no topo de [`js/app.js`](js/app.js).
+- **Projetos:** adicione o repositório em `PROJECTS` (nome, ícone e tags) e a descrição em `projects.items`, nos dois idiomas.
 - **Habilidades:** `SKILL_ITEMS` (itens), `SKILL_ICONS` (ícones [Font Awesome](https://fontawesome.com/icons)) e `skills.cats` (nomes das categorias, por idioma).
 - **Currículo (PDF):** `CV_LINKS`.
 - **Idade e anos de experiência:** calculados automaticamente a partir de `BIRTH_DATE` e `CAREER_START`.
@@ -84,7 +87,7 @@ O checklist de melhorias e validação está em [`docs/CHECKLIST.md`](docs/CHECK
 
 ## 📞 Contato
 
-- ✉️ andre08.m@usp.br
+- ✉️ andre08.m@gmail.com
 - 💼 [LinkedIn](https://www.linkedin.com/in/andre-miyazawa-2446a21b7/)
 - 🐙 [GitHub](https://github.com/andrem08) · 🦊 [GitLab](https://gitlab.com/andrem08)
 - ✈️ [Telegram](https://t.me/andrmiyazawa)
