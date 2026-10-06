@@ -2,7 +2,7 @@
 
 Cada item foi implementado e validado com testes automatizados em navegador real (Microsoft Edge headless) e revisão visual por screenshots em celular, tablet e desktop.
 
-**Resultado final: 53/53 testes passando.**
+**Resultado final: 65/65 testes passando.**
 
 ## Design
 
@@ -67,6 +67,14 @@ Esses itens costumam fazer diferença, mas precisam de dados que não estão no 
 - [ ] **Certificações** (ex.: Salesforce Platform Developer I, AWS Cloud Practitioner), se houver.
 - [ ] **Recomendações** do LinkedIn (1–2 frases de colegas ou gestores).
 - [ ] **Projetos profissionais/demos**: prints ou links ao vivo, quando puderem ser públicos.
+
+## Rodada 3: LinkedIn, certificações e página extra
+
+- [x] **34. CV hospedado no site** (`assets/cv/`), sem depender do Google Drive. *Validado: PDFs servidos com HTTP 200; link muda com o idioma.*
+- [x] **35. Um único botão "Baixar CV"**, no final (Contato). *Validado.*
+- [x] **36. Faixa compacta de certificações e reconhecimentos** na seção Formação (AWS, Salesforce JS Developer, Salesforce AI Associate, Claude Code in Action, mérito Itaú, Time de Fenômenos). *Validado: 6 itens.*
+- [x] **37. Selo `#ituber`** na experiência da Rede.
+- [x] **38. Página não listada "Além do currículo"**, com jornada em capítulos, como trabalho, recomendações, certificações e curiosidades, em PT/EN. Não tem links no site, fica fora do sitemap e tem `noindex`. *Validado em 7 dispositivos, sem erros nem overflow, nos dois idiomas.*
 
 ## Matriz de testes
 

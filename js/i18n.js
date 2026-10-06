@@ -16,9 +16,10 @@ function yearsSince(dateStr) {
 const AGE = yearsSince(BIRTH_DATE);
 const YEARS_EXP = yearsSince(CAREER_START);
 
+// PDFs hospedados no próprio site: para atualizar, substitua os arquivos em assets/cv/
 const CV_LINKS = {
-  pt: 'https://drive.google.com/file/d/1Ude0Vm_1FZltb0pz0Drosp5sxIMLiiWy/view?usp=drive_link',
-  en: 'https://drive.google.com/file/d/1zvGWS2D4R06-BvagxDCS6yuw3JzI0Xu8/view?usp=drive_link'
+  pt: 'assets/cv/andre-miyazawa-cv-pt.pdf',
+  en: 'assets/cv/andre-miyazawa-cv-en.pdf'
 };
 
 // Itens do carrossel de tecnologias (independe de idioma)
@@ -60,11 +61,20 @@ const PROJECTS = [
   { repo: 'x86_prime_numbers', icon: 'fa-solid fa-microchip', tags: ['Assembly x86'] }
 ];
 
+// Certificações e reconhecimentos (faixa compacta na seção Formação)
+const CREDENTIALS = [
+  { icon: 'fa-brands fa-aws', name: 'AWS Certified Cloud Practitioner', year: '2026' },
+  { icon: 'fa-brands fa-salesforce', name: 'Salesforce Certified JavaScript Developer', year: '2026' },
+  { icon: 'fa-brands fa-salesforce', name: 'Salesforce Certified AI Associate', year: '2024' },
+  { icon: 'fa-solid fa-robot', name: 'Claude Code in Action · Anthropic', year: '2026' }
+];
+
 // Dados de experiência compartilhados entre idiomas
 const EXPERIENCE_META = {
   rede: {
     logo: 'www/redecard-logo.jpeg',
     company: 'Rede',
+    badge: '#ituber',
     tools: ['Apex', 'LWC', 'Flow', 'SOQL', 'Aura', 'REST / SOAP', 'SFDX', 'Go', 'Python', 'AWS Lambda', 'S3', 'EC2', 'RDS', 'DynamoDB', 'CloudWatch', 'Docker', 'Kubernetes', 'Terraform', 'Datadog', 'Grafana']
   },
   itau: {
@@ -97,8 +107,7 @@ const LANGUAGES = {
       greeting: 'Olá, eu sou',
       roles: ['Engenheiro de Software', 'Desenvolvedor Salesforce', 'Back-end em Go e Python', 'Analista de Dados'],
       desc: 'Desenvolvo soluções <b>Salesforce</b> full-stack e microserviços em <b>AWS</b> com <b>Go</b> e <b>Python</b>, com base em análise de dados e formação em Sistemas de Informação pela <b>USP</b>.',
-      ctaPrimary: 'Ver experiência',
-      ctaSecondary: 'Baixar CV'
+      ctaPrimary: 'Ver experiência'
     },
     stats: [
       { value: YEARS_EXP, suffix: '+', label: 'anos de experiência' },
@@ -244,7 +253,13 @@ const LANGUAGES = {
       text: [
         'Formação com base sólida em <b>algoritmos</b>, <b>estruturas de dados</b>, <b>estatística</b>, <b>banco de dados</b> e <b>arquitetura de software</b>, além de disciplinas de <b>administração</b>, <b>economia</b> e <b>marketing</b>.'
       ],
-      tools: ['C / C++', 'Java', 'Python', 'R', 'Julia', 'SQL', 'OpenMP', 'Assembly x86', 'Bash', 'IA & Ciência de Dados', 'Redes', 'Programação Paralela', 'Computação em Nuvem', 'IHC']
+      tools: ['C / C++', 'Java', 'Python', 'R', 'Julia', 'SQL', 'OpenMP', 'Assembly x86', 'Bash', 'IA & Ciência de Dados', 'Redes', 'Programação Paralela', 'Computação em Nuvem', 'IHC'],
+      credsTitle: 'Certificações',
+      awardsTitle: 'Reconhecimentos',
+      awards: [
+        { icon: 'fa-solid fa-medal', name: 'Reconhecimento por mérito · Itaú Unibanco', year: '2026' },
+        { icon: 'fa-solid fa-trophy', name: 'Prêmio "Time de Fenômenos" (equipe) · Rede', year: '2024' }
+      ]
     },
     contact: {
       eyebrow: '// contato',
@@ -272,8 +287,7 @@ const LANGUAGES = {
       greeting: "Hi, I'm",
       roles: ['Software Engineer', 'Salesforce Developer', 'Go & Python Back-end', 'Data Analyst'],
       desc: 'I build full-stack <b>Salesforce</b> solutions and <b>AWS</b> microservices with <b>Go</b> and <b>Python</b>, backed by a data analysis background and an Information Systems degree from <b>USP</b>.',
-      ctaPrimary: 'View experience',
-      ctaSecondary: 'Download CV'
+      ctaPrimary: 'View experience'
     },
     stats: [
       { value: YEARS_EXP, suffix: '+', label: 'years of experience' },
@@ -419,7 +433,13 @@ const LANGUAGES = {
       text: [
         'Solid foundation in <b>algorithms</b>, <b>data structures</b>, <b>statistics</b>, <b>databases</b> and <b>software architecture</b>, plus courses in <b>business administration</b>, <b>economics</b> and <b>marketing</b>.'
       ],
-      tools: ['C / C++', 'Java', 'Python', 'R', 'Julia', 'SQL', 'OpenMP', 'x86 Assembly', 'Bash', 'AI & Data Science', 'Networks', 'Parallel Programming', 'Cloud Computing', 'HCI']
+      tools: ['C / C++', 'Java', 'Python', 'R', 'Julia', 'SQL', 'OpenMP', 'x86 Assembly', 'Bash', 'AI & Data Science', 'Networks', 'Parallel Programming', 'Cloud Computing', 'HCI'],
+      credsTitle: 'Certifications',
+      awardsTitle: 'Recognition',
+      awards: [
+        { icon: 'fa-solid fa-medal', name: 'Merit recognition · Itaú Unibanco', year: '2026' },
+        { icon: 'fa-solid fa-trophy', name: '"Team of Phenomena" award (team) · Rede', year: '2024' }
+      ]
     },
     contact: {
       eyebrow: '// contact',

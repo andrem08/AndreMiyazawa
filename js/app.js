@@ -111,7 +111,7 @@
           <div class="timeline-top">
             <img class="company-logo" src="${meta.logo}" alt="Logo ${meta.company}" width="58" height="58" loading="lazy" />
             <div>
-              <h3 class="company-name">${meta.company}</h3>
+              <h3 class="company-name">${meta.company}${meta.badge ? ` <span class="company-badge">${meta.badge}</span>` : ''}</h3>
               <p class="company-meta">${item.meta}</p>
             </div>
           </div>
@@ -150,6 +150,9 @@
     const ed = t().education;
     $('#edu-text').innerHTML = ed.text.map(p => `<p>${p}</p>`).join('');
     $('#edu-tools').innerHTML = ed.tools.map(s => `<span class="chip">${s}</span>`).join('');
+    const credItem = c => `<li><i class="${c.icon}"></i><span>${c.name}</span><span class="cred-year">${c.year}</span></li>`;
+    $('#creds').innerHTML = CREDENTIALS.map(credItem).join('');
+    $('#awards').innerHTML = ed.awards.map(credItem).join('');
   }
 
   function renderAll() {

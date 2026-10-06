@@ -1,0 +1,365 @@
+/* story.css - Estilos próprios da página "Além do currículo" (usa os tokens de style.css) */
+
+.story-page .nav-inner {
+  gap: 12px;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+  background: rgba(22, 27, 34, 0.6);
+  transition: all 0.25s ease;
+}
+
+.back-link:hover {
+  color: #fff;
+  border-color: var(--blue);
+}
+
+/* ---------- Hero ---------- */
+.story-hero {
+  position: relative;
+  padding: calc(var(--nav-h) + 72px) 0 120px;
+  overflow: hidden;
+  isolation: isolate;
+  text-align: center;
+}
+
+.story-hero-inner {
+  max-width: 820px;
+}
+
+.story-avatar {
+  position: relative;
+  width: 132px;
+  aspect-ratio: 1;
+  margin: 0 auto 28px;
+}
+
+.story-avatar .avatar {
+  border-width: 4px;
+}
+
+.story-title {
+  margin: 10px 0 0;
+  font-size: clamp(2.4rem, 6.4vw, 4.4rem);
+  font-weight: 800;
+  line-height: 1.06;
+  letter-spacing: -0.035em;
+  color: var(--heading);
+}
+
+.story-lead {
+  max-width: 680px;
+  margin: 26px auto 0;
+  font-size: 1.15rem;
+  color: var(--text-muted);
+}
+
+.story-lead b {
+  color: var(--heading);
+}
+
+.read-time {
+  margin: 22px 0 0;
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+.story-stats {
+  margin-top: -64px;
+}
+
+/* ---------- Capítulos ---------- */
+.chapters .timeline-item {
+  margin-bottom: 28px;
+}
+
+.chapter {
+  padding: 28px 30px;
+}
+
+.chapter-head {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.chapter-head .date-pill {
+  margin-bottom: 6px;
+}
+
+.chapter h3 {
+  margin: 0;
+  font-size: 1.3rem;
+  letter-spacing: -0.01em;
+  color: var(--heading);
+}
+
+.chapter p {
+  margin: 0 0 12px;
+  font-size: 1.02rem;
+}
+
+.chapter p:last-child {
+  margin-bottom: 0;
+}
+
+.chapter b,
+.quote b,
+.fun-card b {
+  color: var(--heading);
+  font-weight: 600;
+}
+
+/* ---------- Como eu trabalho ---------- */
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.work-card {
+  padding: 24px;
+}
+
+.work-card h3 {
+  margin: 16px 0 8px;
+  font-size: 1.05rem;
+  color: var(--heading);
+}
+
+.work-card p {
+  margin: 0;
+  font-size: 0.93rem;
+  color: var(--text-muted);
+}
+
+/* ---------- Recomendações ---------- */
+.quotes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+.quote {
+  margin: 0;
+  padding: 34px 32px 28px;
+  display: flex;
+  flex-direction: column;
+}
+
+.quote-mark {
+  font-size: 2rem;
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.quote blockquote {
+  flex: 1;
+  margin: 14px 0 24px;
+  font-size: 1.04rem;
+  font-style: italic;
+  line-height: 1.7;
+}
+
+.quote figcaption {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+}
+
+.quote-avatar {
+  flex-shrink: 0;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+  color: #fff;
+  background: var(--gradient);
+}
+
+.quote figcaption strong {
+  display: block;
+  color: var(--heading);
+}
+
+.quote figcaption small {
+  display: block;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+.quote-source {
+  margin-top: 2px;
+  color: var(--blue) !important;
+}
+
+/* ---------- Certificações ---------- */
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+.cert {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 20px 22px;
+}
+
+.cert h3 {
+  margin: 0;
+  font-size: 1rem;
+  color: var(--heading);
+}
+
+.cert p {
+  margin: 2px 0 6px;
+  font-size: 0.88rem;
+  color: var(--text-muted);
+}
+
+.cert code {
+  display: inline-block;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  background: var(--bg-3);
+  border: 1px solid var(--border);
+}
+
+/* ---------- Curiosidades ---------- */
+.fun-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.fun-card {
+  padding: 24px;
+  text-align: center;
+}
+
+.fun-icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 14px;
+  border-radius: 18px;
+  display: grid;
+  place-items: center;
+  font-size: 1.5rem;
+  color: #fff;
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.25), rgba(138, 43, 226, 0.25));
+  border: 1px solid rgba(138, 43, 226, 0.35);
+  transition: transform 0.5s var(--ease);
+}
+
+.fun-card:hover .fun-icon {
+  transform: rotate(-10deg) scale(1.1);
+}
+
+.fun-card h3 {
+  margin: 0 0 8px;
+  font-size: 1.02rem;
+  color: var(--heading);
+}
+
+.fun-card p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+/* ---------- Responsivo ---------- */
+@media (max-width: 1000px) {
+  .work-grid,
+  .fun-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 760px) {
+  /* Esta página não tem barra inferior */
+  .story-page {
+    padding-bottom: 0;
+  }
+  .back-link span,
+  .story-page .brand-name {
+    display: none;
+  }
+  .back-link {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    justify-content: center;
+  }
+  .story-hero {
+    padding: calc(var(--nav-h) + 40px) 0 96px;
+  }
+  .story-avatar {
+    width: 108px;
+  }
+  .story-lead {
+    font-size: 1.04rem;
+  }
+  .quotes,
+  .cert-grid {
+    grid-template-columns: 1fr;
+  }
+  .chapter,
+  .quote {
+    padding: 22px 20px;
+  }
+  .chapter-head {
+    align-items: flex-start;
+  }
+  .chapter h3 {
+    font-size: 1.12rem;
+  }
+}
+
+@media (max-width: 440px) {
+  .work-grid,
+  .fun-grid {
+    grid-template-columns: 1fr;
+  }
+  .fun-card {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 4px 14px;
+    text-align: left;
+    align-items: start;
+  }
+  .fun-icon {
+    grid-row: span 2;
+    width: 48px;
+    height: 48px;
+    margin: 0;
+    font-size: 1.2rem;
+  }
+}
