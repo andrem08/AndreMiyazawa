@@ -90,7 +90,7 @@ const EXPERIENCE_META = {
   dasi: {
     logo: 'www/dasi-usp.jpeg',
     company: 'DASI USP',
-    tools: ['Photoshop', 'Canva']
+    tools: ['Photoshop', 'Canva', 'HTML', 'CSS', 'JavaScript', 'React']
   },
   elite: {
     logo: 'www/elite-logo.jpg',
@@ -121,7 +121,7 @@ const LANGUAGES = {
       text: [
         `Sou <b>Engenheiro de Software</b> na <b>Rede</b> (Itaú Unibanco), onde desenvolvo soluções <b>Salesforce</b> full-stack e microserviços em <b>AWS</b> com <b>Go</b> e <b>Python</b>.`,
         'Comecei pela área de dados: modelagem de <b>risco de crédito</b> no Itaú BBA e uma aplicação de <b>machine learning</b> no Inmetro. Essa base analítica ainda orienta a forma como trabalho: decisões guiadas por dados, código testável e foco no resultado para o negócio.',
-        'Na Rede, entrei como estagiário e hoje lidero iniciativas de otimização do CRM, defino boas práticas de desenvolvimento e ajudo a integrar novos membros do time.'
+        'Na Rede, entrei como estagiário desenvolvedor Salesforce e fui efetivado como engenheiro, atuando hoje do CRM à nuvem.'
       ],
       facts: [
         { icon: 'fa-solid fa-location-dot', label: 'Localização', value: 'São Paulo, SP' },
@@ -156,7 +156,7 @@ const LANGUAGES = {
               date: 'Dez 2024 — atual',
               current: true,
               bullets: [
-                'Liderei a <b>refatoração da jornada de credenciamento de clientes</b>, reconstruindo telas e integrações de API com <b>Apex</b>, <b>LWC</b> e <b>Flow</b>, o que reduziu o tempo de formalização e melhorou a conversão de novos clientes.',
+                'Liderei a refatoração da <b>jornada de credenciamento de Máquinas Rede no Cockpit Rede</b>, reconstruindo telas e integrações de API com <b>Apex</b>, <b>LWC</b> e <b>Flow</b>, o que reduziu o tempo de formalização e melhorou a conversão de novos clientes.',
                 'Desenvolvi um <b>painel de gestão tática em LWC</b> que centraliza dados de performance (visitas e agendamentos) em gráficos e tabelas, dando aos gestores visibilidade em tempo real das metas.',
                 'Desenvolvo <b>microserviços em AWS</b> com <b>Go</b> e <b>Python</b> para integrações e automação de processos de negócio.'
               ]
@@ -179,6 +179,7 @@ const LANGUAGES = {
               title: 'Estagiário em Risco de Crédito',
               date: 'Dez 2022 — Mai 2023',
               bullets: [
+                'Trabalhei com <b>modelos estatísticos de previsão</b> aplicados ao mercado de crédito, usados para estimar perdas e comportamento da carteira e apoiar a calibração dos parâmetros de risco.',
                 'Modelei, monitorei e automatizei <b>parâmetros de risco</b> com <b>Python</b>, incluindo a mitigação de <b>LGD (Loss Given Default)</b> em operações garantidas.',
                 'Monitorei esteiras de provisão (<b>BRGAAP</b>, <b>IFRS 9</b>, câmbio).',
                 'Construí relatórios, dashboards, views e testes estatísticos com <b>SQL</b>, <b>VBA</b> e <b>Excel</b> para apoiar decisões da área.'
@@ -208,6 +209,8 @@ const LANGUAGES = {
               date: 'Mar 2020 — Dez 2021',
               bullets: [
                 'Criei identidade visual, logos, banners e cartazes para os eventos do <b>Diretório Acadêmico de Sistemas de Informação</b>.',
+                'Fiz o <b>design do site da SSI</b> (Semana de Sistemas de Informação), com <b>HTML</b>, <b>CSS</b>, <b>JavaScript</b> e <b>React</b>.',
+                'Produzi <b>vídeos</b> e peças de <b>publicidade</b>, e conduzi <b>pesquisas de design</b> para orientar a comunicação da entidade.',
                 'Primeiro contato com demandas reais, prazos e trabalho em equipe.'
               ]
             }
@@ -301,7 +304,7 @@ const LANGUAGES = {
       text: [
         `I'm a <b>Software Engineer</b> at <b>Rede</b> (Itaú Unibanco), building full-stack <b>Salesforce</b> solutions and <b>AWS</b> microservices with <b>Go</b> and <b>Python</b>.`,
         'I started in data: <b>credit risk</b> modeling at Itaú BBA and a <b>machine learning</b> application at Inmetro. That analytical foundation still shapes how I work: data-driven decisions, testable code and a focus on business outcomes.',
-        'At Rede, I joined as an intern and today I lead CRM optimization initiatives, set development best practices and help onboard new team members.'
+        'At Rede, I joined as a Salesforce developer intern and was hired full-time as an engineer, working today from CRM to the cloud.'
       ],
       facts: [
         { icon: 'fa-solid fa-location-dot', label: 'Location', value: 'São Paulo, Brazil' },
@@ -336,10 +339,9 @@ const LANGUAGES = {
               date: 'Dec 2024 — present',
               current: true,
               bullets: [
-                'Led the <b>refactoring of the client onboarding journey</b>, rebuilding screens and API integrations with <b>Apex</b>, <b>LWC</b> and <b>Flow</b>, which reduced formalization time and improved new-client conversion.',
+                'Led the refactoring of the <b>Rede card machine onboarding journey in Cockpit Rede</b>, rebuilding screens and API integrations with <b>Apex</b>, <b>LWC</b> and <b>Flow</b>, which reduced formalization time and improved new-client conversion.',
                 'Built a <b>tactical management dashboard in LWC</b> that centralizes performance data (visits and appointments) in charts and tables, giving managers real-time visibility into goals.',
-                'Develop <b>AWS microservices</b> in <b>Go</b> and <b>Python</b> for integrations and business process automation.',
-                'Lead code optimization initiatives, set development <b>best practices</b> and mentor new team members.'
+                'Develop <b>AWS microservices</b> in <b>Go</b> and <b>Python</b> for integrations and business process automation.'
               ]
             },
             {
@@ -360,6 +362,7 @@ const LANGUAGES = {
               title: 'Credit Risk Intern',
               date: 'Dec 2022 — May 2023',
               bullets: [
+                'Worked with <b>statistical forecasting models</b> applied to the credit market, used to estimate losses and portfolio behavior and to support the calibration of risk parameters.',
                 'Modeled, monitored and automated <b>risk parameters</b> with <b>Python</b>, including <b>LGD (Loss Given Default)</b> mitigation for secured operations.',
                 'Monitored provisioning pipelines (<b>BRGAAP</b>, <b>IFRS 9</b>, FX).',
                 'Built reports, dashboards, views and statistical tests with <b>SQL</b>, <b>VBA</b> and <b>Excel</b> to support business decisions.'
@@ -389,6 +392,8 @@ const LANGUAGES = {
               date: 'Mar 2020 — Dec 2021',
               bullets: [
                 'Created visual identity, logos, banners and posters for <b>Information Systems Student Association</b> events.',
+                'Designed the website for <b>SSI</b> (Information Systems Week), with <b>HTML</b>, <b>CSS</b>, <b>JavaScript</b> and <b>React</b>.',
+                'Produced <b>videos</b> and <b>advertising</b> pieces, and ran <b>design research</b> to guide the association’s communication.',
                 'First experience with real requests, deadlines and teamwork.'
               ]
             }
