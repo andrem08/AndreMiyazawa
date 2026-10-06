@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <!-- Página oculta: sem links no site, fora do sitemap e não indexada -->
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Além do currículo — André Miyazawa</title>
+    <meta name="theme-color" content="#0d1117" />
+    <meta name="color-scheme" content="dark" />
+    <link rel="icon" href="../assets/LogoCoffeeWhite.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/story.css" />
+    <script src="../js/story-content.js" defer></script>
+    <script src="../js/story.js" defer></script>
+</head>
+<body class="story-page">
+    <div class="scroll-progress" aria-hidden="true"></div>
+
+    <header class="nav" id="nav">
+        <div class="container nav-inner">
+            <a class="brand" href="../" aria-label="André Miyazawa">
+                <span class="brand-mark" aria-hidden="true">AM</span>
+                <span class="brand-name">André Miyazawa</span>
+            </a>
+            <div class="nav-actions">
+                <a class="back-link" href="../"><i class="fa-solid fa-arrow-left"></i><span data-s="back">Voltar ao portfólio</span></a>
+                <div class="lang-toggle" role="group" aria-label="Idioma / Language">
+                    <button type="button" data-lang="pt" aria-pressed="true"><img src="../assets/br-flag.png" alt="" width="16" height="11" />PT</button>
+                    <button type="button" data-lang="en" aria-pressed="false"><img src="../assets/us-flag.png" alt="" width="16" height="11" />EN</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <section class="story-hero">
+            <div class="hero-bg" aria-hidden="true">
+                <div class="hero-grid"></div>
+                <div class="blob blob-1"></div>
+                <div class="blob blob-2"></div>
+            </div>
+            <div class="container story-hero-inner">
+                <div class="story-avatar reveal">
+                    <div class="avatar-ring" aria-hidden="true"></div>
+                    <div class="avatar"><img src="../assets/Eu.png" alt="André Miyazawa" width="768" height="797" /></div>
+                </div>
+                <span class="eyebrow reveal" data-s="hero.eyebrow">// além do currículo</span>
+                <h1 class="story-title reveal" data-s-html="hero.title"></h1>
+                <p class="story-lead reveal" data-s-html="hero.lead"></p>
+                <p class="read-time reveal"><i class="fa-regular fa-clock"></i> <span id="read-time"></span></p>
+            </div>
+        </section>
+
+        <!-- Números -->
+        <section class="container">
+            <div class="stats story-stats" id="story-numbers"></div>
+        </section>
+
+        <!-- Jornada -->
+        <section class="section" aria-labelledby="chapters-title">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="eyebrow" data-s="chaptersHead.eyebrow"></span><br />
+                    <h2 class="section-title" id="chapters-title" data-s="chaptersHead.title"></h2>
+                </div>
+                <div class="timeline chapters" id="timeline">
+                    <div class="timeline-line" aria-hidden="true"></div>
+                    <div id="chapters"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Como eu trabalho -->
+        <section class="section section-alt" aria-labelledby="work-title">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="eyebrow" data-s="workHead.eyebrow"></span><br />
+                    <h2 class="section-title" id="work-title" data-s="workHead.title"></h2>
+                </div>
+                <div class="work-grid" id="work"></div>
+            </div>
+        </section>
+
+        <!-- Recomendações -->
+        <section class="section" aria-labelledby="quotes-title">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="eyebrow" data-s="quotesHead.eyebrow"></span><br />
+                    <h2 class="section-title" id="quotes-title" data-s="quotesHead.title"></h2>
+                </div>
+                <div class="quotes" id="quotes"></div>
+            </div>
+        </section>
+
+        <!-- Certificações -->
+        <section class="section section-alt" aria-labelledby="certs-title">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="eyebrow" data-s="certsHead.eyebrow"></span><br />
+                    <h2 class="section-title" id="certs-title" data-s="certsHead.title"></h2>
+                </div>
+                <div class="cert-grid" id="certs"></div>
+            </div>
+        </section>
+
+        <!-- Curiosidades -->
+        <section class="section" aria-labelledby="fun-title">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="eyebrow" data-s="funHead.eyebrow"></span><br />
+                    <h2 class="section-title" id="fun-title" data-s="funHead.title"></h2>
+                </div>
+                <div class="fun-grid" id="fun"></div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="section" style="padding-top:0">
+            <div class="container">
+                <div class="contact-card reveal">
+                    <h2 data-s="cta.title"></h2>
+                    <p data-s="cta.text"></p>
+                    <div class="contact-actions">
+                        <a class="btn btn-primary" href="mailto:andre08.m@gmail.com"><i class="fa-solid fa-paper-plane"></i><span data-s="cta.email"></span></a>
+                        <a class="btn btn-ghost" href="../"><i class="fa-solid fa-arrow-left"></i><span data-s="cta.back"></span></a>
+                    </div>
+                    <div class="contact-social">
+                        <a class="icon-link" href="https://www.linkedin.com/in/andre-miyazawa-2446a21b7/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a class="icon-link" href="https://github.com/andrem08" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a class="icon-link" href="https://gitlab.com/andrem08" target="_blank" rel="noopener" aria-label="GitLab"><i class="fa-brands fa-gitlab"></i></a>
+                        <a class="icon-link" href="https://t.me/andrmiyazawa" target="_blank" rel="noopener" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <span>&copy; <span id="year"></span> André Miyazawa</span>
+            <span data-s="footer"></span>
+        </div>
+    </footer>
+</body>
+</html>

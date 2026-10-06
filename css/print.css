@@ -308,7 +308,6 @@ strong,
 }
 
 .facts-list .highlight-icon,
-.facts-actions,
 .project-link {
   display: none !important;
 }
@@ -338,4 +337,18 @@ strong,
 
 .bullets li::before {
   background: #3b82f6;
+}
+
+.creds {
+  grid-template-columns: 1fr 1fr;
+  gap: 8pt;
+  margin-top: 8pt;
+}
+
+.creds-list li {
+  background: none !important;
+  border: 1px solid #d0d7de !important;
+  color: #0d1117 !important;
+  padding: 3pt 6pt;
+  font-size: 8.5pt;
 }

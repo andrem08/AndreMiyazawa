@@ -42,7 +42,7 @@ Visual *dark tech* com gradientes neon, animações e versão dedicada para celu
 ├── js/
 │   ├── i18n.js           # TODO o conteúdo (PT/EN): textos, experiências, habilidades, links do CV
 │   └── app.js            # Renderização, troca de idioma, animações e interações
-├── assets/               # Fotos, favicon, bandeiras, QR code
+├── assets/               # Foto, favicon, bandeiras, QR code e PDFs do currículo (assets/cv/)
 └── www/                  # Logos das empresas
 ```
 
@@ -53,7 +53,8 @@ Todo o texto fica em **[`js/i18n.js`](js/i18n.js)**. Não é preciso mexer no HT
 - **Nova experiência:** adicione a chave em `EXPERIENCE_META` (logo, empresa, tecnologias) e os bullets em `LANGUAGES.pt.experience.items` e `LANGUAGES.en.experience.items`. Depois inclua a chave em `MAIN_EXPERIENCES` ou `MORE_EXPERIENCES`, no topo de [`js/app.js`](js/app.js).
 - **Projetos:** adicione o repositório em `PROJECTS` (nome, ícone e tags) e a descrição em `projects.items`, nos dois idiomas.
 - **Habilidades:** `SKILL_ITEMS` (itens), `SKILL_ICONS` (ícones [Font Awesome](https://fontawesome.com/icons)) e `skills.cats` (nomes das categorias, por idioma).
-- **Currículo (PDF):** `CV_LINKS`.
+- **Currículo (PDF):** substitua os arquivos em `assets/cv/` (`andre-miyazawa-cv-pt.pdf` e `andre-miyazawa-cv-en.pdf`), mantendo os mesmos nomes.
+- **Certificações e reconhecimentos:** `CREDENTIALS` e `education.awards`.
 - **Idade e anos de experiência:** calculados automaticamente a partir de `BIRTH_DATE` e `CAREER_START`.
 - **Cores:** variáveis em `:root`, no topo de [`css/style.css`](css/style.css).
 
