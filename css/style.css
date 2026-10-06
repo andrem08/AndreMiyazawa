@@ -480,12 +480,6 @@ button {
   font-weight: 600;
   color: var(--heading);
 }
-
-.hero-role .prefix {
-  color: var(--text-muted);
-  font-weight: 400;
-}
-
 .typed {
   background: var(--gradient);
   -webkit-background-clip: text;
@@ -880,58 +874,143 @@ button {
 /* ---------- About ---------- */
 .about-grid {
   display: grid;
-  grid-template-columns: 0.85fr 1.15fr;
-  gap: 56px;
+  grid-template-columns: 1.35fr 0.9fr;
+  gap: 48px;
   align-items: start;
+  max-width: 1040px;
+  margin: 0 auto;
 }
 
-.about-photo {
-  position: relative;
-  border-radius: 24px;
-  padding: 3px;
-  background: var(--gradient-wide);
-  box-shadow: 0 20px 50px rgba(59, 130, 246, 0.2);
-  transform: rotate(-2deg);
-  transition: transform 0.6s var(--ease);
+.facts {
+  padding: 26px;
 }
 
-.about-photo:hover {
-  transform: rotate(0deg) scale(1.02);
+.facts-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 18px;
 }
 
-.about-photo img {
-  border-radius: 21px;
+.facts-list li {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.facts-list small {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.facts-list strong {
+  color: var(--heading);
+  font-weight: 600;
+  font-size: 0.96rem;
+}
+
+.facts-actions {
+  margin-top: 24px;
+  padding-top: 22px;
+  border-top: 1px solid var(--border);
+}
+
+.facts-actions .btn {
   width: 100%;
-  aspect-ratio: 4 / 5;
-  object-fit: cover;
-  background: var(--bg-2);
 }
 
-.about-photo .code-tag {
+/* ---------- Bullets da experiência ---------- */
+.bullets {
+  margin: 0 0 12px;
+  padding: 0;
+  list-style: none;
+}
+
+.bullets li {
+  position: relative;
+  padding-left: 22px;
+  margin-bottom: 10px;
+  font-size: 0.97rem;
+}
+
+.bullets li::before {
+  content: "";
   position: absolute;
-  right: -18px;
-  bottom: 28px;
-  padding: 12px 16px;
-  border-radius: 12px;
-  background: var(--bg-2);
-  border: 1px solid var(--border);
-  font-family: "JetBrains Mono", ui-monospace, monospace;
-  font-size: 0.82rem;
-  line-height: 1.5;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
+  left: 4px;
+  top: 0.62em;
+  width: 7px;
+  height: 7px;
+  border-radius: 2px;
+  transform: rotate(45deg);
+  background: var(--gradient);
+  box-shadow: 0 0 8px rgba(59, 130, 246, 0.6);
 }
 
-.tok-k {
-  color: #ff7b72;
+.bullets b {
+  color: var(--heading);
+  font-weight: 600;
 }
-.tok-v {
-  color: #79c0ff;
+
+/* ---------- Projects ---------- */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
 }
-.tok-s {
-  color: #a5d6ff;
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  padding: 26px;
 }
-.tok-p {
-  color: #d2a8ff;
+
+.project-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 18px;
+}
+
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  transition: color 0.2s ease;
+}
+
+.project-link .fa-arrow-up-right-from-square {
+  font-size: 0.7rem;
+}
+
+.project-card:hover .project-link {
+  color: var(--blue);
+}
+
+.project-card h3 {
+  margin: 0 0 8px;
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 1.02rem;
+  color: var(--heading);
+  overflow-wrap: anywhere;
+}
+
+.project-card p {
+  flex: 1;
+  margin: 0 0 18px;
+  font-size: 0.93rem;
+  color: var(--text-muted);
+}
+
+.project-card:hover .skill-icon {
+  transform: rotate(-10deg) scale(1.1);
 }
 
 .about-text p {
@@ -944,21 +1023,6 @@ button {
   color: var(--heading);
   font-weight: 600;
 }
-
-.highlights {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 14px;
-  margin-top: 28px;
-}
-
-.highlight {
-  display: flex;
-  gap: 14px;
-  align-items: flex-start;
-  padding: 16px;
-}
-
 .highlight-icon {
   flex-shrink: 0;
   width: 40px;
@@ -969,19 +1033,6 @@ button {
   background: rgba(59, 130, 246, 0.12);
   color: var(--blue);
 }
-
-.highlight h4 {
-  margin: 0;
-  font-size: 0.95rem;
-  color: var(--heading);
-}
-
-.highlight p {
-  margin: 2px 0 0;
-  font-size: 0.85rem;
-  color: var(--text-muted);
-}
-
 /* ---------- Skills ---------- */
 .skills-grid {
   display: grid;
@@ -1195,7 +1246,7 @@ button {
 
 .timeline-desc {
   position: relative;
-  max-height: 140px;
+  max-height: 250px;
   overflow: hidden;
   transition: max-height 0.6s var(--ease);
 }
@@ -1578,15 +1629,13 @@ button.contact-item {
   .hero-social {
     justify-content: center;
   }
-  .about-grid {
-    grid-template-columns: 0.8fr 1.2fr;
-    gap: 36px;
-  }
-  .highlights {
-    grid-template-columns: 1fr 1fr;
-  }
-  .skills-grid {
+  .skills-grid,
+  .projects-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .about-grid {
+    grid-template-columns: 1fr;
+    max-width: 720px;
   }
   .stats {
     grid-template-columns: repeat(2, 1fr);
@@ -1771,20 +1820,6 @@ button.contact-item {
   .hero-social {
     margin-top: 26px;
   }
-
-  .about-grid {
-    grid-template-columns: 1fr;
-  }
-  .about-photo {
-    max-width: 320px;
-    margin: 0 auto 8px;
-  }
-  .about-photo .code-tag {
-    right: -6px;
-    bottom: 18px;
-    font-size: 0.72rem;
-  }
-
   /* Habilidades viram carrossel com swipe */
   .skills-grid {
     display: flex;
@@ -1831,17 +1866,6 @@ button.contact-item {
   .stat-num {
     font-size: 2rem;
   }
-
-  .highlights {
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-  }
-  .highlight {
-    flex-direction: column;
-    gap: 10px;
-    padding: 14px;
-  }
-
   .timeline {
     padding-left: 26px;
   }
@@ -1886,8 +1910,13 @@ button.contact-item {
   .contact-actions .btn {
     flex: 1 1 100%;
   }
-  .contact-grid {
+  .contact-grid,
+  .projects-grid {
     grid-template-columns: 1fr;
+  }
+  .facts,
+  .project-card {
+    padding: 20px;
   }
 
   .footer-inner {
@@ -1901,9 +1930,6 @@ button.contact-item {
 @media (max-width: 380px) {
   .brand-name {
     display: none;
-  }
-  .highlights {
-    grid-template-columns: 1fr;
   }
   .tabbar a span {
     font-size: 0.6rem;

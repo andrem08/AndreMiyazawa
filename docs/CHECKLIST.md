@@ -45,6 +45,29 @@ Cada item foi implementado e validado com testes automatizados em navegador real
 - [x] Font Awesome carregado como CSS (antes era um JS que reescrevia o DOM).
 - [x] README reescrito.
 
+## Rodada 2: conteúdo e itens que faltavam
+
+Pesquisa em guias de currículo e portfólio para desenvolvedores (2026): recrutadores fazem uma triagem de ~7s, então os itens mais cobrados são **projetos**, **resultados em bullets**, **idiomas** e **contato claro**. O conteúdo novo foi tirado dos currículos PDF (PT/EN) e dos repositórios públicos do GitHub; nada foi inventado.
+
+- [x] **26. Sobre sem foto**: a foto grande saiu; no lugar entrou um card de "fatos rápidos" (localização, formação, idiomas, idade, interesses) com botão de CV. *Validado: 5 fatos renderizados em todos os dispositivos.*
+- [x] **27. Favicon original** (`LogoCoffeeWhite.ico`) de volta, também na 404 e no manifest. *Validado.*
+- [x] **28. Textos reescritos**: tom mais profissional, sem exageros ("∞ cafés", "respondo rápido"), alinhados ao currículo. *Revisado em PT e EN.*
+- [x] **29. Experiência em bullets** focados em ação e resultado, em vez de parágrafos longos. *Validado: 13 bullets nas experiências principais.*
+- [x] **30. Seção Projetos** com 6 repositórios reais do GitHub e link "ver todos". *Validado: 6 cards, links corretos.*
+- [x] **31. Idiomas** (Português nativo, Inglês fluente) e **interesses**, tirados do CV.
+- [x] **32. E-mail atualizado** para `andre08.m@gmail.com`, o mesmo do currículo (o `@usp.br` foi removido). *Validado: nenhum `usp.br` na página.*
+- [x] **33. Estatística "2 idiomas"** no lugar de "∞ cafés".
+- [x] Removidos `assets/Eu.jpg` e `assets/favicon.svg` (sem uso).
+
+### Sugestões que dependem de você
+
+Esses itens costumam fazer diferença, mas precisam de dados que não estão no site nem no CV:
+
+- [ ] **Números de impacto** nas experiências (ex.: "reduziu o tempo de formalização em X%", "N gestores usam o painel").
+- [ ] **Certificações** (ex.: Salesforce Platform Developer I, AWS Cloud Practitioner), se houver.
+- [ ] **Recomendações** do LinkedIn (1–2 frases de colegas ou gestores).
+- [ ] **Projetos profissionais/demos**: prints ou links ao vivo, quando puderem ser públicos.
+
 ## Matriz de testes
 
 | Dispositivo | Viewport | Erros JS/rede | Overflow horizontal | Navegação |

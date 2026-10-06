@@ -23,8 +23,7 @@
     <meta name="twitter:description" content="Salesforce · AWS · Go · Python · Dados." />
     <meta name="twitter:image" content="https://andrem08.github.io/AndreMiyazawa/assets/Eu.png" />
 
-    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-    <link rel="alternate icon" href="assets/LogoCoffeeWhite.ico" type="image/x-icon" />
+    <link rel="icon" href="assets/LogoCoffeeWhite.ico" type="image/x-icon" />
     <link rel="apple-touch-icon" href="assets/LogoCoffeeWhite.png" />
     <link rel="manifest" href="manifest.webmanifest" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -77,6 +76,7 @@
                     <li><a href="#about" data-i18n="nav.about">Sobre</a></li>
                     <li><a href="#skills" data-i18n="nav.skills">Habilidades</a></li>
                     <li><a href="#experience" data-i18n="nav.experience">Experiência</a></li>
+                    <li><a href="#projects" data-i18n="nav.projects">Projetos</a></li>
                     <li><a href="#education" data-i18n="nav.education">Formação</a></li>
                     <li><a href="#contact" data-i18n="nav.contact">Contato</a></li>
                 </ul>
@@ -108,7 +108,6 @@
                     <p class="hero-greeting reveal" style="--delay:.05s" data-i18n="hero.greeting">Olá, eu sou</p>
                     <h1 class="hero-title reveal" style="--delay:.1s">André <span class="gradient-text">Miyazawa</span></h1>
                     <p class="hero-role reveal" style="--delay:.15s">
-                        <span class="prefix" data-i18n="hero.rolePrefix">Eu sou</span>
                         <span class="typed" id="typed"></span><span class="caret" aria-hidden="true"></span>
                     </p>
                     <p class="hero-desc reveal" style="--delay:.2s" data-i18n-html="hero.desc"></p>
@@ -121,7 +120,7 @@
                         <a class="icon-link" href="https://github.com/andrem08" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
                         <a class="icon-link" href="https://gitlab.com/andrem08" target="_blank" rel="noopener" aria-label="GitLab"><i class="fa-brands fa-gitlab"></i></a>
                         <a class="icon-link" href="https://t.me/andrmiyazawa" target="_blank" rel="noopener" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
-                        <a class="icon-link" href="mailto:andre08.m@usp.br" aria-label="E-mail"><i class="fa-solid fa-envelope"></i></a>
+                        <a class="icon-link" href="mailto:andre08.m@gmail.com" aria-label="E-mail"><i class="fa-solid fa-envelope"></i></a>
                     </div>
                 </div>
 
@@ -156,20 +155,13 @@
                     <h2 class="section-title" id="about-title" data-i18n="about.title">Quem sou eu</h2>
                 </div>
                 <div class="about-grid">
-                    <div class="about-photo reveal">
-                        <img src="assets/Eu.jpg" alt="André Miyazawa" width="709" height="703" loading="lazy" />
-                        <div class="code-tag" aria-hidden="true">
-                            <span class="tok-k">const</span> <span class="tok-v">andre</span> = {<br />
-                            &nbsp;&nbsp;<span class="tok-p">role</span>: <span class="tok-s">'SWE'</span>,<br />
-                            &nbsp;&nbsp;<span class="tok-p">stack</span>: [<span class="tok-s">'SF'</span>, <span class="tok-s">'AWS'</span>],<br />
-                            &nbsp;&nbsp;<span class="tok-p">coffee</span>: <span class="tok-v">Infinity</span><br />
-                            };
+                    <div class="about-text reveal" id="about-text"></div>
+                    <aside class="card facts reveal" style="--delay:.1s">
+                        <ul class="facts-list" id="facts"></ul>
+                        <div class="facts-actions">
+                            <a class="btn btn-primary cv-link" href="#" target="_blank" rel="noopener"><i class="fa-solid fa-file-arrow-down"></i><span data-i18n="hero.ctaSecondary">Baixar CV</span></a>
                         </div>
-                    </div>
-                    <div>
-                        <div class="about-text reveal" id="about-text"></div>
-                        <div class="highlights" id="highlights"></div>
-                    </div>
+                    </aside>
                 </div>
             </div>
         </section>
@@ -208,6 +200,21 @@
             </div>
         </section>
 
+        <!-- ===== Projects ===== -->
+        <section class="section" id="projects" aria-labelledby="projects-title">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="eyebrow" data-i18n="projects.eyebrow">// projetos</span><br />
+                    <h2 class="section-title" id="projects-title" data-i18n="projects.title">Projetos</h2>
+                    <p class="section-sub" data-i18n="projects.sub"></p>
+                </div>
+                <div class="projects-grid" id="projects-grid"></div>
+                <div class="center" style="margin-top:36px">
+                    <a class="btn btn-ghost" href="https://github.com/andrem08?tab=repositories" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i><span data-i18n="projects.all">Ver todos no GitHub</span><i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+
         <!-- ===== Education ===== -->
         <section class="section section-alt" id="education" aria-labelledby="education-title">
             <div class="container">
@@ -236,15 +243,15 @@
                     <h2 id="contact-title" data-i18n="contact.title">Vamos construir algo juntos?</h2>
                     <p data-i18n="contact.text"></p>
                     <div class="contact-actions">
-                        <a class="btn btn-primary" href="mailto:andre08.m@usp.br"><i class="fa-solid fa-paper-plane"></i><span data-i18n="contact.email">Enviar e-mail</span></a>
+                        <a class="btn btn-primary" href="mailto:andre08.m@gmail.com"><i class="fa-solid fa-paper-plane"></i><span data-i18n="contact.email">Enviar e-mail</span></a>
                         <a class="btn btn-ghost cv-link" href="#" target="_blank" rel="noopener"><i class="fa-solid fa-file-arrow-down"></i><span data-i18n="contact.cv">Baixar Currículo</span></a>
                         <button class="btn btn-ghost share-btn" type="button" hidden><i class="fa-solid fa-share-nodes"></i><span data-i18n="contact.share">Compartilhar</span></button>
                     </div>
 
                     <div class="contact-grid">
-                        <button class="card contact-item copy-email" type="button" data-email="andre08.m@usp.br">
+                        <button class="card contact-item copy-email" type="button" data-email="andre08.m@gmail.com">
                             <span class="highlight-icon"><i class="fa-solid fa-envelope"></i></span>
-                            <span><small data-i18n="contact.emailLabel">E-mail</small><strong>andre08.m@usp.br</strong></span>
+                            <span><small data-i18n="contact.emailLabel">E-mail</small><strong>andre08.m@gmail.com</strong></span>
                             <i class="fa-regular fa-copy copy-icon" aria-hidden="true"></i>
                         </button>
                         <div class="card contact-item">
@@ -280,7 +287,7 @@
         <a href="#hero" class="active"><i class="fa-solid fa-house"></i><span data-i18n="nav.home">Início</span></a>
         <a href="#about"><i class="fa-solid fa-user"></i><span data-i18n="nav.about">Sobre</span></a>
         <a href="#skills"><i class="fa-solid fa-code"></i><span data-i18n="nav.skills">Habilidades</span></a>
-        <a href="#experience" data-also="education"><i class="fa-solid fa-briefcase"></i><span data-i18n="nav.experienceShort">Carreira</span></a>
+        <a href="#experience" data-also="education projects"><i class="fa-solid fa-briefcase"></i><span data-i18n="nav.experienceShort">Carreira</span></a>
         <a href="#contact"><i class="fa-solid fa-paper-plane"></i><span data-i18n="nav.contact">Contato</span></a>
     </nav>
 

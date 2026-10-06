@@ -68,11 +68,11 @@
   function renderAbout() {
     const a = t().about;
     $('#about-text').innerHTML = a.text.map(p => `<p>${p}</p>`).join('');
-    $('#highlights').innerHTML = a.highlights.map((h, i) => `
-      <div class="card highlight reveal" style="--delay:${i * 0.07}s">
-        <span class="highlight-icon"><i class="${h.icon}"></i></span>
-        <div><h4>${h.title}</h4><p>${h.text}</p></div>
-      </div>`).join('');
+    $('#facts').innerHTML = a.facts.map(f => `
+      <li>
+        <span class="highlight-icon"><i class="${f.icon}"></i></span>
+        <span><small>${f.label}</small><strong>${f.value}</strong></span>
+      </li>`).join('');
   }
 
   function renderSkills() {
@@ -93,7 +93,7 @@
     const item = e.items[key];
     const tools = item.tools || meta.tools || [];
     const toolsLabel = item.tools ? e.knowledgeLabel : e.toolsLabel;
-    const longText = item.roles.reduce((n, r) => n + r.desc.join('').length, 0) > 520;
+    const longText = item.roles.reduce((n, r) => n + r.bullets.length, 0) > 4;
 
     const roles = item.roles.map(r => `
       <div class="role">
@@ -101,7 +101,7 @@
           <h4 class="role-title">${r.title}</h4>
           <span class="date-pill${r.current ? ' current' : ''}"><i class="fa-regular fa-calendar"></i>${r.date}</span>
         </div>
-        ${r.desc.map(p => `<p>${p}</p>`).join('')}
+        <ul class="bullets">${r.bullets.map(b => `<li>${b}</li>`).join('')}</ul>
       </div>`).join('');
 
     return `
@@ -132,6 +132,20 @@
     updateMoreBtn();
   }
 
+  function renderProjects() {
+    const p = t().projects;
+    $('#projects-grid').innerHTML = PROJECTS.map((proj, i) => `
+      <a class="card project-card reveal" style="--delay:${(i % 3) * 0.08}s" href="https://github.com/andrem08/${proj.repo}" target="_blank" rel="noopener">
+        <div class="project-top">
+          <span class="skill-icon"><i class="${proj.icon}"></i></span>
+          <span class="project-link" aria-hidden="true"><i class="fa-brands fa-github"></i>${p.code}<i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+        </div>
+        <h3>${proj.repo}</h3>
+        <p>${p.items[proj.repo]}</p>
+        <div class="chips">${proj.tags.map(s => `<span class="chip">${s}</span>`).join('')}</div>
+      </a>`).join('');
+  }
+
   function renderEducation() {
     const ed = t().education;
     $('#edu-text').innerHTML = ed.text.map(p => `<p>${p}</p>`).join('');
@@ -144,6 +158,7 @@
     renderAbout();
     renderSkills();
     renderExperience();
+    renderProjects();
     renderEducation();
     observeReveals();
     bindCardGlow();
@@ -257,7 +272,7 @@
   function setupActiveNav() {
     const links = $$('.nav-links a, .tabbar a');
     const sections = [...new Set(links.map(a => $(a.getAttribute('href'))).filter(Boolean))];
-    const setActive = id => links.forEach(a => a.classList.toggle('active', a.getAttribute('href') === `#${id}` || a.dataset.also === id));
+    const setActive = id => links.forEach(a => a.classList.toggle('active', a.getAttribute('href') === `#${id}` || (a.dataset.also || '').split(' ').includes(id)));
     const spy = new IntersectionObserver(entries => {
       entries.forEach(entry => { if (entry.isIntersecting) setActive(entry.target.id); });
     }, { rootMargin: '-45% 0px -50% 0px' });
