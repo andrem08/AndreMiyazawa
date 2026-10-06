@@ -352,3 +352,20 @@ strong,
   padding: 3pt 6pt;
   font-size: 8.5pt;
 }
+
+.footer-legal {
+  display: none !important;
+}
+
+.edu-mini {
+  padding: 6pt 10pt;
+  margin-top: 6pt;
+}
+
+.edu-mini .skill-icon {
+  display: none;
+}
+
+.edu-mini h3 {
+  color: #0d1117 !important;
+}

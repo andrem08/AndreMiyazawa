@@ -26,6 +26,7 @@ Visual *dark tech* com gradientes neon, animações e versão dedicada para celu
 | 🖨️ **Vira currículo em PDF** | `Ctrl+P` / "Salvar como PDF" gera um currículo limpo, em fundo branco |
 | 📲 **Instalável** | Web App Manifest: dá para adicionar à tela inicial do celular |
 | 🔎 **SEO** | Meta tags, Open Graph, JSON-LD (`Person`), sitemap e robots |
+| ⚖️ **Transparente** | Página única de privacidade, termos e cookies: o site não usa cookies nem rastreamento |
 | ♿ **Acessível** | Skip link, landmarks semânticos, ARIA, foco visível e respeito a `prefers-reduced-motion` |
 
 ## 🗂️ Estrutura
@@ -34,6 +35,7 @@ Visual *dark tech* com gradientes neon, animações e versão dedicada para celu
 ├── index.html            # Página única: hero, sobre, habilidades, experiência, projetos, formação, contato
 ├── experience.html       # Redireciona links antigos para index.html#experience
 ├── 404.html              # Página de erro personalizada (GitHub Pages)
+├── legal.html            # Privacidade, termos e cookies (página única, PT/EN)
 ├── manifest.webmanifest  # PWA / instalação no celular
 ├── robots.txt, sitemap.xml
 ├── css/
