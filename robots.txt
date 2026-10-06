@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://andrem08.github.io/AndreMiyazawa/sitemap.xml

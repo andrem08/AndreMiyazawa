@@ -1,0 +1,310 @@
+/* print.css - Imprimir / "Salvar como PDF" gera um currículo limpo */
+@page {
+  margin: 14mm;
+}
+
+* {
+  animation: none !important;
+  transition: none !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
+}
+
+body {
+  background: #fff !important;
+  color: #1f2328 !important;
+  font-size: 10.5pt;
+  padding: 0 !important;
+}
+
+.nav,
+.tabbar,
+.scroll-progress,
+.to-top,
+.toast,
+.skip-link,
+.hero-bg,
+.scroll-hint,
+.marquee,
+.float-chip,
+.avatar-ring,
+.hero-cta,
+.contact-actions,
+.contact-social,
+.read-more,
+#more-btn,
+.swipe-dots,
+.about-photo,
+.qr,
+.edu-watermark,
+#stats {
+  display: none !important;
+}
+
+.reveal {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+.hero {
+  min-height: 0;
+  padding: 0 0 12pt;
+  border-bottom: 2px solid #3b82f6;
+}
+
+.hero-inner {
+  display: flex !important;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 18pt;
+  text-align: left !important;
+}
+
+.avatar-wrap {
+  width: 80pt !important;
+  margin: 0;
+}
+
+.avatar {
+  border: 0;
+}
+
+.hero-title,
+.section-title,
+.company-name,
+.edu-card h3,
+.contact-card h2,
+.highlight h4,
+.skill-card h3 {
+  color: #0d1117 !important;
+}
+
+.hero-title {
+  font-size: 24pt;
+}
+
+.gradient-text,
+.typed {
+  -webkit-text-fill-color: #3b82f6;
+  color: #3b82f6 !important;
+  background: none !important;
+}
+
+.hero-role {
+  font-size: 13pt;
+  margin-top: 4pt;
+}
+
+.caret,
+.badge,
+.hero-greeting {
+  display: none !important;
+}
+
+.hero-desc {
+  margin: 6pt 0;
+  font-size: 10.5pt;
+}
+
+.hero-desc,
+.about-text,
+.timeline-desc,
+.section-sub,
+.company-meta,
+.edu-card p,
+.highlight p,
+.hero-social {
+  color: #1f2328 !important;
+}
+
+.hero-social {
+  margin-top: 4pt;
+}
+
+.hero-social a::after {
+  content: attr(aria-label);
+  font-size: 8pt;
+  margin-left: 2pt;
+}
+
+.icon-link {
+  width: auto;
+  height: auto;
+  border: 0;
+  background: none;
+  color: #1f2328;
+  font-size: 9pt;
+  gap: 2pt;
+  display: inline-flex;
+}
+
+.section {
+  padding: 12pt 0 0 !important;
+  background: none !important;
+}
+
+.section-head {
+  text-align: left;
+  margin-bottom: 8pt;
+}
+
+.section-title {
+  font-size: 14pt;
+  padding-bottom: 3pt;
+}
+
+.section-title::after {
+  left: 0;
+  transform: none;
+  width: 40pt !important;
+  height: 2px;
+  background: #3b82f6;
+}
+
+.eyebrow,
+.section-sub {
+  display: none;
+}
+
+.card,
+.contact-card {
+  background: none !important;
+  border: 1px solid #d0d7de !important;
+  break-inside: avoid;
+}
+
+.card::before,
+.contact-card::before {
+  display: none;
+}
+
+.about-grid {
+  display: block;
+}
+
+.highlights {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 6pt;
+}
+
+.highlight {
+  padding: 6pt;
+}
+
+.highlight-icon,
+.skill-icon {
+  display: none;
+}
+
+.skills-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6pt;
+}
+
+.skill-card {
+  padding: 8pt;
+}
+
+.skill-head {
+  margin-bottom: 4pt;
+}
+
+.chip {
+  color: #1f2328 !important;
+  background: #f6f8fa !important;
+  border: 1px solid #d0d7de !important;
+  padding: 1pt 6pt;
+  font-size: 8pt;
+}
+
+.timeline {
+  padding-left: 0;
+}
+
+.timeline::before,
+.timeline-line,
+.timeline-dot {
+  display: none;
+}
+
+.timeline-item {
+  margin-bottom: 8pt;
+}
+
+.timeline-card {
+  padding: 10pt;
+}
+
+.timeline-desc {
+  max-height: none !important;
+}
+
+.timeline-desc::after {
+  display: none;
+}
+
+.more-wrap {
+  grid-template-rows: 1fr !important;
+}
+
+.role-title {
+  color: #3b82f6 !important;
+}
+
+.date-pill {
+  background: none !important;
+  color: #57606a !important;
+  border-color: #d0d7de !important;
+}
+
+.edu-card {
+  padding: 10pt;
+}
+
+.edu-card .company-logo {
+  width: 48pt;
+  height: 48pt;
+}
+
+.contact-card {
+  padding: 10pt;
+  text-align: left;
+}
+
+.contact-card h2 {
+  font-size: 13pt;
+}
+
+.contact-card > p {
+  margin: 4pt 0;
+  color: #1f2328;
+}
+
+.contact-grid {
+  grid-template-columns: 1fr 1fr;
+  margin-top: 6pt;
+}
+
+.contact-item {
+  padding: 6pt;
+}
+
+.contact-item strong {
+  color: #0d1117 !important;
+}
+
+.footer {
+  border: 0;
+  color: #57606a;
+  padding: 8pt 0 0;
+}
+
+b,
+strong,
+.about-text b,
+.timeline-desc b,
+.hero-desc b {
+  color: #0d1117 !important;
+}
