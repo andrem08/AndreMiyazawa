@@ -57,7 +57,7 @@ const STORY = {
       {
         year: '2020', icon: 'fa-solid fa-building-columns', title: 'USP e um começo inesperado: design',
         text: [
-          'Entrei em <b>Sistemas de Informação na USP</b>. Curiosamente, meu primeiro papel em tecnologia não foi como programador, e sim como <b>designer</b>: como voluntário no <b>DASI</b> (o diretório acadêmico), criei identidades visuais, artes e cartazes de eventos no Photoshop e no Canva.',
+          'Entrei em <b>Sistemas de Informação na USP</b>. Curiosamente, meu primeiro papel em tecnologia não foi como programador, e sim como <b>designer</b>: como voluntário no <b>DASI</b> (o diretório acadêmico), criei identidades visuais, artes, cartazes, vídeos e peças de publicidade, conduzi pesquisas de design e fiz o design do site da <b>SSI</b> (Semana de Sistemas de Informação), já com HTML, CSS, JavaScript e React.',
           'O design ficou comigo. Até hoje me importo muito com como as coisas parecem e com como as pessoas as usam, inclusive neste site.'
         ]
       },
@@ -78,7 +78,7 @@ const STORY = {
       {
         year: 'Dez 2022', icon: 'fa-solid fa-chart-pie', title: 'Itaú BBA: risco de crédito',
         text: [
-          'Meu primeiro estágio corporativo foi em <b>Risco de Crédito no Itaú BBA</b>: modelagem e monitoramento de parâmetros de risco, mitigação de <b>LGD</b> em operações garantidas e acompanhamento de esteiras de provisão (<b>BRGAAP</b>, <b>IFRS 9</b>, câmbio), com Python, SQL, SAS e VBA.',
+          'Meu primeiro estágio corporativo foi em <b>Risco de Crédito no Itaú BBA</b>: modelos estatísticos de previsão, modelagem e monitoramento de parâmetros de risco, mitigação de <b>LGD</b> em operações garantidas e acompanhamento de esteiras de provisão (<b>BRGAAP</b>, <b>IFRS 9</b>, câmbio), com Python, SQL, SAS e VBA.',
           'Aprendi a linguagem do negócio financeiro e a importância de números confiáveis. Em paralelo, fiz uma maratona de cursos: Azure ML, Streamlit, JavaScript moderno, HTML5 (Michigan), Python para finanças (HKUST) e a certificação interna <b>Practitioner</b> do Itaú.'
         ]
       },
@@ -93,7 +93,7 @@ const STORY = {
         year: 'Dez 2024', icon: 'fa-solid fa-graduation-cap', title: 'Formatura e efetivação',
         text: [
           'Um mês marcante: concluí o bacharelado em <b>Sistemas de Informação pela USP</b> e fui efetivado na Rede como <b>Engenheiro de Software Júnior</b>. Ao longo do curso, busquei optativas e atividades de extensão para complementar a formação, incluindo administração, economia e marketing.',
-          'Como engenheiro, liderei a refatoração da jornada de credenciamento de clientes, construí um painel de gestão tática em LWC e passei a atuar também na arquitetura de <b>microserviços em AWS</b> com Go e Python.'
+          'Como engenheiro, liderei a refatoração da jornada de credenciamento de Máquinas Rede no <b>Cockpit Rede</b>, construí um painel de gestão tática em LWC e passei a atuar também na arquitetura de <b>microserviços em AWS</b> com Go e Python.'
         ]
       },
       {
@@ -178,7 +178,7 @@ const STORY = {
       {
         year: '2020', icon: 'fa-solid fa-building-columns', title: 'USP and an unexpected start: design',
         text: [
-          'I started <b>Information Systems at USP</b>. Funny enough, my first role in tech wasn\'t as a developer but as a <b>designer</b>: volunteering at <b>DASI</b> (the student association), I created visual identities, artwork and event posters in Photoshop and Canva.',
+          'I started <b>Information Systems at USP</b>. Funny enough, my first role in tech wasn\'t as a developer but as a <b>designer</b>: volunteering at <b>DASI</b> (the student association), I created visual identities, artwork, posters, videos and advertising pieces, ran design research and designed the website for <b>SSI</b> (Information Systems Week), already using HTML, CSS, JavaScript and React.',
           'Design stayed with me. I still care a lot about how things look and feel to use, this site included.'
         ]
       },
@@ -199,7 +199,7 @@ const STORY = {
       {
         year: 'Dec 2022', icon: 'fa-solid fa-chart-pie', title: 'Itaú BBA: credit risk',
         text: [
-          'My first corporate internship was in <b>Credit Risk at Itaú BBA</b>: modeling and monitoring risk parameters, <b>LGD</b> mitigation for secured operations and tracking provisioning pipelines (<b>BRGAAP</b>, <b>IFRS 9</b>, FX), with Python, SQL, SAS and VBA.',
+          'My first corporate internship was in <b>Credit Risk at Itaú BBA</b>: statistical forecasting models, modeling and monitoring risk parameters, <b>LGD</b> mitigation for secured operations and tracking provisioning pipelines (<b>BRGAAP</b>, <b>IFRS 9</b>, FX), with Python, SQL, SAS and VBA.',
           "I learned the language of finance and the value of reliable numbers. Meanwhile, I binged courses: Azure ML, Streamlit, modern JavaScript, HTML5 (Michigan), Python for finance (HKUST) and Itaú's internal <b>Practitioner</b> certification."
         ]
       },
@@ -214,7 +214,7 @@ const STORY = {
         year: 'Dec 2024', icon: 'fa-solid fa-graduation-cap', title: 'Graduation and a full-time role',
         text: [
           'A milestone month: I graduated in <b>Information Systems from USP</b> and was hired full-time at Rede as a <b>Junior Software Engineer</b>. Throughout the degree, I sought electives and extension activities to round out my education, including business administration, economics and marketing.',
-          'As an engineer, I led the refactoring of the client onboarding journey, built a tactical management dashboard in LWC and started working on <b>AWS microservices</b> architecture with Go and Python.'
+          'As an engineer, I led the refactoring of the Rede card machine onboarding journey in <b>Cockpit Rede</b>, built a tactical management dashboard in LWC and started working on <b>AWS microservices</b> architecture with Go and Python.'
         ]
       },
       {
